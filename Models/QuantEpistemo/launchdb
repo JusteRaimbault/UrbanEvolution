@@ -1,3 +1,2 @@
-
-sudo mongod --dbpath /mnt/volume1/juste/mongodb/microsim --bind_ip 127.0.0.1 --port 27017
+sudo mongod --dbpath /var/mongodb/quantep
 
