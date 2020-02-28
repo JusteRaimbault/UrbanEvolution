@@ -20,5 +20,7 @@ db.references.updateMany({"horizontalDepth.artificial_life":{$gt:-1}},{$set:{dep
 { "acknowledged" : true, "matchedCount" : 200, "modifiedCount" : 147 }
 some priorities at 1000, some not set: ??? + does not correspond to hdepth for some with only alife
 * run // collection: ./parrun.sh "java -jar bibliodata.jar --citation --mongo alife 1000 250 true" 10
-
+* 2020/02/23 19h50~ : rerun, idem - 5//
+* rerun lasts. (pb processing field after crash)
+* priorities
 
