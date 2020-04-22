@@ -1,0 +1,824 @@
+
+[1] "Community 7 ; corpus prop 0.109743010449026"
+                                                                                                                 titles
+9275319889372464090                                       Fly-inspired visual steering of an ultralight indoor aircraft
+4549297941912742343                                       RANGE–Robust autonomous navigation in GPS‐denied environments
+15661449769049830704 Optic flow-based vision system for autonomous 3D localization and control of small aerial vehicles
+10699588011318681786             Survey of advances in guidance, navigation, and control of unmanned rotorcraft systems
+13914429537029381214                                                       Vision-based control of near-obstacle flight
+                     degree
+9275319889372464090     156
+4549297941912742343     199
+15661449769049830704    136
+10699588011318681786    211
+13914429537029381214    146
+[1] "Community 30 ; corpus prop 0.0910477266308952"
+                                                                                                     titles
+6020623860903843127                 Perception, planning, control, and coordination for autonomous vehicles
+8172356533583417046                            Autonomous ground vehicles—Concepts and a path to the future
+6354403244940140613 Simultaneous localization and mapping: A survey of current trends in autonomous driving
+9330239807086579592                                    Planning and decision-making for autonomous vehicles
+1200872129892710311                           A review of motion planning techniques for automated vehicles
+                    degree
+6020623860903843127     60
+8172356533583417046    139
+6354403244940140613     89
+9330239807086579592     81
+1200872129892710311    213
+[1] "Community 20 ; corpus prop 0.127478113527252"
+                                                                                               titles degree
+4320914030835235196        The re‐emergence of “emergence”: A venerable concept in search of a theory    127
+5388898196341298196  Tutorial on agent-based modeling and simulation part 2: how to model with agents    168
+11546170336168403450                                  Tutorial on agent-based modeling and simulation    272
+943556007072357348                                                                    Would-be worlds    507
+7030948693429082538         Agent-based modeling: Methods and techniques for simulating human systems    283
+[1] "Community 26 ; corpus prop 0.0864162665913584"
+                                                                                                               titles
+11436551616051866733                                             Two bits: The cultural significance of free software
+12352364525234430907                                     Embodied progress: A cultural account of assisted conception
+11867822715651239425                                                                      The politics of life itself
+4926098509674505281   Silicon Second Nature: Culturing Artificial Life in a Digital World, Updated With a New Preface
+9735041220180664111                                        Network Culture: Cultural Politics for the Information Age
+                     degree
+11436551616051866733    159
+12352364525234430907    217
+11867822715651239425    156
+4926098509674505281     189
+9735041220180664111     161
+[1] "Community 10 ; corpus prop 0.0366563117763344"
+                                                                                                                      titles
+13794345468332688614                               Progress toward multi‐robot reconnaissance and the MAGIC 2010 competition
+1181774132291567849                                                                      Robot simulation physics validation
+1656775135143715833                                        High fidelity tools for rescue robotics: results and perspectives
+1406783739804279267                 Evaluating maps produced by urban search and rescue robots: lessons learned from RoboCup
+5392646687450140772  A comparison of path planning strategies for autonomous exploration and mapping of unknown environments
+                     degree
+13794345468332688614     46
+1181774132291567849      51
+1656775135143715833      66
+1406783739804279267      53
+5392646687450140772      53
+[1] "Community 31 ; corpus prop 0.00321942953967806"
+                                                                                                                                                            titles
+6169560056311665439                                                      Machine learning approaches to coastal water quality monitoring using GOCI satellite data
+17444885697779255498                                                Linking patch dynamics, landscape organization, patch-size scaling, and landscape connectivity
+11210326492591196924                                   Variable selection for hedonic model using machine learning approaches: A case study in Onondaga County, NY
+11253389063796803086                                    Building type classification using spatial and landscape attributes derived from LiDAR remote sensing data
+2404422660154577816  Evaluation of five landscape-level metrics for measuring the effects of urbanization on landscape structure: the case of Tucson, Arizona, USA‏
+                     degree
+6169560056311665439      31
+17444885697779255498      1
+11210326492591196924     14
+11253389063796803086     27
+2404422660154577816       5
+[1] "Community 11 ; corpus prop 0.00621293419937871"
+                                                                                                                                   titles
+6358274878584847993                                                                                    Synthetic biology: Living quarters
+5343902733896244414                                                                      Kinetic architectures & geotextile installations
+2270623485315636402                                                                      Soil and Protoplasm: The Hylozoic Ground Project
+9447329226511561967                          Near-living Architecture: Work in Progress from the Hylozoic Ground Collaboration, 2011-2013
+17260696077510612347  Evolving Systems within Immersive Architectural Environments: New Research by the Living Architecture Systems Group
+                     degree
+6358274878584847993      52
+5343902733896244414      52
+2270623485315636402      41
+9447329226511561967      49
+17260696077510612347     46
+[1] "Community 6 ; corpus prop 0.000734255859926574"
+                                                                                                                   titles
+3526367142906497317                                              Boosting city image for creation of a certain city brand
+16957959152565772089             The Bateson Building, Sacramento, California, 1977–81, and the Design of a New Age State
+13633875867731945574                                             Predetermined?–Systems thinking for the urban subsurface
+10740433980117054141  Systems thinking and decision making in urban and environmental planning by Anastássios Perdicoúlis
+16126075436955637164                                               The two orders of cybernetics in urban form and design
+4906534554348824579      Strengthening the city's reputation in the age of cities: an insight in the city branding theory
+                     degree
+3526367142906497317       4
+16957959152565772089      1
+13633875867731945574      1
+10740433980117054141      2
+16126075436955637164      6
+4906534554348824579       2
+[1] "Community 15 ; corpus prop 0.0980513979101949"
+                                                                                                                                              titles
+5852810794259493697                                                                                                             From cells to cities‏
+17624835233644625816 Loose-coupling a cellular automaton model and GIS: long-term urban growth prediction for San Francisco and Washington/Baltimore
+18009378539651666673                                 From cellular automata to urban models: new principles for model development and implementation‏
+13443307700762178611                              A self-modifying cellular automaton model of historical urbanization in the San Francisco Bay area‏
+12954335397668543979             Cellular automata and fractal urban form: a cellular modelling approach to the evolution of urban land-use patterns
+                     degree
+5852810794259493697     290
+17624835233644625816    240
+18009378539651666673    203
+13443307700762178611    239
+12954335397668543979    331
+[1] "Community 12 ; corpus prop 0.0715617057328438"
+                                                                                                  titles degree
+6098735927092770640                Intuitive crowd behavior in dense urban environments using local laws    152
+13717750592563022520                                             Scalable behaviors for crowd simulation    169
+5200661626033955413                                     Virtual crowds: Methods, simulation, and control    159
+14956943355130930538                      Controlling individual agents in high-density crowd simulation    325
+3165136909787197238   Crowd simulation incorporating agent psychological models, roles and communication    139
+[1] "Community 42 ; corpus prop 0.065009884213499"
+                                                                                                     titles
+16652030977272114047              Stabilising experience replay for deep multi-agent reinforcement learning
+13104688959668713880                   Computational intelligence in urban traffic signal control: A survey
+8348839764603034120  A review of the applications of agent technology in traffic and transportation systems
+1275033596823914971                                  Holonic multi-agent system for traffic signals control
+16334073567006184026                      A review on agent-based technology for traffic and transportation
+                     degree
+16652030977272114047     65
+13104688959668713880    112
+8348839764603034120     244
+1275033596823914971      62
+16334073567006184026     88
+[1] "Community 24 ; corpus prop 0.0399887037560011"
+                                                                                                                                       titles
+3177496954456642984                                           Green justice or just green? Provision of urban green spaces in Berlin, Germany
+5336071289952517284  Using a GIS-based network analysis to determine urban greenspace accessibility for different ethnic and religious groups
+9275445651873334693                          Factors influencing the use of green space: Results from a Danish national representative survey
+5973174750988507465                                          Street trees and equity: evaluating the spatial distribution of an urban amenity
+14867097899341371802                      Racial/ethnic and socioeconomic disparities in urban green space accessibility: Where to intervene?
+                     degree
+3177496954456642984      56
+5336071289952517284     216
+9275445651873334693      67
+5973174750988507465      98
+14867097899341371802    100
+[1] "Community 38 ; corpus prop 0.0410053657158995"
+                                                                                                                                                             titles
+11968190804502399364                                                                               Social computing: From social informatics to social intelligence
+11740763492887180253                                                                                  Toward a paradigm shift in social computing: The ACP approach
+16864682425531891667                                                    Computational experiments for behavior analysis and decision evaluation of complex systems
+744945349581261758                                                          Artificial societies for integrated and sustainable development of metropolitan systems
+3812132805016985854  Artificial societies, computational experiments, and parallel systems: a discussion on computational theory of complex social-economic systems
+                     degree
+11968190804502399364    129
+11740763492887180253    139
+16864682425531891667    108
+744945349581261758       86
+3812132805016985854      95
+[1] "Community 14 ; corpus prop 0.0445636825755436"
+                                                                                                                            titles
+2368017218408906128                                                Traffic flow prediction with big data: a deep learning approach
+11660571840579604845        Improving traffic flow prediction with weather information in connected cars: A deep learning approach
+8760659757919304399                                  Short-term speed predictions exploiting big data on large urban road networks
+3746669812522100770  Deep bidirectional and unidirectional LSTM recurrent neural network for network-wide traffic speed prediction
+14797484426936055665                                        LSTM network: a deep learning approach for short-term traffic forecast
+                     degree
+2368017218408906128     533
+11660571840579604845     72
+8760659757919304399      38
+3746669812522100770      33
+14797484426936055665    144
+[1] "Community 4 ; corpus prop 0.0346229878565377"
+                                                                                         titles degree
+2227689056372207020                                       Metacreation: art and artificial life    150
+1968683185414990963                                 Open problems in evolutionary music and art     69
+8703676035462970269                                        A taxonomy for artificial embryogeny    103
+16560836320831105229  The art of artificial evolution: A handbook on evolutionary art and music     85
+2856522412193981510               Competitive coevolution through evolutionary complexification    134
+[1] "Community 37 ; corpus prop 0.0142332674385767"
+                                                                                                                                                 titles
+18122350817215766263                                                              Seductive simulations? Uncertainty distribution around climate models
+13913541851923470887                                                                                                          Experimenting on theories
+12681916917021381528                                                Remote sensing technology for mapping and monitoring land-cover and land-use change
+5389478908147136493                                                                                      Uncertainty in integrated assessment modelling
+1506991113378469944   Simulating nature: a philosophical study of computer-simulation uncertainties and their role in climate science and policy advice
+                     degree
+18122350817215766263     51
+13913541851923470887     45
+12681916917021381528     88
+5389478908147136493      39
+1506991113378469944      32
+[1] "Community 36 ; corpus prop 0.0029370234397063"
+                                                                                                                                                              titles
+5941698819549167305                   Stability of Pareto optimal allocation of land reclamation by multistage decision-based multipheromone ant colony optimization
+1207308206912606587                                                 The urban bus routing problem in the Tunisian case by the hybrid artificial ant colony algorithm
+16349976204921726168                                                                   Simultaneous bus transit route network and frequency setting search algorithm
+3254369035041158069  Integration of efficient multi-objective ant-colony and a heuristic method to solve a novel multi-objective mixed load school bus routing model
+5965472957785997865                                                     An ant colony optimization technique for solving min–max multi-depot vehicle routing problem
+                     degree
+5941698819549167305       6
+1207308206912606587      30
+16349976204921726168      3
+3254369035041158069       4
+5965472957785997865       8
+[1] "Community 43 ; corpus prop 0.0196554645580345"
+                                                                                                                                             titles
+11087082909308748579                Recent developments and future trends in volunteered geographic information research: The case of OpenStreetMap
+10251598309178948236                                                                                                        Ontology‐based metadata
+6820259464156326397   The geography of happiness: Connecting twitter sentiment and expression, demographics, and objective characteristics of place‏
+4688365405266066279                     An introduction to OpenStreetMap in Geographic Information Science: Experiences, research, and applications
+39842899420027210                                                                                   Web mapping 2.0: The neogeography of the GeoWeb
+14156308905597993952            An assessment of a collaborative mapping approach for exploring land use patterns for several European metropolises
+                     degree
+11087082909308748579     76
+10251598309178948236     42
+6820259464156326397      26
+4688365405266066279      17
+39842899420027210       112
+14156308905597993952     17
+[1] "Community 44 ; corpus prop 0.00898051397910195"
+                                                                                                                       titles
+13017714683921827506        Interactive evolutionary approaches to multiobjective spatial decision making: A synthetic review
+4982547454917372013  Studying real traffic and mobility scenarios for a Smart City using a new monitoring and tracking system
+6185221243223583633                            Geographic information systems for transportation: principles and applications
+1786780030627166320                                                                        The geography of transport systems
+3990691818007418458                         On complex geographic space: Computing frameworks for spatial diffusion processes
+                     degree
+13017714683921827506     23
+4982547454917372013       7
+6185221243223583633      85
+1786780030627166320      60
+3990691818007418458      11
+[1] "Community 27 ; corpus prop 0.00440553515955945"
+                                                                                                                                                titles
+17129932466374821299                                                            Classification and resolving urban problems by means of fuzzy approach
+16353751735885546433                                                The “New Urban Europe”: Global challenges and local responses in the urban century
+11179740077515228150 Identifying urban transformation dynamics: Functional use of scenario techniques to integrate knowledge from science and practice
+1674055334448056044                                              Imagineering city futures: The use of prospective through scenarios in urban planning
+6003557381179571339                                      Crowdsourcing urban sustainability. Data, people and technologies in participatory governance
+                     degree
+17129932466374821299      5
+16353751735885546433     12
+11179740077515228150      7
+1674055334448056044      25
+6003557381179571339      14
+[1] "Community 39 ; corpus prop 0.0130471618186953"
+                                                                                               titles degree
+11955131102786952106                              Augmented reality simulations on handheld computers     71
+16972584057543242819        Environmental detectives: PDAs as a window into a virtual simulated world     44
+12988595592437004439  Open-ended video games: A model for developing learning for the interactive age     38
+11642140292628760152                       From content to context: Videogames as designed experience    100
+6420109384595558526  Wherever you go, there you are: Place-based augmented reality games for learning     29
+[1] "Community 8 ; corpus prop 0.00265461733973454"
+                                                                                                                                                    titles
+15458811355582740543                                                       Identifying essential organizational characteristics for smart urban governance
+7890613350900493877                               Information sharing as a dimension of smartness: Understanding benefits and challenges in two megacities
+12562585558382699610                                                          Social Smart City-A Dream or a Reality? An Exploratory Case Study of Hamburg
+6024871627781119563                                                     Conceptualizing smartness in government: An integrative and multi-dimensional view
+18084650248612918910                                                       Understanding Smart Cities: A tool for smart government or an industrial trick?
+12738271548819287618                          Orchestrating big data analytics capability for sustainability: A study of air pollution management in China
+11168757199096385456                                                                     Smart Cities: Transport Challenges of the Macedonian Capital City
+1872606080616958310                                                                          Smart City and Smart Government: Synonymous or Complementary?
+6237148070052373193                                                    Smart city initiatives: Designing a project-level smart value assessment instrument
+13971839994546074760                                                                              Towards a capabilities approach to smart city management
+17203269366980502440                                                               Standardisation of enterprise architecture development for smart cities
+15129153165210987898                                                                        Social Innovation for “Smart” Territories: Fiction or Reality?
+16106903539459418120                                                           Innovaciones sociales para territorios “inteligentes”:¿ ficción o realidad?
+8420159373525609033                                                                                          Understanding smart cities as social machines
+17171798384654823531                                              Delivering public value through open government data initiatives in a Smart City context
+9736233956733668417                                                                                                                    BUSINESS STRATEGIES
+445753272899100290                                  Public libraries as anchor institutions in smart communities: Current practices and future development
+18252186533092700453               Smart cities through implicit participation: Using gamification to generate citizen input for public transport planning
+18432042021593890795                                                            Using gamification to generate citizen input for public transport planning
+14397006111482577301                 What makes a city smart? Identifying core components and proposing an integrative and comprehensive conceptualization
+2610781215015861073                                         Kazakhstan Develops Smart Cities Institutional Repositories as Backbones of Digital Kazakhstan
+10129783804867656297       Smart cities in Turkey: Approaches, advances and applications with greater consideration for future urban transport development
+18079365943541094072                                                                          Datapolis: A public governance perspective on “Smart Cities”
+6849692421709557950                                                                                      The Evolution of City Labelling in the Literature
+8340354283069778025                                                                Urban smart mobility in the scientific literature—bibliometric analysis
+13176209742134843600                                              Proposta de modelo para estruturação de centros de controle integrados em cidades médias
+13812321834421391235                                                           Innovaciones sociales para territorios “inteligentes”:¿ ficción o realidad?
+8928722703217728305                                                           Verwaltung 4.0: Modernisierungsrelevant oder alter Wein in neuen Schläuchen?
+2530222720154454404  Digital Smart Citizenship Competence Development with a Cyber-Physical Learning Approach Supported by Internet of Things Technologies
+4064961833337242376                    Exploring e3-value ontology-based service engineering for participatory processes of community development projects
+7112132866129168435                  Building understanding of municipal operations centers as smart city'initiatives: insights from a cross-case analysis
+78963381071759075                                                                          Creating public value through smart technologies and strategies
+18321150843806624554                            AN INSIGHT INTO GOVERNANCE AND POLICY-MAKING DIMENSIONS OF THE SMART CITY CONCEPT FROM THE CEE PERSPECTIVE
+14496474999693714994                 Towards three decades of spatial development transformation in two contrasting post-Soviet cities—Kraków and Budapest
+16753133491260665537                                                                                           Smart city label: past, present, and future
+11947314382272805027                                                 Citizens' Understanding of Smart City Development: The Case of St. Petersburg, Russia
+7541672355146462824                                                 A Cyberphysical learning approach for digital smart citizenship competence development
+5735353613805954961                                                                                               APPLICATIONS OF THE SMART CITIES CONCEPT
+11828282878573984964                                                                           Smart City Priority Correlation Using Differential Equation
+15620092022711724606                                               Auto city: A system for generating 3D virtual cities for simulation systems on GIS maps
+15899585791333162890                                                                   Towards A Framework for Smart City Model Based on Adaptive Capacity
+12973755195803018708                                                                                      Smart home: Highly-educated students' acceptance
+13169568059287680222                 Cidade Inteligente: as mudanças estratégicas promovidas no município de Santa Rosa/RS estão inseridas neste conceito?
+2496307752212696582                                          Identifying the results of smart city development: Findings from systematic literature review
+12694715503683764001                                                   The operationalizing aspects of smart cities: The case of Turkey's smart strategies
+11700570639088278552                                                            Smart government: A new adjective to government transformation or a trick?
+15552442616810224854                             Social smart city: introducing digital and social strategies for participatory governance in smart cities
+                     degree
+15458811355582740543      0
+7890613350900493877       0
+12562585558382699610      0
+6024871627781119563       0
+18084650248612918910      0
+12738271548819287618      0
+11168757199096385456      0
+1872606080616958310       0
+6237148070052373193       0
+13971839994546074760      0
+17203269366980502440      0
+15129153165210987898      0
+16106903539459418120      0
+8420159373525609033       0
+17171798384654823531      0
+9736233956733668417       0
+445753272899100290        0
+18252186533092700453      2
+18432042021593890795      0
+14397006111482577301     40
+2610781215015861073       0
+10129783804867656297      0
+18079365943541094072      0
+6849692421709557950       0
+8340354283069778025       0
+13176209742134843600      0
+13812321834421391235      0
+8928722703217728305       0
+2530222720154454404       0
+4064961833337242376       0
+7112132866129168435       0
+78963381071759075         0
+18321150843806624554      0
+14496474999693714994      0
+16753133491260665537      0
+11947314382272805027      0
+7541672355146462824       0
+5735353613805954961       0
+11828282878573984964      0
+15620092022711724606      1
+15899585791333162890      0
+12973755195803018708      0
+13169568059287680222      0
+2496307752212696582       0
+12694715503683764001      3
+11700570639088278552      0
+15552442616810224854      0
+[1] "Community 40 ; corpus prop 0.00231573001976843"
+                                                                                                                                                                                              titles
+12464384076382939521                                                                                        Modelling crop improvement in a G* E* M framework via gene-trait-phenotype relationships
+7408620699538343898                                                                                             Flowering time control: gene network modelling and the link to quantitative genetics
+2723361490336120891                                                          Molecular breeding for complex adaptive traits: how integrating crop ecophysiology and modelling can enhance efficiency
+2844464439670186764                                                                                                                               An integrated systems approach to crop improvement
+18274145091659514839                                                                  Trait physiology and crop modelling as a framework to link phenotypic complexity to underlying genetic systems
+10084386665853238854                                                     Integrating modelling and phenotyping approaches to identify and screen complex traits: transpiration efficiency in cereals
+13885678019500512572                                Preface to Special Issue: Complex traits and plant breeding—can we understand the complexities of gene-to-phenotype relationships and use such …
+5776407431726744028                  Análisis genético de la respuesta de los caracteres ecofisiológicos determinantes del rendimiento en grano a la disponibilidad de nitrógeno en maíz (Zea mays …
+5142236624903288917                                                                                            Biological reality and parsimony in crop models—why we need both in crop improvement!
+2657130537736227898                                                                                          Molecular breeding for a changing climate: Bridging ecophysiology and molecular biology
+2150121213208900243                                                                                                     Models for navigating biological complexity in breeding improved crop plants
+1061150784528992956                                                                                                                                Field-based phenomics for plant genetics research
+1032540356647137199                                                                                                                   Sorghum crop modeling and its utility in agronomy and breeding
+618337673519391229                                                                               Predicting the future of plant breeding: complementing empirical evaluation with genetic prediction
+14156123379587972711                                                                                                                          Accelerating crop genetic gains with genomic selection
+9952784127679227627                                                                                                                      The GP problem: quantifying gene-to-phenotype relationships
+15683248597081907779                                                                               Functional Whole Plant Modelling–The Missing Link between Molecular Biology and Crop Improvement?
+6477187286958893600                                                                                                                  Post-GWAS: where next? More samples, more SNPs or more biology?
+2946595597037524167                  Leveraging biological insight and environmental variation to improve phenotypic prediction: Integrating crop growth models (CGM) with whole genome prediction …
+10103183170474432484         A mixed-model quantitative trait loci (QTL) analysis for multiple-environment trial data using environmental covariables for QTL-by-environment interactions, with an …
+16439233157075708344                                                                                                                             Gene-to-phenotype models and complex trait genetics
+9917163673078715782                                                                                                      Plant adaptation to climate change—opportunities and priorities in breeding
+13882958309497647017                                                                                                     Patterns of water stress and temperature for Australian chickpea production
+4815582673232487281                                                                                    Adapting APSIM to model the physiology and genetics of complex adaptive traits in field crops
+1705185330302700553                                                                             Integrating crop growth models with whole genome prediction through approximate Bayesian computation
+8780909618543921325                                                                                            Needles: toward large-scale genomic prediction with marker-by-environment interaction
+5913106974844476447                                                              Statistical models for genotype by environment data: from conventional ANOVA models to eco-physiological QTL models
+18120494382676070605                                                                                                                                  Modeling QTL effects and MAS in plant breeding
+6963507249577444701                                                                                                                   Phenotyping for drought tolerance of crops in the genomics era
+3354334282509807158                                                                                                                                            Computer simulation in plant breeding
+4474342371551926809                                                                                               Dryland agriculture: bringing resilience to crop production under changing climate
+8480889780836181431                                                                 What should students in plant breeding know about the statistical aspects of genotype× environment interactions?
+11154068307787902682                                                                           Use of crop growth models with whole-genome prediction: application to a maize multienvironment trial
+797752211114511021                                                                                                                                      QTL for agronomic traits in maize production
+17167985791890611132 Physiology of yield determination in chickpea (Cicer arietinum L.): critical period for yield determination, patterns of environmental stress, competitive ability and stress …
+6287477988679958072                                                                                                                                                        Complexity in Corn Fields
+16799518836474602258                                                                                                             Modelling environmental and genetic control of tillering in sorghum
+7619905234383537178                                                                                                                                                            and Molecular Biology
+10263246777031968998                                                                                                          QTL Modelling: An Adaptation Option in Spring Wheat for Drought Stress
+5406327126901590257                                                                        A gene regulatory network model for floral transition of the shoot apex in maize and its dynamic modeling
+16071809880718210779                                                                          Yield–trait performance landscapes: from theory to application in breeding maize for drought tolerance
+                     degree
+12464384076382939521      0
+7408620699538343898       0
+2723361490336120891       0
+2844464439670186764       0
+18274145091659514839      0
+10084386665853238854      0
+13885678019500512572      0
+5776407431726744028       0
+5142236624903288917       0
+2657130537736227898       0
+2150121213208900243       0
+1061150784528992956       0
+1032540356647137199       0
+618337673519391229        0
+14156123379587972711      0
+9952784127679227627      32
+15683248597081907779      0
+6477187286958893600       0
+2946595597037524167       0
+10103183170474432484      0
+16439233157075708344     27
+9917163673078715782       0
+13882958309497647017      0
+4815582673232487281       0
+1705185330302700553       0
+8780909618543921325       0
+5913106974844476447       0
+18120494382676070605      5
+6963507249577444701       0
+3354334282509807158       0
+4474342371551926809       0
+8480889780836181431       0
+11154068307787902682      0
+797752211114511021        0
+17167985791890611132      0
+6287477988679958072       0
+16799518836474602258      0
+7619905234383537178       0
+10263246777031968998      0
+5406327126901590257       0
+16071809880718210779     18
+[1] "Community 22 ; corpus prop 0.00621293419937871"
+                                                                                                                                        titles
+8358348866350048806  Geometrically corrected second order analysis of events on a linear network, with applications to ecology and criminology
+2197630145369848599                                                                     GIS and spatial data analysis: Converging perspectives
+1365689794546834098                                                                                 Spatial data analysis: theory and practice
+12014572585326199922                                                               Spatial point patterns: methodology and applications with R
+5342508893598075998                                                                              Kernel density estimation on a linear network
+                     degree
+8358348866350048806      30
+2197630145369848599      35
+1365689794546834098      50
+12014572585326199922     43
+5342508893598075998      19
+[1] "Community 23 ; corpus prop 0.0125388308387461"
+                                                                                                          titles
+8674952162935704512                                Adaptivity and self-organization in organic computing systems
+6753641944988556267                                           Towards a quantitative notion of self-organisation
+10375403526238369489 Self-adaptive systems: A survey of current approaches, research challenges and applications
+16478701937033701213           An organic computing perspective on self-improving system interweaving at runtime
+3968484698949766118                                                   Observation and control of organic systems
+                     degree
+8674952162935704512      92
+6753641944988556267      21
+10375403526238369489     20
+16478701937033701213     21
+3968484698949766118      58
+[1] "Community 32 ; corpus prop 0.00513979101948602"
+                                                                                                           titles
+17011364874400829693                          Pylon line spatial correlation assisted transmission line detection
+9199128846828956284                              Detecting wires in cluttered urban scenes using a Gaussian model
+5172458930943226708                           Wire detection in low-altitude, urban, and low-quality video frames
+752709019249625253                                                       Power line detection from optical images
+8906698328118596291  Detection of thin lines using low-quality video from low-altitude aircraft in urban settings
+                     degree
+17011364874400829693     14
+9199128846828956284      11
+5172458930943226708      11
+752709019249625253       22
+8906698328118596291      37
+[1] "Community 16 ; corpus prop 0.00406664783959334"
+                                                                                                                                                                        titles
+5130442499978525457                                                   Optimization of a complex urban intersection using discrete event simulation and evolutionary algorithms
+13266067713119831064  Indicators for traffic safety assessment and prediction and their application in micro-simulation modelling: A study of urban and suburban intersections
+9849639803444766401                                                                        Assessing safety performance of transportation systems using microscopic simulation
+12850532445322862509                    Methods for the assessment and prediction of traffic safety at urban intersections and their application in micro-simulation modelling
+10417546411646144526                                                                                   Multi-agent Architecture for Simulation of Traffic with Communications.
+                     degree
+5130442499978525457       1
+13266067713119831064     52
+9849639803444766401      35
+12850532445322862509     20
+10417546411646144526      5
+[1] "Community 35 ; corpus prop 0.00135554927986445"
+                                                                                                              titles
+5567972126034790571  3D spatial-temporal GIS modeling of urban environments to support design and planning processes
+5989116023289619867                Planning Europe's capital cities: aspects of nineteenth-century urban development
+9898479291117608765                        Rome in the past hundred years: urban expansion without industrialisation
+16300494029870168281                         Commentary: designing codes: trends in cities, planning and development
+11404957961126248569                                    The Drafting of a Master Plan for Roma Capitale: An Exordium
+                     degree
+5567972126034790571       3
+5989116023289619867       7
+9898479291117608765       4
+16300494029870168281      6
+11404957961126248569      3
+[1] "Community 33 ; corpus prop 0.0016379553798362"
+                                                                                                    titles
+4795207328901487685  An analysis to wealth distribution based on sugarscape model in an artificial society
+6707386545631885794                   Optimal behavior of a moving creature in the cellular automata model
+13528522511410400453          Optimization of agent-based models: scaling methods and heuristic algorithms
+16587558595709400960      Modeling production with artificial societies: the emergence of social structure
+5421162495639944071            Using difference equations to find optimal tax structures on the SugarScape
+11003047322123792825              Optimizing the Behavior of a Moving Creature in Software and in Hardware
+                     degree
+4795207328901487685       4
+6707386545631885794      11
+13528522511410400453      5
+16587558595709400960      7
+5421162495639944071       4
+11003047322123792825     10
+[1] "Community 17 ; corpus prop 0.0185823213781418"
+                                                                                                   titles degree
+2667235598050056597                   A taxonomy of biologically inspired research in computer networking     56
+909046666804922007                 A survey on nature‐inspired metaphors for pervasive service ecosystems     40
+14756983734669713907 Bio-inspired multi-agent data harvesting in a proactive urban monitoring environment     40
+13755559953515497263                                                  A survey on bio-inspired networking     46
+17351504887488460812                                        A survey of urban vehicular sensing platforms     63
+[1] "Community 21 ; corpus prop 0.000508330979949167"
+                                                                                                                                         titles
+16381921057148742797                           A comparative study of road extraction techniques from aerial imagery-a navigational perspective
+13980278823112893956                                                                                      A segment algorithm for crack dection
+5705232038659272257                    A new ant based distributed framework for urban road map updating from high resolution satellite imagery
+7668367594184977473        Detection of geometric change in railway curves caused by earthquakes, using high-resolution stereo satellite images
+15309835617629953755                                                                 Pavement distress detection based on artificial population
+842624125551304443                                              Detection and classification of pavement surface cracks based on image analysis
+9044101910747205468              Development of Machine Learning Based Analytical Tools for Pavement Performance Assessment and Crack Detection
+198264688998288280   Segmentation for object-based image analysis (obia): A review of algorithms and challenges from remote sensing perspective
+11157321182682570377                Image based techniques for crack detection, classification and quantification in asphalt pavement: a review
+                     degree
+16381921057148742797      0
+13980278823112893956      2
+5705232038659272257       4
+7668367594184977473       0
+15309835617629953755      2
+842624125551304443        1
+9044101910747205468       0
+198264688998288280        0
+11157321182682570377      0
+[1] "Community 18 ; corpus prop 0.0155888167184411"
+                                                                                                         titles
+7066224391947864328                                                        杭州城市形态和土地利用结构的时空演化
+6069307627225847770                                              上海市土地利用结构和形态演变的信息熵与分维分析
+6904035610242430404                                          城市土地利用结构和形态的定量描述: 从信息熵到分数维‏
+17440034600103227351 Using fractal dimensions for characterizing intra‐urban diversity: The example of Brussels‏
+15552324774663456191                                                                 城市土地利用结构的熵值定律‏
+                     degree
+7066224391947864328      30
+6069307627225847770      64
+6904035610242430404     118
+17440034600103227351     26
+15552324774663456191     65
+[1] "Community 25 ; corpus prop 0.00197684269980232"
+                                                                                                                                                                               titles
+5316275728945887333                                                                               A relational view of learning an additional language: An analysis of classroom talk
+2025890774525620750                                                Development of second-order theory of mind: Assessment of environmental influences using a dynamic system approach
+18423489399150750288                                                                                                                                           How do you feel today?
+10273184532435921619                                                                                                                  Principles of organizational and social systems
+18337912824904539373                                                                                                                                The tip of the iceberg and beyond
+5128787135913193139                                             Understanding mind, brain, and education as a complex, dynamic developing system: Measurement, modeling, and research
+857878250379205218   “Looking at” educational interventions: Surplus value of a complex dynamic systems approach to study the effectiveness of a science and technology educational …
+9202950456458468717                                                            Collaborative play in young children as a complex dynamic system: Revealing gender related differences
+17909900523272393068                                                                                11 Dynamic modelling of cognitive development: time, situatedness and variability
+9158085329499266418                                                                                                                                            Dynamic systems theory
+17263436835380377331                                                                                                 11 The search for relations between micro and macro development1
+5843162575617729479                                                                                                                                                  Dynamic systems.
+17409989793288955879                                                             The dynamics of general developmental mechanisms: From Piaget and Vygotsky to dynamic systems models
+11357004560003375046                                                                                                 Time and identity: A framework for research and theory formation
+4184128487050122098                                           Twenty years of dynamic systems approaches to development: Significant contributions, challenges, and future directions
+18409867541182699133                                                                                                   A comprehensive dynamic systems theory of language development
+15740100682667266148                                                                         Assessing Young Children's Learning and Behavior in the Classroom: A Complexity Approach
+6491212004812669614                                                         Here we go again: A dynamic systems perspective on emotional rigidity across parent–adolescent conflicts.
+13306860006985276491      Developmental model of parent-child coordination for self-regulation across childhood and into emerging adulthood: Type 1 diabetes management as an example
+17708762319799778930                                                                                                 Nonlinear complex dynamical systems in developmental psychology.
+13785690898509147540                                                               Using the dynamics of a person-context system to describe children's understanding of air pressure
+7943108743008637332                                                                         A quantitative dynamic systems model of health-related quality of life among older adults
+192307823664460688                                                                                                                           Dynamic systems in developmental science
+2497300493735498963                                       UNA REVISIÓN DE LAS RELACIONES ENTRE LOS SISTEMAS DINÁMICOS Y LA PSICOLOGÍA DEL DESARROLLO: A REVIEW OF RELATIONS BETWEEN …
+341838670540307587                                                           Socio-emotional concern dynamics in a model of real-time dyadic interaction: parent-child play in autism
+15507869969481700315                    An empirical validation of a dynamic systems model of interaction: do children of different sociometric statuses differ in their dyadic play?
+52827607819049731                                                                                        Teorije dinamičkih sustava kao metateorijski okvir za istraživanja ličnosti.
+3454587670042411750                                           Synchronisation nonverbalen Verhaltens: Weiterentwicklung und Anwendung zeitreihenanalytischer Identifikationsverfahren
+7626974605063188370                                                                                                         Brains and the dynamics of “wants” and “cans” in learning
+11205366345419052788                                                                                     A Self-Adaptive Model of TESOL Teacher Education in a Non-Anglophone Context
+6593673506075537540                                                                                         A dynamic systems model of dyadic interaction during play of two children
+3025540292340755758                                                                                                                            Toward a unified theory of development
+9266616865038961091                                                                                                                          Dynamic systems, process and development
+9021801080511642228                                                                                                                                                 State space grids
+4390349021999095924                                                                               The dynamic systems approach in the study of L1 and L2 acquisition: An introduction
+                     degree
+5316275728945887333       0
+2025890774525620750       0
+18423489399150750288      0
+10273184532435921619      0
+18337912824904539373      0
+5128787135913193139       0
+857878250379205218        0
+9202950456458468717       0
+17909900523272393068      6
+9158085329499266418       0
+17263436835380377331      0
+5843162575617729479       0
+17409989793288955879     15
+11357004560003375046      0
+4184128487050122098       0
+18409867541182699133      0
+15740100682667266148      0
+6491212004812669614       0
+13306860006985276491      0
+17708762319799778930      0
+13785690898509147540      0
+7943108743008637332       0
+192307823664460688        0
+2497300493735498963       0
+341838670540307587        0
+15507869969481700315     24
+52827607819049731         0
+3454587670042411750       0
+7626974605063188370       0
+11205366345419052788      0
+6593673506075537540      22
+3025540292340755758       0
+9266616865038961091       0
+9021801080511642228       0
+4390349021999095924       0
+[1] "Community 28 ; corpus prop 0.0014120304998588"
+                                                                                                                                                      titles
+2510966817328021721                                                                 Optimization methods applied to stormwater management problems: a review
+1564413171665156371                                           An exact approach for the prioritization process of industrial influents in wastewater systems
+10247164089699532833             Application of Ant-Colony-Optimization algorithm for improved management of first flush effects in urban wastewater systems
+15287803788924169843 A step forward in the management of multiple wastewater streams by using an ant colony optimization-based method with bounded pheromone
+13992476116727537108        Optimizing low impact development (LID) for stormwater runoff treatment in urban area, Korea: Experimental and modeling approach
+                     degree
+2510966817328021721       3
+1564413171665156371       2
+10247164089699532833      9
+15287803788924169843      2
+13992476116727537108      9
+[1] "Community 34 ; corpus prop 0.00231573001976843"
+                                                                                                               titles
+17761952073875656173  Autonomy-oriented computing (AOC): formulating computational systems with autonomous components
+15463783138358147448                            SWARM—An Object-Oriented Platform to Construct Artificial Life Model
+11872662335592527563                    Autonomy oriented computing: from problem solving to complex systems modeling
+11368736691647042776  Autonomy oriented computing (AOC): formulating computational systems with autonomous components
+13460063203968752611                                              Artificial Societies-Agent Based Social Simulation
+6707642554948835919                                  A discussion on methodologies for research into complex systems
+                     degree
+17761952073875656173     25
+15463783138358147448      2
+11872662335592527563     28
+11368736691647042776      6
+13460063203968752611      5
+6707642554948835919       2
+[1] "Community 41 ; corpus prop 0.00112962439988704"
+                                                                                                                                                                       titles
+14643919001731328754                                                                         Perspectives for flood risk assessment and management for mega-city metro system
+7789490303922455638                                                                                    A 3D dynamic visualization method coupled with an urban drainage model
+8840466623712509653                    Flood risk assessment and increased resilience for coastal urban watersheds under the combined impact of storm tide and heavy rainfall
+13727378018286244072                                                                                           A simplified approach for flood modeling in urban environments
+4056573873090593649                                                                     Assessment of urban flood susceptibility using semi-supervised machine learning model
+16209695317749910466                                                                            Scenario-based inundation analysis of metro systems: A case study in Shanghai
+8174756864091118685                                                                                          Assessment of Epistemic Uncertainty in Flood Inundation Modeling
+2224152285115659550                                  Urban inundation response to rainstorm patterns with a coupled hydrodynamic model: A case study in Haidian Island, China
+12371577257797992628                                                         Improved building treatment approach for urban inundation modeling: A case study in Wuhan, China
+13536985566530332004                                                                                            Uncertainty Analysis of Hydrologic Forecasts Based on Copulas
+17986082752121373113                       Comparison of urbanization and climate change impacts on urban flood volumes: Importance of urban planning and drainage adaptation
+2019036450289691000                   Effectiveness of low-impact development for urban inundation risk mitigation under different scenarios: A case study in Shenzhen, China
+4304987367073319625                                                                           Flood risk zoning by using 2D hydrodynamic modeling: a case study in Jinan City
+13045522300765844073                                                               Integrated Hazard Modeling for Simulating Torrential Stream Response to Flash Flood Events
+11809222605856299628                                                                Key Technologies for an Urban Overland Flow Simulation System to Support What-If Analysis
+16261717634905343013 Inundation analysis of metro systems with the storm water management model incorporated into a geographical information system: a case study in Shanghai
+2048141040374382892                                                                 An enhanced inundation method for urban flood hazard mapping at the large catchment scale
+12634014438134710268                                                         Seasonal rainfall forecasting for the Yangtze River basin using statistical and dynamical models
+5725649415613956503                                                                         Rainwater harvesting for urban flood management–An integrated modelling framework
+7653458626780883060                 Scenario-based projections of future urban inundation within a coupled hydrodynamic model framework: a case study in Dongguan City, China
+                     degree
+14643919001731328754      0
+7789490303922455638       0
+8840466623712509653       0
+13727378018286244072      0
+4056573873090593649       0
+16209695317749910466      0
+8174756864091118685       0
+2224152285115659550       1
+12371577257797992628      0
+13536985566530332004      0
+17986082752121373113      0
+2019036450289691000       0
+4304987367073319625       0
+13045522300765844073      0
+11809222605856299628      0
+16261717634905343013      0
+2048141040374382892       0
+12634014438134710268      0
+5725649415613956503       0
+7653458626780883060      19
+[1] "Community 2 ; corpus prop 0.000338887319966111"
+                                                                                                                                            titles
+16238730228351779637                        Artificial intelligence-based solution to estimate the spatial accuracy of volunteered geographic data
+8230652658957178259                                           A conceptual model for quality assessment of VGI for the purpose of flood management
+15847478912796847157  YOU DESCRIBE IT, I WILL NAME IT: AN APPROACH TO ALLEVIATE THE EFFECT OF USERS'SEMANTICS IN ASSIGNING TAGS TO FEATURES IN VGI
+14359246769690638844                         Quality assessment of spatial data: Positional uncertainties of the national shoreline data of Sweden
+14744521712788770360                                          A conceptual model for quality assessment of VGI for the purpose of flood management
+16480959786207038637                              A taxonomy of quality assessment methods for volunteered and crowdsourced geographic information
+                     degree
+16238730228351779637      5
+8230652658957178259       0
+15847478912796847157      0
+14359246769690638844      0
+14744521712788770360      0
+16480959786207038637      0
+[1] "Community 29 ; corpus prop 0.000169443659983056"
+                                                                                                                     titles
+9020217309284417040                  Negotiation and Decision-Making for a Pedestrian Roadway Crossing: A Literature Review
+14600327029874325282 Studying pedestrians' crossing behavior when interacting with automated vehicles using virtual reality
+16698717230588437484                                                    A pedestrian simulator for urban crossing scenarios
+                     degree
+9020217309284417040       0
+14600327029874325282      0
+16698717230588437484      2
+[1] "Community 19 ; corpus prop 0.000508330979949167"
+                                                                                                              titles
+14213297824464210716                                         Towards a unified planner for socially-aware navigation
+10672338623873286827                Towards pedestrian-AV interaction: method for elucidating pedestrian preferences
+2044231143210416812                           Game Theoretic Planning for Self-Driving Cars in Competitive Scenarios
+1871307795827713427                           Measuring the effectiveness of readability for mobile robot locomotion
+1494371412300535155                               Human-like motion planning based on game theoretic decision making
+7908336460250450463   Understanding human avoidance behavior: interaction-aware decision making based on game theory
+2989909862999652193                                        Communicating intent of automated vehicles to pedestrians
+13463031924726725690                   Socially-Aware Navigation: A Non-linear Multi-Objective Optimization Approach
+11847421800202128005        Somebody help me, please?!” Interaction Design Framework for Needy Mobile Service Robots
+                     degree
+14213297824464210716      0
+10672338623873286827      0
+2044231143210416812       0
+1871307795827713427       0
+1494371412300535155       2
+7908336460250450463       6
+2989909862999652193       0
+13463031924726725690      0
+11847421800202128005      0
+[1] "Community 9 ; corpus prop 0.000677774639932223"
+                                                                                                                                            titles
+2672670583604096177                                                                                                   Reza Beheshti Khaldoun Zreik
+4534123879361262622                                                              City generator: GIS driven genetic evolution in urban simulation.
+18087948006947799475                                                                                                        Shrinking city layouts
+13060119488683209742                                                                  Research in Practice–An Exercise in Generative Urban Massing
+17924856868619322957                                                                        Citybreeder: City design with evolutionary computation
+10430696859901535382                                  Information Urbanism: Parametric urbanism in junction with GIS data processing & fabrication
+13494945830637113354                                                                                  Interactive reconfiguration of urban layouts
+4307764582194113107                                                                                                 Geometrical Models of the City
+8012244032091453171   Data mapping, modeling and experimental simulation as information management tools in urban system and infrastructure design
+16059106140878328052                                                                                                  Processing of Façade Imagery
+11629886705845225671                                                                                Parametric building design using Autodesk Maya
+17942091323169854283                                                                                         Example‐driven procedural urban roads
+                     degree
+2672670583604096177       0
+4534123879361262622       4
+18087948006947799475      0
+13060119488683209742      0
+17924856868619322957      0
+10430696859901535382      2
+13494945830637113354      6
+4307764582194113107       0
+8012244032091453171       0
+16059106140878328052      0
+11629886705845225671      0
+17942091323169854283      0
+[1] "Community 3 ; corpus prop 0.000112962439988704"
+                                                                                                                                     titles
+4221451926225016735  MorphologIcal and EnvIronmental PerspectIves for OptImIzIng MultIfractal ArchItecture In the HIstorIcal CIty of Aleppo
+4910426792110567107                           Thresholding urban connectivity by local connected fractal dimensions and lacunarity analyses
+                    degree
+4221451926225016735      0
+4910426792110567107      1
+[1] "Community 1 ; corpus prop 5.64812199943519e-05"
+                                                                                     titles degree
+369836918795736953  Trajectory optimization and state selection for urban automated driving      0
+[1] "Community 5 ; corpus prop 0.000225924879977408"
+                                                                                  titles degree
+12433428186272576108  Construction of artificial life model for urban transport analysis      3
+11362103745292190720    Multi-Agent Simulation Model for Fuzzy Travel Behaviour Analysis      0
+4577144305165706663                     マルチエージェント型ファジィ交通行動モデルの提案      0
+10176427133342128050      局所的相互作用を考慮した都市交通政策評価のための人工社会モデル      0
+[1] "Community 13 ; corpus prop 0.00090369951990963"
+                                                                                                                                          titles
+2388014113011188903                                         A Resilience Modelling Approach for Oil Terminal Operations Under High Uncertainties
+15706798581830877744                     Context-based behaviour modelling and classification of marine vessels in an abalone poaching situation
+15094686734374812475                                                                                   An N time-slice dynamic chain event graph
+2005259396025803970                                              A novel robust approach for handling illumination changes in video segmentation
+4380916650785883560                                                           Maritime piracy situation modelling with dynamic Bayesian networks
+7401519825018964187                        Test-driven simulation modelling: A case study using agent-based maritime search-operation simulation
+9922262439677439832                                       Micro-Doppler radar classification of humans and animals in an operational environment
+1315303662713183574                                                   A unified model for context-based behavioural modelling and classification
+1974077408260937100  Naïve Bayes switching linear dynamical system: A model for dynamic system modelling, classification, and information fusion
+8836990318816415035                                         A novel flexible model for piracy and robbery assessment of merchant ship operations
+8224200409898313509          Self-learning adaptive algorithm for maritime traffic abnormal movement detection based on virtual pheromone method
+10008453320455920991               Wissensbasierte probabilistische Modellierung für die Situationsanalyse am Beispiel der maritimen Überwachung
+282651536660475450                                                Simulation models and artificial neural networks for vessels behavior analysis
+12907015426536397951                                                                     Properties of an N Time-Slice Dynamic Chain Event Graph
+1608178517816672778                                                                                Loitering behaviour detection of boats at sea
+6021393355868670674                                                                      Agent-Based Computing for Intelligent Transport Systems
+                     degree
+2388014113011188903       0
+15706798581830877744      0
+15094686734374812475      0
+2005259396025803970       0
+4380916650785883560      14
+7401519825018964187       0
+9922262439677439832       0
+1315303662713183574       7
+1974077408260937100       0
+8836990318816415035       0
+8224200409898313509       0
+10008453320455920991      0
+282651536660475450        0
+12907015426536397951      0
+1608178517816672778       0
+6021393355868670674       0

@@ -77,24 +77,116 @@ juste.raimbault@polytechnique.edu} % email of corresponding author
   
 \end{abstract}
 
+
 \section{Introduction}
+
+
+% (i) interest to understand urban dynamics, link to ALife
+
+Urban systems 
+\cite{batty2009centenary}
+
+
+
+% (ii) Urban Evolution / Cultural evolution
+%  - urban dna not related to evolutionary processes in existing literature
 
 % https://scholar.google.com/scholar?hl=fr&as_sdt=0%2C5&q=meme+gene+coevolution&btnG=
 
 
-\cite{votsis2019urban}
+
+
+\cite{Eletreby5664} diffusion/evolving
+
+
+\cite{votsis2019urban} use the concept of Urban DNA to characterize morphological properties of cities such as density or the role of the road network. Similarly, \cite{kaya2017urban} describe cities based on their morphological properties
+
+
+\cite{wu2011urban}
+
+
+% (iii) Innovation diffusion - in ALife studies ; - in urban systems
+
+
+
+
+% (iv) contribution
+
+
+
 
 \section{Urban evolution model}
 
 \subsection{Rationale}
 
-The principal idea in the model is to include a concept of ``Urban DNA'', i.e. a kind of genome that cities would be exchanging and which would undergo mutation processes. A suitable candidate is to build on the concept of \emph{meme} introduced in the field of cultural evolution. However, several particularities must be stressed out when working with urban systems.
+The principal idea in the model is to build on a concept of ``Urban DNA'' which would capture evolution processes as in biological evolution and cultural evolution, i.e. a kind of genome that cities would be exchanging and which would undergo mutation processes. A suitable candidate is to build on the concept of \emph{meme} introduced in the field of cultural evolution. However, several particularities must be stressed out when working with urban systems.
 
 \cite{d2014urban}
 
+\cite{batty2009digital}
+
+\cite{blommestein1987adoption} describes a model of innovation diffusion and urban dynamics with endogenous demand for innovations, but in which the spatial component only influences prices of innovations.
+
+\cite{deffuant2005individual} give an example of an elaborated model for adoption dynamics at the microscopic level.
+
+Effective channels for the diffusion of innovations are multiple, and can for example be urban firm linkages \citep{rozenblat2007firm}.
+
+
 \subsection{Model description}
 
-\cite{favaro2011gibrat}
+
+% - urban genome as a matrix (one for each city)
+% - rows: % of each innovation (to simplify, sums to 1), columns: dimension of "urban life": transportation, economic production, leisure, built environment, governance, etc.
+% - mutations: new innovations: new row. "endogenous innovation": add new column (dimension that did not exist before: new info technologies, induce niches, new needs, new dimensions in themselves. too complicated, do not include this aspect for the sake of simplicity, consider "fundamental dimensions" only
+% - interdependance between dimensions? -> should yield "technological lockdowns". Q: how to implement? SBM? additional correlation matrix/ parameter?
+% - innovation utility matrix: stochastic, not necessarily strongly increasing (should be similar though)
+% - crossovers is hierarchical spatial diffusion: spatial interaction model
+% - ! no network evolving (too complicated
+% - evolves pop following Favaro-Pumain. P(innov) = scaling (pop) / utility ? ! not pop, gdp? (ok for eco innovation and sectors - should be multi-dimensional indeed)
+
+
+Our model is inspired from the urban dynamics model of \cite{favaro2011gibrat}.
+
+\paragraph{Model dynamics}
+
+% $\rightarrow$ Work under Gibrat independence assumptions, i.e. $\Covb{P_i(t)}{P_j(t)}=0$. If $\vec{P}(t+1)=\mathbf{R}\cdot \vec{P}(t)$ where $\mathbf{R}$ is also independent, then $\Eb{\vec{P}(t+1)}=\Eb{\mathbf{R}}\cdot\Eb{\vec{P}}(t)$. Consider expectancies only (higher moments computable similarly)
+%$\rightarrow$ With $\vec{\mu}(t)=\Eb{\vec{P}(t)}$, we generalize this approach by taking $\vec{\mu}(t+1)=f(\vec{\mu}(t))$
+
+%Let $\vec{\mu}(t)=\Eb{\vec{P}(t)}$ cities population and $(d_{ij})$ distance matrix
+
+%Model specified by
+%\[
+%f(\vec{\mu}) = r_0\cdot \mathbf{Id}\cdot \vec{\mu} + \mathbf{G}\cdot \mathbf{1}
+%\]
+
+Innovation occur along dimensions $1 \leq d \leq D$, and are indexed by their order of apparition $c$.
+
+The crossover between urban genomes relies on spatial processes of innovation diffusion, following a spatial interaction model given by
+
+\[
+\delta_{c,i,t} = \frac{\sum_j p_{c,j,t-1}^{s_c} \exp{(-\lambda_s d_{ij})}}{\sum_c \sum_j p_{c,j,t-1}^{s_c} \exp{(-\lambda_s d_{ij})}}
+\]
+
+
+
+The sizes of cities evolve according to their performance in terms of innovation, i.e. more innovative cities are more attractive, with $G_{ij} = w_G\cdot \frac{V_{ij}}{<V_{ij}>}$ such that
+\[
+V_{ij}= \frac{p_i p_j}{(\sum_k p_k)^2} \exp{(-\lambda_m d_{ij} \prod_c \delta_{c,i}^{\phi_c})}
+\]
+with $\phi_c = \sum_i p_{i,c}/\sum_{i,c} p_{i,c}$
+
+
+Mutation corresponds to the introduction of new innovations with utility $s_{c+1} = g_0 \cdot s_c$ in a randomly chosen city with a hierarchy parameter $\alpha_I$, if global adoption share $\phi_c$ is larger than a threshold $\theta_I$. Initial utility $s_0$ is a parameter. New innovation has an initial penetration rate $r_I$ in the city.
+
+
+\paragraph{Synthetic setup}
+
+
+
+\paragraph{Indicators}
+
+% - Indicators: innovation diversity (on cities profiles); overall utility (optimal config as a function of lambda - non trivial?) - with path-dep/correlations?; existence of cycles?
+%.   compute utility for one city: along each dimension, weight utility of innovations. then aggregate? ~
 
 
 \section{Results}

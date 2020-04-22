@@ -1,0 +1,638 @@
+
+
+[1] "Community 31 ; corpus prop 0.134759644038884"
+                                                                                                                   titles
+6963684955368649803                                                       G2o: A general framework for graph optimization
+2080948435570936585          RGB-D mapping: Using Kinect-style depth cameras for dense 3D modeling of indoor environments
+14772198501858056782                                                     Stereoscan: Dense 3d reconstruction in real-time
+8812060418202963546                 The graph SLAM algorithm with applications to large-scale mapping of urban structures
+7657884500312010308                                                           LSD-SLAM: Large-scale direct monocular SLAM
+7969294237648132683                       RGB-D mapping: Using depth cameras for dense 3D modeling of indoor environments
+13676885247919558695                                        FrameSLAM: From bundle adjustment to real-time visual mapping
+11874056207070311683 Past, present, and future of simultaneous localization and mapping: Toward the robust-perception age
+12302339234906762029                                                                       A tutorial on graph-based SLAM
+                     degree
+6963684955368649803     789
+2080948435570936585     440
+14772198501858056782    442
+8812060418202963546     470
+7657884500312010308     603
+7969294237648132683     420
+13676885247919558695    404
+11874056207070311683    509
+12302339234906762029    490
+[1] "Community 15 ; corpus prop 0.0487494091292106"
+                                                                                                                                                                                   titles
+13104688959668713880                                                                                                 Computational intelligence in urban traffic signal control: A survey
+8348839764603034120                                                                                A review of the applications of agent technology in traffic and transportation systems
+8136641524012153433                                                                                                 SUMO (Simulation of Urban MObility)-an open-source traffic simulation
+5061549745839563740                                                                         Opportunities for multiagent systems and multiagent reinforcement learning in traffic control
+17331933601368548924 Multiagent reinforcement learning for integrated network of adaptive traffic signal controllers (MARLIN-ATSC): methodology and large-scale application on downtown …
+16346957776686104877                                                                                        Using intelligent agents for pro-active, real-time urban intersection control
+6614898294751212995                                                                                 Multiagent reinforcement learning for urban traffic control using coordination graphs
+9038960209533046276                                                                                               Self-control of traffic lights and vehicle flows in urban road networks
+1093045576816593362                                                                                                 Adaptive traffic signal control using approximate dynamic programming
+                     degree
+13104688959668713880    112
+8348839764603034120     244
+8136641524012153433     120
+5061549745839563740     128
+17331933601368548924    152
+16346957776686104877    105
+6614898294751212995     109
+9038960209533046276     106
+1093045576816593362      92
+[1] "Community 9 ; corpus prop 0.0378773866041885"
+                                                                                                                 titles
+9275319889372464090                                       Fly-inspired visual steering of an ultralight indoor aircraft
+6974149490585088044          Implementation of wide-field integration of optic flow for autonomous quadrotor navigation
+4931456332468538802     Toward a fully autonomous UAV: Research platform for indoor and outdoor urban search and rescue
+15661449769049830704 Optic flow-based vision system for autonomous 3D localization and control of small aerial vehicles
+5294930900640164680                                                Real-time indoor autonomous vehicle test environment
+10699588011318681786             Survey of advances in guidance, navigation, and control of unmanned rotorcraft systems
+4391779994432193093              A survey of motion planning algorithms from the perspective of autonomous UAV guidance
+13914429537029381214                                                       Vision-based control of near-obstacle flight
+                     degree
+9275319889372464090     156
+6974149490585088044     128
+4931456332468538802     302
+15661449769049830704    136
+5294930900640164680     147
+10699588011318681786    211
+4391779994432193093     210
+13914429537029381214    146
+[1] "Community 12 ; corpus prop 0.0283001418089895"
+                                                                                                                                          titles
+3948429834472873487                                             Review ArticleDigital change detection methods in ecosystem monitoring: a review
+13766452930721163781                                                                         Support vector machines in remote sensing: A review
+15478997007283982095                                        Forest biomass estimation from airborne LiDAR data using machine learning approaches
+13256250401346005553                         Detecting the nature of change in an urban environment: A comparison of machine learning algorithms
+9103526675916218842  Remote sensing and GIS for mapping and monitoring land cover and land-use changes in the Northwestern coastal zone of Egypt
+16459333795867826375                                                                                                 Change detection techniques
+12681916917021381528                                         Remote sensing technology for mapping and monitoring land-cover and land-use change
+14721470572331842103                                                                                        Subpixel urban land cover estimation
+14430262169575989729                  A change detection model based on neighborhood correlation image analysis and decision tree classification
+                     degree
+3948429834472873487     380
+13766452930721163781    173
+15478997007283982095     75
+13256250401346005553     88
+9103526675916218842     118
+16459333795867826375    422
+12681916917021381528     88
+14721470572331842103     84
+14430262169575989729     77
+[1] "Community 10 ; corpus prop 0.0711305670304375"
+                                                                                                                                 titles
+5429203109770313463  Statistical methods versus neural networks in transportation research: Differences, similarities and some insights
+14409305640301446934            Optimized and meta-optimized neural networks for short-term traffic flow prediction: A genetic approach
+3476054802169528458                                                         Urban traffic flow prediction using a fuzzy-neural approach
+3733373342939532161               Long short-term memory neural network for traffic speed prediction using remote microwave sensor data
+2368017218408906128                                                     Traffic flow prediction with big data: a deep learning approach
+9337719402972744308                                                            Data-driven intelligent transportation systems: A survey
+14115333996266534730                              Short-term freeway traffic flow prediction: Bayesian combined neural network approach
+7830885039509620041                                                  Short‐term traffic forecasting: Overview of objectives and methods
+15355353362625588646                                      Combining Kohonen maps with ARIMA time series models to forecast traffic flow
+                     degree
+5429203109770313463     338
+14409305640301446934    420
+3476054802169528458     365
+3733373342939532161     308
+2368017218408906128     533
+9337719402972744308     339
+14115333996266534730    304
+7830885039509620041     372
+15355353362625588646    321
+[1] "Community 11 ; corpus prop 0.0208808598968288"
+                                                                                                                                                 titles
+407277234970983819                                                                                         A crash-prediction model for multilane roads
+3547386011930794636  Development of artificial neural network models to predict driver injury severity in traffic accidents at signalized intersections
+11818042524805385509                               Analysis of traffic injury severity: An application of non-parametric classification tree techniques
+8885991760167972347                                                                Predicting motor vehicle crashes using support vector machine models
+15081559592709413353            Identifying significant predictors of injury severity in traffic accidents using a series of artificial neural networks
+3188281565707582224                             Analysis of freeway accident frequencies: negative binomial regression versus artificial neural network
+11668805612512224084                                                             An analysis of urban collisions using an artificial intelligence model
+5812352677148900589                                     Predicting motor vehicle collisions using Bayesian neural network models: An empirical analysis
+6554427233630852809                A Bayesian network based framework for real-time crash prediction on the basic freeway segments of urban expressways
+                     degree
+407277234970983819       88
+3547386011930794636     155
+11818042524805385509    212
+8885991760167972347     145
+15081559592709413353    199
+3188281565707582224     134
+11668805612512224084    121
+5812352677148900589     133
+6554427233630852809      99
+[1] "Community 30 ; corpus prop 0.0232854471093573"
+                                                                                                                    titles
+11914601464262017632                                                           Transit network design with variable demand
+14168754543732813088                                  Transit route network design using frequency coded genetic algorithm
+17416408963688415749             A simultaneous bus route design and frequency setting problem for Tin Shui Wai, Hong Kong
+13330806947726084592                                                Transit network design and scheduling: A global review
+11831474961696719555                                                                  Transit route network design problem
+9687384747645384328                                         Urban bus transit route network design using genetic algorithm
+17294317388056533184                                                                                        Public transit
+9383447590000852528                Using a simulated annealing algorithm to solve the transit route network design problem
+11214363054932077496 Optimal transit route network design problem with variable transit demand: genetic algorithm approach
+                     degree
+11914601464262017632    128
+14168754543732813088    152
+17416408963688415749    139
+13330806947726084592    296
+11831474961696719555    162
+9687384747645384328     295
+17294317388056533184    146
+9383447590000852528     134
+11214363054932077496    209
+[1] "Community 1 ; corpus prop 0.0111391988819697"
+                                                                                                titles degree
+7708389686347063384   A fuzzy cognitive map approach for effect-based operations: An illustrative case     47
+6706958950687323326                             A fuzzy cognitive map approach to support urban design     81
+12571207032380136751 Unsupervised learning techniques for fine-tuning fuzzy cognitive map causal links     98
+16022707183348463801     Fuzzy cognitive maps: Basic theories and their application to complex systems     72
+9005077350312940440                                        Intelligent modeling of e-business maturity     45
+17079937317091366479    Expert system methodologies and applications—a decade review from 1995 to 2004     40
+1595744985739820981            Fuzzy cognitive maps in business analysis and performance-driven change     57
+5199660207860796714                            Modelling IT projects success with fuzzy cognitive maps     81
+11247410288073110542        Fuzzy cognitive strategic maps in business process performance measurement     50
+[1] "Community 22 ; corpus prop 0.0486672010193806"
+                                                                                                                                  titles
+4466816028222955388                                                           Urban search and rescue robots: from tragedy to technology
+8472536814394639442                                                                                    Human–robot interaction: a survey
+13381797886258738723                                                                          Human-robot interaction in rescue robotics
+15431195775923044798 Emergency response to the nuclear accident at the Fukushima Daiichi Nuclear Power Plants using mobile rescue robots
+14650916797832101916                                              Test arenas and performance metrics for urban search and rescue robots
+6878971312380751550                                                      Marsupial and shape-shifting robots for urban search and rescue
+3398579637907480058                                                                                                    Disaster robotics
+12792719380143491096       Human-robot interactions during the robot-assisted urban search and rescue response at the world trade center
+13533934364573989626                                                                                                      Trial by fire
+                     degree
+4466816028222955388     165
+8472536814394639442     199
+13381797886258738723    282
+15431195775923044798    125
+14650916797832101916    130
+6878971312380751550     176
+3398579637907480058     111
+12792719380143491096    480
+13533934364573989626    122
+[1] "Community 24 ; corpus prop 0.0906138890601558"
+                                                                                                                                 titles
+17031501958017159937                                                           Towards fully autonomous driving: Systems and algorithms
+3451458181460643976                      Segmentation of 3D lidar data in non-flat urban environments using a local convexity criterion
+2734382346396741889                                             Model based vehicle detection and tracking for autonomous urban driving
+323484656153914989                                   A survey of motion planning and control techniques for self-driving urban vehicles
+1754101373758869066                                                         Odin: Team victortango's entry in the darpa urban challenge
+12957160867122111797  Real-time motion planning methods for autonomous on-road driving: State-of-the-art and future research directions
+10687874766661143040                                              Survey of pedestrian detection for advanced driver assistance systems
+17884689297959578696                                                                  Junior: The stanford entry in the urban challenge
+1200872129892710311                                                       A review of motion planning techniques for automated vehicles
+                     degree
+17031501958017159937    364
+3451458181460643976     170
+2734382346396741889     290
+323484656153914989      335
+1754101373758869066     210
+12957160867122111797    194
+10687874766661143040    301
+17884689297959578696    784
+1200872129892710311     213
+[1] "Community 26 ; corpus prop 0.0534352713895226"
+                                                                                               titles degree
+13141632660085168047                                            Individual-based modeling and ecology    108
+10804012677944405794                        Ten principles of complexity and enabling infrastructures    122
+4320914030835235196        The re‐emergence of “emergence”: A venerable concept in search of a theory    127
+5388898196341298196  Tutorial on agent-based modeling and simulation part 2: how to model with agents    168
+17874548420813716354                                                              The complexity turn    113
+11546170336168403450                                  Tutorial on agent-based modeling and simulation    272
+11896429539657828659                                                          The place of complexity    117
+943556007072357348                                                                    Would-be worlds    507
+7030948693429082538         Agent-based modeling: Methods and techniques for simulating human systems    283
+[1] "Community 20 ; corpus prop 0.0428715292763631"
+                                                                                                               titles
+2227689056372207020                                                             Metacreation: art and artificial life
+11436551616051866733                                             Two bits: The cultural significance of free software
+12352364525234430907                                     Embodied progress: A cultural account of assisted conception
+11867822715651239425                                                                      The politics of life itself
+2856522412193981510                                     Competitive coevolution through evolutionary complexification
+12387949626985176590                           Technologies of procreation: Kinship in the age of assisted conception
+4926098509674505281   Silicon Second Nature: Culturing Artificial Life in a Digital World, Updated With a New Preface
+9735041220180664111                                        Network Culture: Cultural Politics for the Information Age
+                     degree
+2227689056372207020     150
+11436551616051866733    159
+12352364525234430907    217
+11867822715651239425    156
+2856522412193981510     134
+12387949626985176590    124
+4926098509674505281     189
+9735041220180664111     161
+[1] "Community 3 ; corpus prop 0.0205109234025937"
+                                                                                                                                                                                     titles
+13801425978647336440                                                                                 Application of an evidential belief function model in landslide susceptibility mapping
+6058531239236147513  Landslide susceptibility mapping at Vaz Watershed (Iran) using an artificial neural network model: a comparison between multilayer perceptron (MLP) and radial basic …
+18628909178696974      Landslide susceptibility assessment and factor effect analysis: backpropagation artificial neural networks and their comparison with frequency ratio and bivariate …
+15835010032211071755                                                   Regional landslide susceptibility analysis using back-propagation neural network model at Cameron Highland, Malaysia
+13154328812287043486                                                             Manifestation of an adaptive neuro-fuzzy model on landslide susceptibility mapping: Klang valley, Malaysia
+10118729459649125211                                                 Landslide susceptibility mapping at Hoa Binh province (Vietnam) using an adaptive neuro-fuzzy inference system and GIS
+8756740601054072527                                                  An easy-to-use MATLAB program (MamLand) for the assessment of landslide susceptibility using a Mamdani fuzzy algorithm
+7891506626352607963  Spatial prediction of landslide hazards in Hoa Binh province (Vietnam): a comparative assessment of the efficacy of evidential belief functions and fuzzy logic models
+3579321805578316994                      Landslide susceptibility mapping at Golestan Province, Iran: a comparison between frequency ratio, Dempster–Shafer, and weights-of-evidence models
+                     degree
+13801425978647336440    153
+6058531239236147513     147
+18628909178696974       315
+15835010032211071755    198
+13154328812287043486    155
+10118729459649125211    197
+8756740601054072527     175
+7891506626352607963     198
+3579321805578316994     176
+[1] "Community 23 ; corpus prop 0.0499619787492036"
+                                                                                                         titles
+11610619655653227148                        Robust techniques for background subtraction in urban traffic video
+6386252393774725527                        Evaluation of background subtraction algorithms with post-processing
+9587305792361169016            Robust background subtraction with foreground validation for urban traffic video
+14318058327193454440                                                   The SOBS algorithm: What are the limits?
+13510331201891360477                                     Comparative study of background subtraction algorithms
+15462776832438754514                     Evaluation of background subtraction techniques for video surveillance
+5147218049652497632   A self-organizing approach to background subtraction for visual surveillance applications
+17230313226625073379            Review and evaluation of commonly-implemented background subtraction algorithms
+9352064098502678694  Moving object detection in spatial domain using background removal techniques-state-of-art
+                     degree
+11610619655653227148    616
+6386252393774725527     148
+9587305792361169016     154
+14318058327193454440    170
+13510331201891360477    184
+15462776832438754514    377
+5147218049652497632     471
+17230313226625073379    158
+9352064098502678694     242
+[1] "Community 29 ; corpus prop 0.018990073370738"
+                                                                                                                                   titles
+14735307428446957021                                  Feature relevance assessment for the semantic interpretation of 3D point cloud data
+3053675618964345262    Semantic 3D scene interpretation: A framework combining optimal neighborhood size selection with relevant features
+9825115597819845199  Detection, segmentation and classification of 3D urban objects using mathematical morphology and supervised learning
+17042139459282867396                                                   Automatic registration of LIDAR and optical images of urban scenes
+18377929553053370235                               Distinctive 2D and 3D features for automated large-scale scene analysis in urban areas
+807708149911733250                                         Relevance assessment of full-waveform lidar data for urban area classification
+12660420481002752934                                                      Classification of airborne laser scanning data using JointBoost
+15764639753471126161                                                          Extracting urban features from LiDAR digital surface models
+15369462621645201335      Semantic point cloud interpretation based on optimal neighborhoods, relevant features and efficient classifiers
+                     degree
+14735307428446957021     64
+3053675618964345262      58
+9825115597819845199      79
+17042139459282867396    138
+18377929553053370235     55
+807708149911733250      145
+12660420481002752934     66
+15764639753471126161     54
+15369462621645201335    156
+[1] "Community 7 ; corpus prop 0.0360071521055552"
+                                                                                                                                  titles
+14126747065405447291 Comparison of genetic programming with neuro-fuzzy systems for predicting short-term water table depth fluctuations
+15109712469867309492                                               An application of artificial neural networks for rainfall forecasting
+9331729879917786337                A study of optimal model lag and spatial inputs to artificial neural network for rainfall forecasting
+7118438677344275029                                         A wavelet neural network conjunction model for groundwater level forecasting
+14031149036225171698                                                      A genetic programming approach to suspended sediment modelling
+8136005850683938484              Prediction and modeling of the rainfall-runoff transformation of a typical urban basin using ANN and GP
+3394416617353766554                        Genetic programming approach for prediction of local scour downstream of hydraulic structures
+10495733325202847149              Precipitation forecasting using wavelet-genetic programming and wavelet-neuro-fuzzy conjunction models
+11587407024013492269                                          New approach for stage–discharge relationship: gene-expression programming
+                     degree
+14126747065405447291     78
+15109712469867309492    178
+9331729879917786337     102
+7118438677344275029     131
+14031149036225171698    117
+8136005850683938484      76
+3394416617353766554      88
+10495733325202847149     78
+11587407024013492269     89
+[1] "Community 18 ; corpus prop 0.0214357646381816"
+                                                                                                                                titles
+1370677455803569006                     Towards an effective framework for building smart cities: Lessons from Seoul and San Francisco
+14494128068311273351                                                                           Self-aware pervasive service ecosystems
+311745112305346992                                             Smart cities: moving beyond urban cybernetics to tackle wicked problems
+10203850020977865399                                       Smart city as urban innovation: Focusing on management, policy, and context
+2301778016414729637                                                              Pervasive urban crowdsourcing: Visions and challenges
+18256618058993347376                                                            Smart and digital city: A systematic literature review
+17291515406436793877 An architectural framework and enabling wireless technologies for digital cities & intelligent urban environments
+7077455345362618810                                 Conceptualizing smart city with dimensions of technology, people, and institutions
+16929761615032121423                                                   Intelligent cities: Variable geometries of spatial intelligence
+                     degree
+1370677455803569006     113
+14494128068311273351     42
+311745112305346992       53
+10203850020977865399    201
+2301778016414729637      55
+18256618058993347376    137
+17291515406436793877     85
+7077455345362618810     285
+16929761615032121423     54
+[1] "Community 6 ; corpus prop 0.00764535421419323"
+                                                                                                             titles
+15008383903083172035                         Urban water quality prediction based on multi-task multi-view learning
+2522925369586495824  TRUSTS: Scheduling randomized patrols for fare inspection in transit systems using game theory‏
+1661069997248243450                         Urban security: Game-theoretic resource allocation in networked domains
+5797810168742564993                         Security and game theory: algorithms, deployed systems, lessons learned
+6887267796377000789                                                        Security games with interval uncertainty
+6580764382014480134                    Trusts: Scheduling randomized patrols for fare inspection in transit systems
+8055519681763016710                                                     Security scheduling for real-world networks
+12401676486430529181                                A double oracle algorithm for zero-sum security games on graphs
+                     degree
+15008383903083172035     74
+2522925369586495824      45
+1661069997248243450      60
+5797810168742564993     192
+6887267796377000789      38
+6580764382014480134      75
+8055519681763016710      60
+12401676486430529181    102
+[1] "Community 5 ; corpus prop 0.00170581827897322"
+                                                                                                                                   titles
+6358274878584847993                                                                                    Synthetic biology: Living quarters
+15563689983868519048                                                                                      Bütschli dynamic droplet system
+7413394330311152694                       Generating artificial plant morphologies for function and aesthetics through evolving L-systems
+9177117873117020172                                                                                                        Protocell Mesh
+6051620007272237117                              Controlling urban lighting by human motion patterns results from a full scale experiment
+5343902733896244414                                                                      Kinetic architectures & geotextile installations
+2270623485315636402                                                                      Soil and Protoplasm: The Hylozoic Ground Project
+9447329226511561967                          Near-living Architecture: Work in Progress from the Hylozoic Ground Collaboration, 2011-2013
+17260696077510612347  Evolving Systems within Immersive Architectural Environments: New Research by the Living Architecture Systems Group
+                     degree
+6358274878584847993      52
+15563689983868519048      8
+7413394330311152694       3
+9177117873117020172      31
+6051620007272237117       4
+5343902733896244414      52
+2270623485315636402      41
+9447329226511561967      49
+17260696077510612347     46
+[1] "Community 8 ; corpus prop 0.0651499270403025"
+                                                                                                               titles
+15000799135448552447                                                       Towards urban 3d reconstruction from video
+12026258953323694221                                                                Rendering with concentric mosaics
+8103810462809671487                                                Modeling the world from internet photo collections
+11429310730210873338                                                                 A survey of urban reconstruction
+3789793874475109957  Modeling and rendering architecture from photographs: A hybrid geometry-and image-based approach
+14008937939018281073                                      3-d reconstruction of urban scenes from sequences of images
+11804395475309572666                                                        Creating architectural models from images
+12939195738550888198                                            Detailed real-time urban 3d reconstruction from video
+16428884083692864002             On benchmarking camera calibration and multi-view stereo for high resolution imagery
+                     degree
+15000799135448552447    201
+12026258953323694221    200
+8103810462809671487     380
+11429310730210873338    193
+3789793874475109957     402
+14008937939018281073    188
+11804395475309572666    202
+12939195738550888198    450
+16428884083692864002    301
+[1] "Community 17 ; corpus prop 0.0277041330127217"
+                                                                                                                                       titles
+10036608556622044107                                                                                The new urbanism: Critiques and rebuttals
+3177496954456642984                                           Green justice or just green? Provision of urban green spaces in Berlin, Germany
+5336071289952517284  Using a GIS-based network analysis to determine urban greenspace accessibility for different ethnic and religious groups
+9275445651873334693                          Factors influencing the use of green space: Results from a Danish national representative survey
+5973174750988507465                                          Street trees and equity: evaluating the spatial distribution of an urban amenity
+8303058985566511483                                                                             Urban sprawl in Europe: The ignored challenge
+12891562496351549405                                                                                                  Theory of the urban web
+14867097899341371802                      Racial/ethnic and socioeconomic disparities in urban green space accessibility: Where to intervene?
+                     degree
+10036608556622044107     48
+3177496954456642984      56
+5336071289952517284     216
+9275445651873334693      67
+5973174750988507465      98
+8303058985566511483      71
+12891562496351549405     61
+14867097899341371802    100
+[1] "Community 13 ; corpus prop 0.0157223010049941"
+                                                                                                                                                             titles
+4563472901804315732                                 Prediction of hourly air pollutant concentrations near urban arterials using artificial neural network approach
+15492348173675552165                                  Artificial neural network approach for modelling nitrogen dioxide dispersion from vehicular exhaust emissions
+18027294298292985838 3-Day-Ahead Forecasting of Regional Pollution Index for the Pollutants NO2, CO, SO2, and O3 Using Artificial Neural Networks in Athens, Greece
+3571301533132990654                                                              Real-time air quality forecasting, part I: History, techniques, and current status
+8673945415605111638                                         Air quality prediction in Milan: feed-forward neural networks, pruned neural networks and lazy learning
+14345707623246183899                        Two-days ahead prediction of daily maximum concentrations of SO2, O3, PM10, NO2, CO in the urban area of Palermo, Italy
+12715363241463766112                                                                      Linear and nonlinear modeling approaches for urban air quality prediction‏
+13828266525229130354                                         Atmospheric urban pollution: applications of an artificial neural network (ANN) to the city of Perugia
+8233107257081719207          Artificial neural networks forecasting of PM2. 5 pollution using air mass trajectory based geographic model and wavelet transformation
+                     degree
+4563472901804315732      86
+15492348173675552165     63
+18027294298292985838     49
+3571301533132990654      74
+8673945415605111638      92
+14345707623246183899     73
+12715363241463766112     65
+13828266525229130354    126
+8233107257081719207      97
+[1] "Community 14 ; corpus prop 0.0487083050742956"
+                                                                                                                                              titles
+4524380269330566983                         Simulation of land development through the integration of cellular automata and multicriteria evaluation
+5852810794259493697                                                                                                             From cells to cities‏
+17624835233644625816 Loose-coupling a cellular automaton model and GIS: long-term urban growth prediction for San Francisco and Washington/Baltimore
+18009378539651666673                                 From cellular automata to urban models: new principles for model development and implementation‏
+13443307700762178611                              A self-modifying cellular automaton model of historical urbanization in the San Francisco Bay area‏
+1461690676315947817                                The use of constrained cellular automata for high-resolution modelling of urban land-use dynamics
+2666875791644394737                                                          Cellular automata as the basis of integrated dynamic regional modelling
+9827856692492280391                                                                      Modeling urban dynamics through GIS-based cellular automata
+12954335397668543979             Cellular automata and fractal urban form: a cellular modelling approach to the evolution of urban land-use patterns
+                     degree
+4524380269330566983     156
+5852810794259493697     290
+17624835233644625816    240
+18009378539651666673    203
+13443307700762178611    239
+1461690676315947817     172
+2666875791644394737     188
+9827856692492280391     175
+12954335397668543979    331
+[1] "Community 32 ; corpus prop 0.0240047680703701"
+                                                                                                                                            titles
+6098735927092770640                                                          Intuitive crowd behavior in dense urban environments using local laws
+13717750592563022520                                                                                       Scalable behaviors for crowd simulation
+829861685362888105                                          An informed environment dedicated to the simulation of virtual humans in urban context
+5200661626033955413                                                                               Virtual crowds: Methods, simulation, and control
+15190667213842835140 Encoding natural movement as an agent-based system: an investigation into human pedestrian behaviour in the built environment
+3952071333443711434                                                          Modeling crowd and trained leader behavior during building evacuation
+14956943355130930538                                                                Controlling individual agents in high-density crowd simulation
+10593615974006627899                                                                                                        Big fast crowds on ps3
+3165136909787197238                                             Crowd simulation incorporating agent psychological models, roles and communication
+                     degree
+6098735927092770640     152
+13717750592563022520    169
+829861685362888105      107
+5200661626033955413     159
+15190667213842835140     88
+3952071333443711434     119
+14956943355130930538    325
+10593615974006627899    106
+3165136909787197238     139
+[1] "Community 21 ; corpus prop 0.0163799658836344"
+                                                                                                                                                   titles
+8272404832058232639                                                                Semantic granularity in ontology-driven geographic information systems
+9274226960838787804                                                                             Ontologies in support of activities in geographical space
+12470567978632913712             Comparison of volunteered geographic information data contributions and community development for selected world regions
+11087082909308748579                      Recent developments and future trends in volunteered geographic information research: The case of OpenStreetMap
+15924640564881863258                                                               A comprehensive framework for intrinsic OpenStreetMap quality analysis
+12629950836406046395                                                                     Quality assessment for building footprints data on OpenStreetMap
+9135883894623086365  Mining urban land-use patterns from volunteered geographic information by means of genetic algorithms and artificial neural networks
+39842899420027210                                                                                         Web mapping 2.0: The neogeography of the GeoWeb
+1016943929820884784                                                                                         Ontologies and knowledge sharing in urban GIS
+                     degree
+8272404832058232639      75
+9274226960838787804      86
+12470567978632913712     62
+11087082909308748579     76
+15924640564881863258    103
+12629950836406046395     95
+9135883894623086365      59
+39842899420027210       112
+1016943929820884784     144
+[1] "Community 27 ; corpus prop 0.0112214069917997"
+                                                                                                                                                             titles
+11968190804502399364                                                                               Social computing: From social informatics to social intelligence
+14337642290207092600                                                                       Toward a revolution in transportation operations: AI for complex systems
+11740763492887180253                                                                                  Toward a paradigm shift in social computing: The ACP approach
+12371687123882334938                                                                                       Optimization of multitrain operations in a subway system
+16864682425531891667                                                    Computational experiments for behavior analysis and decision evaluation of complex systems
+744945349581261758                                                          Artificial societies for integrated and sustainable development of metropolitan systems
+3812132805016985854  Artificial societies, computational experiments, and parallel systems: a discussion on computational theory of complex social-economic systems
+3434574380959987863                                                                                 DynaCAS: Computational experiments and decision support for ITS
+4424578939955419391                                                     A subway train timetable optimization approach based on energy-efficient operation strategy
+                     degree
+11968190804502399364    129
+14337642290207092600     70
+11740763492887180253    139
+12371687123882334938     40
+16864682425531891667    108
+744945349581261758       86
+3812132805016985854      95
+3434574380959987863      73
+4424578939955419391      61
+[1] "Community 28 ; corpus prop 0.00332942844811641"
+                                                                                                                              titles
+9985414636700525821  Marsupial teams of robots: deployment of miniature robots for swarm exploration under communication constraints
+5631247629275742401                                                               Data capture and identification system and process
+12325437514568171204                                                                   Object information derived from object images
+6232744644047090608                                                              Image capture and identification system and process
+8833787424528949609                                    Fast and secure multihop broadcast solutions for intervehicular communication
+15962569280887137325                                                                   Object information derived from object images
+2823824410773968239                                                              Image capture and identification system and process
+2018596081975301829                                                              Image capture and identification system and process
+12249288029635933706                                                                Mixed reality applications in urban environments
+                     degree
+9985414636700525821      34
+5631247629275742401      33
+12325437514568171204     15
+6232744644047090608      34
+8833787424528949609      14
+15962569280887137325     14
+2823824410773968239      34
+2018596081975301829      13
+12249288029635933706     80
+[1] "Community 4 ; corpus prop 0.0099471812894342"
+                                                                                                                                                           titles
+16337546628275413629                                                                   Overland flow and pathway analysis for modelling of urban pluvial flooding
+13561417854307268149                                                              A critical review of integrated urban water modelling–Urban drainage and beyond
+6495925569569655363                                                  A coarse-grid approach to representing building blockage effects in 2D urban flood modelling
+18318192389245423177                                            Comparison of 1D/1D and 1D/2D coupled (sewer/surface) hydraulic models for urban flood simulation
+15497870824730304947                             The urban inundation model with bidirectional flow interaction between 2D overland surface and 1D sewer networks
+3259272719990553936  A novel approach to model dynamic flow interactions between storm sewer system and overland surface for different land covers in urban areas
+1954782915221983904                                                         Formulation of a fast 2D urban pluvial flood model using a cellular automata approach
+9781304694818513982                      Understanding, management and modelling of urban hydrology and its consequences for receiving waters: A state of the art
+16063805320630530334                                                         Coupled 1D and noninertia 2D flood inundation model for simulation of urban flooding
+                     degree
+16337546628275413629     85
+13561417854307268149     37
+6495925569569655363      32
+18318192389245423177    141
+15497870824730304947     73
+3259272719990553936      40
+1954782915221983904      39
+9781304694818513982      65
+16063805320630530334     56
+[1] "Community 33 ; corpus prop 0.000822081098300347"
+                                                                                                                     titles
+9952784127679227627                                             The GP problem: quantifying gene-to-phenotype relationships
+16439233157075708344                                                    Gene-to-phenotype models and complex trait genetics
+18120494382676070605                                                         Modeling QTL effects and MAS in plant breeding
+16071809880718210779 Yield–trait performance landscapes: from theory to application in breeding maize for drought tolerance
+                     degree
+9952784127679227627      32
+16439233157075708344     27
+18120494382676070605      5
+16071809880718210779     18
+[1] "Community 16 ; corpus prop 0.00400764535421419"
+                                                                                                          titles
+15470146561676260308               A Graph Analysis Approach to Detect Attacks in Multi-agent Systems at Runtime
+8674952162935704512                                Adaptivity and self-organization in organic computing systems
+6753641944988556267                                           Towards a quantitative notion of self-organisation
+10375403526238369489 Self-adaptive systems: A survey of current approaches, research challenges and applications
+16478701937033701213           An organic computing perspective on self-improving system interweaving at runtime
+2518430740184611949               Controlled and self-organized routing for large-scale wireless sensor networks
+3968484698949766118                                                   Observation and control of organic systems
+17555234106598384097                                                          Organic computing in the spotlight
+                     degree
+15470146561676260308     11
+8674952162935704512      92
+6753641944988556267      21
+10375403526238369489     20
+16478701937033701213     21
+2518430740184611949      10
+3968484698949766118      58
+17555234106598384097     10
+[1] "Community 25 ; corpus prop 0.00339108453048893"
+                                                                                                                               titles
+5745185575756104235  Routing protocols for next-generation networks inspired by collective behaviors of insect societies: An overview
+58825985060304479                                                Bio-inspired routing algorithms survey for vehicular ad hoc networks
+2667235598050056597                                               A taxonomy of biologically inspired research in computer networking
+3449271595608802354                                                                         Ant colony algorithms in MANETs: A review
+18266574589807436638           Biologically inspired consensus-based spectrum sensing in mobile ad hoc networks with cognitive radios
+9386420556239812376                                    Theory and Practice of Ant-Based Routing in Dynamic Telecommunication Networks
+13755559953515497263                                                                              A survey on bio-inspired networking
+15150263199836911359  A survey on heuristic-based routing methods in vehicular ad-hoc network: Technical challenges and future trends
+                     degree
+5745185575756104235      30
+58825985060304479        24
+2667235598050056597      56
+3449271595608802354      22
+18266574589807436638     12
+9386420556239812376      11
+13755559953515497263     46
+15150263199836911359     14
+[1] "Community 19 ; corpus prop 0.00115091353762049"
+                                                                                                           titles
+17011364874400829693                          Pylon line spatial correlation assisted transmission line detection
+9199128846828956284                              Detecting wires in cluttered urban scenes using a Gaussian model
+5172458930943226708                           Wire detection in low-altitude, urban, and low-quality video frames
+752709019249625253                                                       Power line detection from optical images
+3082422447277247965                        Object-aware power line detection using color and near-infrared images
+14970583416609225505                                                Cable and wire detection system for aircrafts
+15995690406773064754                 A comparison of line detection methods for power line avoidance in aircrafts
+8721866280254678023     State-of-the-art review of computer vision for the management of power transmission lines
+8906698328118596291  Detection of thin lines using low-quality video from low-altitude aircraft in urban settings
+                     degree
+17011364874400829693     14
+9199128846828956284      11
+5172458930943226708      11
+752709019249625253       22
+3082422447277247965       9
+14970583416609225505      8
+15995690406773064754      8
+8721866280254678023       8
+8906698328118596291      37
+[1] "Community 2 ; corpus prop 0.000493248658980208"
+                                                                                            titles degree
+5674351019235109451                                  A phase discrepancy analysis of object motion     21
+14371960676496749263 Using topological structure for path planning in semi-structured environments     18
+10250793228500610422          Computational Modeling and Psvchophysics in Low-and Mid-Level Vision     18
+6572713416626752285      Fast motion detection from airborne videos using graphics processing unit      2

@@ -1,0 +1,45 @@
+
+[1] "20 ; Complexity ; 12.7478113527252"
+                             titles degree
+943556007072357348  Would-be worlds    507
+[1] "7 ; Flying UAV ; 10.9743010449026"
+                                                                                                     titles
+10699588011318681786 Survey of advances in guidance, navigation, and control of unmanned rotorcraft systems
+                     degree
+10699588011318681786    227
+[1] "15 ; Cellular automata ; 9.80513979101949"
+                                                                                                                                  titles
+12954335397668543979 Cellular automata and fractal urban form: a cellular modelling approach to the evolution of urban land-use patterns
+                     degree
+12954335397668543979    331
+[1] "30 ; Autonomous vehicles ; 9.10477266308952"
+                                                                           titles degree
+1200872129892710311 A review of motion planning techniques for automated vehicles    214
+[1] "26 ; Culture ; 8.64162665913584"
+                                                                            titles degree
+12352364525234430907  Embodied progress: A cultural account of assisted conception    219
+[1] "12 ; Crowd behavior ; 7.15617057328438"
+                                                                             titles degree
+14956943355130930538 Controlling individual agents in high-density crowd simulation    331
+[1] "42 ; Traffic control ; 6.5009884213499"
+                                                                                                    titles
+8348839764603034120 A review of the applications of agent technology in traffic and transportation systems
+                    degree
+8348839764603034120    248
+[1] "14 ; Traffic forecasting ; 4.45636825755436"
+                                                                             titles degree
+2368017218408906128 Traffic flow prediction with big data: a deep learning approach    534
+[1] "38 ; Social intelligence ; 4.10053657158995"
+                                                                            titles degree
+11740763492887180253 Toward a paradigm shift in social computing: The ACP approach    140
+[1] "24 ; Urbanism ; 3.99887037560011"
+                                                                                                                                      titles
+5336071289952517284 Using a GIS-based network analysis to determine urban greenspace accessibility for different ethnic and religious groups
+                    degree
+5336071289952517284    216
+[1] "10 ; Rescue robots ; 3.66563117763344"
+                                                                               titles degree
+1656775135143715833 High fidelity tools for rescue robotics: results and perspectives     67
+[1] "4 ; Art ; 3.46229878565377"
+                                                    titles degree
+2227689056372207020  Metacreation: art and artificial life    150

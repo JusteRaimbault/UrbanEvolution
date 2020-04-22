@@ -1,0 +1,199 @@
+
+[1] "31 ; Real-time mapping ; 13.4759644038884"
+                                                                                                                   titles
+6963684955368649803                                                       G2o: A general framework for graph optimization
+2080948435570936585          RGB-D mapping: Using Kinect-style depth cameras for dense 3D modeling of indoor environments
+14772198501858056782                                                     Stereoscan: Dense 3d reconstruction in real-time
+8812060418202963546                 The graph SLAM algorithm with applications to large-scale mapping of urban structures
+7657884500312010308                                                           LSD-SLAM: Large-scale direct monocular SLAM
+7969294237648132683                       RGB-D mapping: Using depth cameras for dense 3D modeling of indoor environments
+13676885247919558695                                        FrameSLAM: From bundle adjustment to real-time visual mapping
+11874056207070311683 Past, present, and future of simultaneous localization and mapping: Toward the robust-perception age
+12302339234906762029                                                                       A tutorial on graph-based SLAM
+                     degree
+6963684955368649803     789
+2080948435570936585     440
+14772198501858056782    442
+8812060418202963546     470
+7657884500312010308     603
+7969294237648132683     420
+13676885247919558695    404
+11874056207070311683    509
+12302339234906762029    490
+[1] "24 ; Autonomous vehicles ; 9.06138890601558"
+                                                                                                                                 titles
+17031501958017159937                                                           Towards fully autonomous driving: Systems and algorithms
+3451458181460643976                      Segmentation of 3D lidar data in non-flat urban environments using a local convexity criterion
+2734382346396741889                                             Model based vehicle detection and tracking for autonomous urban driving
+323484656153914989                                   A survey of motion planning and control techniques for self-driving urban vehicles
+1754101373758869066                                                         Odin: Team victortango's entry in the darpa urban challenge
+12957160867122111797  Real-time motion planning methods for autonomous on-road driving: State-of-the-art and future research directions
+10687874766661143040                                              Survey of pedestrian detection for advanced driver assistance systems
+17884689297959578696                                                                  Junior: The stanford entry in the urban challenge
+1200872129892710311                                                       A review of motion planning techniques for automated vehicles
+                     degree
+17031501958017159937    364
+3451458181460643976     170
+2734382346396741889     290
+323484656153914989      335
+1754101373758869066     210
+12957160867122111797    194
+10687874766661143040    301
+17884689297959578696    784
+1200872129892710311     213
+[1] "10 ; Traffic forecasting ; 7.11305670304376"
+                                                                                                                                 titles
+5429203109770313463  Statistical methods versus neural networks in transportation research: Differences, similarities and some insights
+14409305640301446934            Optimized and meta-optimized neural networks for short-term traffic flow prediction: A genetic approach
+3476054802169528458                                                         Urban traffic flow prediction using a fuzzy-neural approach
+3733373342939532161               Long short-term memory neural network for traffic speed prediction using remote microwave sensor data
+2368017218408906128                                                     Traffic flow prediction with big data: a deep learning approach
+9337719402972744308                                                            Data-driven intelligent transportation systems: A survey
+14115333996266534730                              Short-term freeway traffic flow prediction: Bayesian combined neural network approach
+7830885039509620041                                                  Short‐term traffic forecasting: Overview of objectives and methods
+15355353362625588646                                      Combining Kohonen maps with ARIMA time series models to forecast traffic flow
+                     degree
+5429203109770313463     338
+14409305640301446934    420
+3476054802169528458     365
+3733373342939532161     308
+2368017218408906128     533
+9337719402972744308     339
+14115333996266534730    304
+7830885039509620041     372
+15355353362625588646    321
+[1] "8 ; 3D Modeling ; 6.51499270403025"
+                                                                                                               titles
+15000799135448552447                                                       Towards urban 3d reconstruction from video
+12026258953323694221                                                                Rendering with concentric mosaics
+8103810462809671487                                                Modeling the world from internet photo collections
+11429310730210873338                                                                 A survey of urban reconstruction
+3789793874475109957  Modeling and rendering architecture from photographs: A hybrid geometry-and image-based approach
+14008937939018281073                                      3-d reconstruction of urban scenes from sequences of images
+11804395475309572666                                                        Creating architectural models from images
+12939195738550888198                                            Detailed real-time urban 3d reconstruction from video
+16428884083692864002             On benchmarking camera calibration and multi-view stereo for high resolution imagery
+                     degree
+15000799135448552447    201
+12026258953323694221    200
+8103810462809671487     380
+11429310730210873338    193
+3789793874475109957     402
+14008937939018281073    188
+11804395475309572666    202
+12939195738550888198    450
+16428884083692864002    301
+[1] "26 ; Complexity/ABM ; 5.34352713895226"
+                                                                                               titles degree
+13141632660085168047                                            Individual-based modeling and ecology    108
+10804012677944405794                        Ten principles of complexity and enabling infrastructures    122
+4320914030835235196        The re‐emergence of “emergence”: A venerable concept in search of a theory    127
+5388898196341298196  Tutorial on agent-based modeling and simulation part 2: how to model with agents    168
+17874548420813716354                                                              The complexity turn    113
+11546170336168403450                                  Tutorial on agent-based modeling and simulation    272
+11896429539657828659                                                          The place of complexity    117
+943556007072357348                                                                    Would-be worlds    507
+7030948693429082538         Agent-based modeling: Methods and techniques for simulating human systems    283
+[1] "23 ; Computer vision ; 4.99619787492036"
+                                                                                                         titles
+11610619655653227148                        Robust techniques for background subtraction in urban traffic video
+6386252393774725527                        Evaluation of background subtraction algorithms with post-processing
+9587305792361169016            Robust background subtraction with foreground validation for urban traffic video
+14318058327193454440                                                   The SOBS algorithm: What are the limits?
+13510331201891360477                                     Comparative study of background subtraction algorithms
+15462776832438754514                     Evaluation of background subtraction techniques for video surveillance
+5147218049652497632   A self-organizing approach to background subtraction for visual surveillance applications
+17230313226625073379            Review and evaluation of commonly-implemented background subtraction algorithms
+9352064098502678694  Moving object detection in spatial domain using background removal techniques-state-of-art
+                     degree
+11610619655653227148    616
+6386252393774725527     148
+9587305792361169016     154
+14318058327193454440    170
+13510331201891360477    184
+15462776832438754514    377
+5147218049652497632     471
+17230313226625073379    158
+9352064098502678694     242
+[1] "15 ; Traffic control ; 4.87494091292106"
+                                                                                                                                                                                   titles
+13104688959668713880                                                                                                 Computational intelligence in urban traffic signal control: A survey
+8348839764603034120                                                                                A review of the applications of agent technology in traffic and transportation systems
+8136641524012153433                                                                                                 SUMO (Simulation of Urban MObility)-an open-source traffic simulation
+5061549745839563740                                                                         Opportunities for multiagent systems and multiagent reinforcement learning in traffic control
+17331933601368548924 Multiagent reinforcement learning for integrated network of adaptive traffic signal controllers (MARLIN-ATSC): methodology and large-scale application on downtown …
+16346957776686104877                                                                                        Using intelligent agents for pro-active, real-time urban intersection control
+6614898294751212995                                                                                 Multiagent reinforcement learning for urban traffic control using coordination graphs
+9038960209533046276                                                                                               Self-control of traffic lights and vehicle flows in urban road networks
+1093045576816593362                                                                                                 Adaptive traffic signal control using approximate dynamic programming
+                     degree
+13104688959668713880    112
+8348839764603034120     244
+8136641524012153433     120
+5061549745839563740     128
+17331933601368548924    152
+16346957776686104877    105
+6614898294751212995     109
+9038960209533046276     106
+1093045576816593362      92
+[1] "14 ; Urban growth/CA ; 4.87083050742956"
+                                                                                                                                              titles
+4524380269330566983                         Simulation of land development through the integration of cellular automata and multicriteria evaluation
+5852810794259493697                                                                                                             From cells to cities‏
+17624835233644625816 Loose-coupling a cellular automaton model and GIS: long-term urban growth prediction for San Francisco and Washington/Baltimore
+18009378539651666673                                 From cellular automata to urban models: new principles for model development and implementation‏
+13443307700762178611                              A self-modifying cellular automaton model of historical urbanization in the San Francisco Bay area‏
+1461690676315947817                                The use of constrained cellular automata for high-resolution modelling of urban land-use dynamics
+2666875791644394737                                                          Cellular automata as the basis of integrated dynamic regional modelling
+9827856692492280391                                                                      Modeling urban dynamics through GIS-based cellular automata
+12954335397668543979             Cellular automata and fractal urban form: a cellular modelling approach to the evolution of urban land-use patterns
+                     degree
+4524380269330566983     156
+5852810794259493697     290
+17624835233644625816    240
+18009378539651666673    203
+13443307700762178611    239
+1461690676315947817     172
+2666875791644394737     188
+9827856692492280391     175
+12954335397668543979    331
+[1] "22 ; Rescue robots ; 4.86672010193806"
+                                                                                                                                  titles
+4466816028222955388                                                           Urban search and rescue robots: from tragedy to technology
+8472536814394639442                                                                                    Human–robot interaction: a survey
+13381797886258738723                                                                          Human-robot interaction in rescue robotics
+15431195775923044798 Emergency response to the nuclear accident at the Fukushima Daiichi Nuclear Power Plants using mobile rescue robots
+14650916797832101916                                              Test arenas and performance metrics for urban search and rescue robots
+6878971312380751550                                                      Marsupial and shape-shifting robots for urban search and rescue
+3398579637907480058                                                                                                    Disaster robotics
+12792719380143491096       Human-robot interactions during the robot-assisted urban search and rescue response at the world trade center
+13533934364573989626                                                                                                      Trial by fire
+                     degree
+4466816028222955388     165
+8472536814394639442     199
+13381797886258738723    282
+15431195775923044798    125
+14650916797832101916    130
+6878971312380751550     176
+3398579637907480058     111
+12792719380143491096    480
+13533934364573989626    122
+[1] "20 ; Art/Culture ; 4.28715292763631"
+                                                                                                               titles
+2227689056372207020                                                             Metacreation: art and artificial life
+11436551616051866733                                             Two bits: The cultural significance of free software
+12352364525234430907                                     Embodied progress: A cultural account of assisted conception
+11867822715651239425                                                                      The politics of life itself
+2856522412193981510                                     Competitive coevolution through evolutionary complexification
+12387949626985176590                           Technologies of procreation: Kinship in the age of assisted conception
+4926098509674505281   Silicon Second Nature: Culturing Artificial Life in a Digital World, Updated With a New Preface
+9735041220180664111                                        Network Culture: Cultural Politics for the Information Age
+                     degree
+2227689056372207020     150
+11436551616051866733    159
+12352364525234430907    217
+11867822715651239425    156
+2856522412193981510     134
+12387949626985176590    124
+4926098509674505281     189
+9735041220180664111     161
