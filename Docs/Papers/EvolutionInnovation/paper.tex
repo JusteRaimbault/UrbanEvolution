@@ -48,8 +48,13 @@
 % Note:  Some laser printers have a serious problem printing TeX
 % output. The use of ps type I fonts should avoid this problem.
 
+% Modeling urban evolution with the diffusion of innovations
+% A simple model of urban evolution based on innovation diffusion
+% A model of urban evolution based on innovation diffusion
+% A model of urban evolution and innovation diffusion
+% A model of urban evolution based on the diffusion of innovations
 
-\title{A simple model of urban evolution based on innovation diffusion}
+\title{A model of urban evolution based on innovation diffusion}
 \author{Juste Raimbault$^{1,2,3}$\\
 \mbox{}\\
 $^1$Center for Advanced Spatial Analysis, University College London\\
@@ -83,31 +88,20 @@ juste.raimbault@polytechnique.edu} % email of corresponding author
 
 % (i) interest to understand urban dynamics, link to ALife
 
-Urban systems 
-\cite{batty2009centenary}
-
+Urban systems are complex as they combine technical artefacts with socio-economic dynamics at multiple temporal and spatial scales. An understanding of processes driving their dynamics is an important aspect for shaping sustainable policies, and a sustainable design and management of cities \citep{lobo2020urban}. Multiple disciplines and viewpoints have proposed such insights from a complexity perspective \citep{pumain2020conclusion}, and Artificial Life approaches have shown promising results to study urban systems, both through conceptual contributions such as interpreting cities through biological metaphors \citep{batty2009centenary}, but also through modeling and simulation for urban growth including cellular automata and evolutionary computation \citep{raimbault2020cities}.
 
 
 % (ii) Urban Evolution / Cultural evolution
-%  - urban dna not related to evolutionary processes in existing literature
 
-% https://scholar.google.com/scholar?hl=fr&as_sdt=0%2C5&q=meme+gene+coevolution&btnG=
-
-
-
-
-\cite{Eletreby5664} diffusion/evolving
-
-
-\cite{votsis2019urban} use the concept of Urban DNA to characterize morphological properties of cities such as density or the role of the road network. Similarly, \cite{kaya2017urban} describe cities based on their morphological properties
-
-
-\cite{wu2011urban}
+A stream of research tightly linked to ALife relates to concepts of \emph{Urban Evolution}. These build in a sense on Cultural Evolution \citep{mesoudi2001cultural}, which aims at understanding changes in social knowledge as evolutionary processes involving replication, mutation, selection. It bears similarities with biological evolution but is not reducible to it, and for example uses the concept of \emph{meme} as transmission units comparable to genes. Both biological and cultural evolution can be linked into common frameworks and models, implying the coupling of different timescales \citep{bull2000meme}. In terms of urban studies, the concept of urban evolution is less formalized than cultural evolution and can be understood in multiple ways. \cite{votsis2019urban} use the concept of Urban DNA to characterize morphological properties of cities such as population density or the role of the road network. Similarly, \cite{kaya2017urban} describe cities based on their morphological properties as a product of their dynamics. \cite{wu2011urban} link the parameters of a cellular automaton model of urban growth to intrinsic properties of urban regions, which should play a role in their overall evolution. In Economic Geography, the concept of co-evolution is used mostly for urban agents such as firms and stakeholders \citep{gong2019co}. At the macroscopic scale of urban systems, \cite{pumain2018evolutionary} proposes an evolutionary theory to study systems of cities as complex adaptive systems, in which interactions between cities play a crucial role. Corresponding simulation models were proposed with different thematic focus, for example by \cite{cottineau2015modular} with economic exchanges and by \cite{raimbault2020indirect} with infrastructure networks. There still however remains a lack of models which would operationalize the concept of urban evolution in a way close to its biological and cultural counterparts.
 
 
 % (iii) Innovation diffusion - in ALife studies ; - in urban systems
+%\cite{Eletreby5664} diffusion/evolving
 
+Besides, a central concept bridging ALife and evolution with the study of urban systems is the concept of innovation diffusion. 
 
+\cite{hagerstrand1968innovation}
 
 
 % (iv) contribution
@@ -129,6 +123,8 @@ The core idea of the model is to build on a concept of ``Urban DNA'' which would
 
 \cite{deffuant2005individual} give an example of an elaborated model for adoption dynamics at the microscopic level.
 
+\cite{kiesling2012agent}
+
 Effective channels for the diffusion of innovations are multiple, and can for example be urban firm linkages \citep{rozenblat2007firm}.
 
 
@@ -145,7 +141,7 @@ Effective channels for the diffusion of innovations are multiple, and can for ex
 % - evolves pop following Favaro-Pumain. P(innov) = scaling (pop) / utility ? ! not pop, gdp? (ok for eco innovation and sectors - should be multi-dimensional indeed)
 
 
-Our model is inspired from the urban dynamics model of \cite{favaro2011gibrat}.
+Our model is inspired from the urban dynamics model of \cite{favaro2011gibrat}, for which crossover and mutation processes were explicited and 
 
 \paragraph{Model dynamics}
 
@@ -191,11 +187,58 @@ Mutation corresponds to the introduction of new innovations with utility $s_{c+1
 
 \section{Results}
 
+The model is implemented in \texttt{scala} and integrated into the OpenMOLE software \citep{reuillon2013openmole} for numerical experiments. OpenMOLE allows embedding models in any language as black boxes, provides a transparent access to high performance computing infrastructures, and model exploration and validation methods such as sensitivity analysis, design of experiments, and calibration methods. Experiments are designed through workflows using a Domain Specific Language \citep{passerat2017reproducible}.
+
+Source code of the model and analysis, and results are available on the open git repository of the project at \url{}. Simulation data files are available on the dataverse repository at \url{https://doi.org/10.7910/DVN/Q5GKZ0}.
+
+Parameter explored in experiments are 
+
+\subsection{Model exploration}
+
+% summary(reldistance("meanAverageDiversity","sdAverageDiversity"))
+%   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+% 0.0000  0.6035  1.2685  1.4709  2.1557  6.1199 
+%> summary(reldistance("medianAverageDiversity","sdAverageDiversity"))
+%   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+% 0.0000  0.5733  1.2115  1.4425  2.0941  6.5835 
+% summary(reldistance("meanAverageInnovation","sdAverageInnovation"))
+%   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+%  0.000   1.839   4.136   4.768   7.011  15.799 
+%> summary(reldistance("medianAverageInnovation","sdAverageInnovation"))
+%   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+%  0.000   1.841   4.176   4.783   7.100  15.891 
+%summary(reldistance("meanAverageUtility","sdAverageUtility"))
+%   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+%  0.000   0.509   1.103   1.320   1.923   6.350 
+%> summary(reldistance("medianAverageUtility","sdAverageUtility"))
+%   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+% 0.0000  0.4942  1.0857  1.3013  1.8863  6.3479 
+%summary(reldistance("meanFinalHierarchy","sdFinalHierarchy"))
+%   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+%  0.000   2.488   6.066  11.424  14.133  96.805 
+%> summary(reldistance("medianFinalHierarchy","sdFinalHierarchy"))
+%   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+%  0.000   2.508   6.074  11.449  14.171  96.789 
+% idea: on this "relative dist": index similar to Saltelli to tell distinguishability across the all parameter space?
+
+The sharpe ratios estimated on repetitions as sample standard deviation relative to absolute sample mean have high values for all indicators (min. 3.9 and median 12.1 for diversity; min. 3.0 and median 6.2 for innovation; min. 1.7 and median 3.6 for utility; min. 26 and median 257.3 for population hierarchy), what means that stochastic noise is not an issue for interpreting indicator values. We also study the distance between points 
+
+
+
+
 
 \section{Discussion}
 
 
-%\section{Acknowledgements}
+
+
+Several extensions and applications would be possible to this first model exploration. First, the innovation space in our model remained unidimensional. \citep{hidalgo2007product} \citep{bergeaud2017classifying}
+Second, applying the model to real system of cities \cite{raimbault:halshs-01880492}
+Finally, % multiscalar?
+
+\section{Acknowledgements}
+
+Results obtained in this paper were computed on the vo.complex-system.eu virtual organization of the European Grid Infrastructure ( http://www.egi.eu ). We thank the European Grid Infrastructure and its supporting National Grid Initiatives (France-Grilles in particular) for providing the technical support and infrastructure. This work was funded by the Urban Dynamics Lab grant EPSRC EP/M023583/1.
 
 
 \footnotesize

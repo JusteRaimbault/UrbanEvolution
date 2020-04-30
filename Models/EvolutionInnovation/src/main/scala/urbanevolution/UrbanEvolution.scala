@@ -43,7 +43,7 @@ case class UrbanEvolution(
     */
   def run: (Double, Double, Double, Double) = {
     val result = UrbanEvolution.run(this)
-    (result.averageDiversity,result.averageUtility,result.averageInnovation,Statistics.slope(result.populations.getCol(dates.length).flatValues)._1)
+    (result.averageDiversity,result.averageUtility,result.averageInnovation,Statistics.slope(result.populations.getCol(dates.length - 1).flatValues)._1)
   }
 
 
@@ -210,8 +210,9 @@ object UrbanEvolution {
              earlyAdoptersRate: Double,
              utilityStd: Double,
              utilityDistribution: String
-           )(implicit rng: Random): UrbanEvolution = {
+           ): UrbanEvolution = {
     implicit val m: MatrixImplementation = Matrix.defaultImplementation
+    implicit val rng: Random = new Random
     rng.setSeed(seed.toLong)
 
     val dmat = Matrix(Spatstat.euclidianDistanceMatrix(RandomPointsGenerator(syntheticCities).generatePoints.toArray))

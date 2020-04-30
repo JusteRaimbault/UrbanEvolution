@@ -1,0 +1,84 @@
+import java.text.SimpleDateFormat
+import java.util.Date
+
+// parameters
+val gravityDecay = Val[Double]
+val innovationDecay = Val[Double]
+val mutationRate = Val[Double]
+val newInnovationHierarchy = Val[Double]
+val earlyAdoptersRate = Val[Double]
+val utilityStd = Val[Double]
+val utilityDistribution = Val[String]
+
+val replication = Val[Int]
+val id = Val[Int]
+
+// indicators
+val averageDiversity = Val[Double]
+val averageUtility = Val[Double]
+val averageInnovation = Val[Double]
+val finalHierarchy = Val[Double]
+
+val model = ScalaTask("""
+    |import urbanevolution.UrbanEvolution
+    |val (averageDiversity,averageUtility,averageInnovation,finalHierarchy) = UrbanEvolution(
+    |  gravityDecay = input.gravityDecay,
+    |  innovationDecay = input.innovationDecay,
+    |  mutationRate = input.mutationRate,
+    |  newInnovationHierarchy = input.newInnovationHierarchy,
+    |  earlyAdoptersRate = input.earlyAdoptersRate,
+    |  utilityStd = input.utilityStd,
+    |  utilityDistribution = input.utilityDistribution,
+    |  syntheticCities = 30,
+    |  syntheticHierarchy = 1.0,
+    |  syntheticMaxPop =  100000.0,
+    |  finalTime = 50,
+    |  growthRate = 0.0,
+    |  innovationWeight = 0.005,
+    |  seed = input.replication
+    |).run
+    """.stripMargin
+) set (
+    (inputs,outputs) += (gravityDecay,innovationDecay,mutationRate,newInnovationHierarchy,earlyAdoptersRate,utilityStd,utilityDistribution,replication,id),
+    outputs += (averageDiversity,averageUtility,averageInnovation,finalHierarchy),
+    plugins += pluginsOf[_root_.urbanevolution.UrbanEvolution]
+)
+        
+  
+//val purpose = "TEST"        
+val purpose = "STOCHASTICITY_GRID"
+
+//val env = LocalEnvironment(5)
+val env = EGIEnvironment("vo.complex-systems.eu")
+
+val indics_hook = AppendToCSVFileHook(workDirectory / "exploration" / (((new java.text.SimpleDateFormat("yyyyMMdd_HHmmss")).format(new java.util.Date()))+"_"+purpose+".csv"),arrayOnRow = true)
+
+
+val exploration = DirectSampling(
+  evaluation = (model on env by 1000 hook indics_hook),
+  //evaluation = (model on env hook indics_hook),
+  sampling = (LHS(50,
+        gravityDecay in Range(0.0,1.5),
+        innovationDecay in Range(0.0,1.5),
+        mutationRate in Range(0.05,0.5),
+        newInnovationHierarchy in Range(0.5,1.5),
+        earlyAdoptersRate in Range(0.01,0.5),
+        utilityStd in Range(0.6,2.0),
+      ) x (utilityDistribution in Seq("normal","log-normal"))
+      withIndex id)
+      x (replication in (UniformDistribution[Int](10000) take 1000)) 
+    /*sampling = ((
+    (gravityDecay in (0.0 to 1.5 by 0.1))
+    x (innovationDecay in (0.0 to 1.5 by 0.1))
+    x (mutationRate in (0.05 to 0.5 by 0.05))
+    x (newInnovationHierarchy in (0.5 to 1.5 by 0.5))
+    x (earlyAdoptersRate in (0.1 to 0.5 by 0.1))
+    x (utilityStd in (0.6 to 2.0 by 0.2))
+    x (utilityDistribution in Seq("normal","log-normal"))
+  )
+  withIndex id)
+  x (replication in (UniformDistribution[Int](10000) take 20))*/
+)
+
+
+exploration
