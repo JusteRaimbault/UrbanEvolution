@@ -6,7 +6,7 @@ library(ggplot2)
 
 source(paste0(Sys.getenv('CS_HOME'),'/Organisation/Models/Utils/R/plots.R'))
 
-params<-c("gravityDecay","innovationDecay","mutationRate","newInnovationHierarchy","utilityStd","earlyAdoptersRate","utilityDistribution","initialHierarchy")
+params<-c("gravityDecay","innovationDecay","mutationRate","newInnovationHierarchy","utilityStd","earlyAdoptersRate","utilityDistribution")#,"initialHierarchy")
 paramnames=list(gravityDecay=expression(d[G]),innovationDecay=expression(d[I]),mutationRate=expression(beta),newInnovationHierarchy=expression(alpha[I]),utilityStd=expression(sigma[U]),earlyAdoptersRate=expression(delta[0]),utilityDistribution="Distribution")
 indics<-c("averageDiversity","averageInnovation","averageUtility","finalHierarchy")
 indicnames = list(averageDiversity="Diversity",averageInnovation="Innovation",averageUtility="Utility",finalHierarchy="Population hierarchy")
@@ -70,6 +70,7 @@ resdir = paste0(Sys.getenv('CS_HOME'),'/UrbanEvolution/Results/EvolutionInnovati
 
 res <- as.tbl(read.csv(file=paste0('openmole/exploration/',resprefix,'.csv')))
 res=res[res$averageUtility<quantile(res$averageUtility,c(0.95),na.rm = T)&!is.na(res$averageUtility),]
+res1=res
 
 for(indic in indics){
   
@@ -95,6 +96,7 @@ resdir = paste0(Sys.getenv('CS_HOME'),'/UrbanEvolution/Results/EvolutionInnovati
 
 res <- as.tbl(read.csv(file=paste0('openmole/exploration/',resprefix,'.csv')))
 res=res[res$averageUtility<quantile(res$averageUtility,c(0.95),na.rm = T)&!is.na(res$averageUtility),]
+res2=res
 
 for(indic in indics){
   for(distrib in unique(res$utilityDistribution)){
@@ -107,15 +109,66 @@ for(indic in indics){
           xlab(expression(d[G]))+ylab(indicnames[[indic]])+scale_color_continuous(name=expression(d[I]))+stdtheme
         ggsave(filename = paste0(resdir,indic,'-gravityDecay_color-innovationDecay_facet-mutationRate-earlyAdoptersRate_newInnovationHierarchy',newInnovationHierarchy,'_distrib',distrib,'.png'),width=30,height=20,units='cm')
         
-        g=ggplot(res[res$utilityDistribution==distrib&res$newInnovationHierarchy==newInnovationHierarchy,],
-                 aes_string(x="as.character(gravityDecay)",y=indic,group="innovationDecay",color="innovationDecay")
-        )
-        g+geom_boxplot()+facet_grid(mutationRate~earlyAdoptersRate,scales = 'free')+
-          xlab(expression(d[G]))+ylab(indicnames[[indic]])+scale_color_continuous(name=expression(d[I]))+stdtheme
-        ggsave(filename = paste0(resdir,indic,'BOXPLOT-gravityDecay_color-innovationDecay_facet-mutationRate-earlyAdoptersRate_newInnovationHierarchy',newInnovationHierarchy,'_distrib',distrib,'.png'),width=30,height=20,units='cm')
+        #g+geom_point(pch='.')+geom_smooth(se = F)+facet_grid(mutationRate~earlyAdoptersRate,scales = 'free')+
+        #  xlab(expression(d[G]))+ylab(indicnames[[indic]])+scale_color_continuous(name=expression(d[I]))+stdtheme
+        #ggsave(filename = paste0(resdir,indic,'POINTS-gravityDecay_color-innovationDecay_facet-mutationRate-earlyAdoptersRate_newInnovationHierarchy',newInnovationHierarchy,'_distrib',distrib,'.png'),width=30,height=20,units='cm')
+        
+        #g+geom_boxplot()+facet_grid(mutationRate~earlyAdoptersRate,scales = 'free')+
+        #  xlab(expression(d[G]))+ylab(indicnames[[indic]])+scale_color_continuous(name=expression(d[I]))+stdtheme
+        #ggsave(filename = paste0(resdir,indic,'BOXPLOT-gravityDecay_color-innovationDecay_facet-mutationRate-earlyAdoptersRate_newInnovationHierarchy',newInnovationHierarchy,'_distrib',distrib,'.png'),width=30,height=20,units='cm')
         
       }
     }
+}
+
+# correlation matrices
+
+allres=rbind(res1[,indics],res2[,indics])
+cor(res1[,indics])
+cor(res2[,indics])
+cor(allres)
+cormat=matrix(0,length(indics),length(indics))
+cormatmin=cormat=matrix(0,length(indics),length(indics))
+cormatmax=cormat=matrix(0,length(indics),length(indics))
+for(i in 1:length(indics)){
+  for(j in 1:length(indics)){
+    rho=cor.test(unlist(allres[,i]),unlist(allres[,j]))
+    cormat[i,j]=rho$estimate;cormatmin[i,j]=rho$conf.int[1];cormatmax[i,j]=rho$conf.int[2]
+  }
+}
+cormatnames=c("D","I","U","P")
+rownames(cormat)=cormatnames;colnames(cormat)=cormatnames
+rownames(cormatmin)=cormatnames;colnames(cormatmin)=cormatnames
+rownames(cormatmax)=cormatnames;colnames(cormatmax)=cormatnames
+
+
+library(corrplot)
+png(filename = paste0(resdir,'corrmat_indics.png'),width = 20,height = 20,units = 'cm',res = 150)
+corrplot(cormat,lowCI.mat = cormatmin,uppCI.mat = cormatmax,mar = c(0,0,0,0))
+dev.off()
+
+m=rbind(res1[,indics],res2[,indics])
+for(j in 1:ncol(m)){m[,j]=(m[,j]-min(m[,j]))/(max(m[,j])-min(m[,j]))}
+summary(prcomp(m))
+
+
+
+############
+# calibration
+
+resprefix = 'CALIBRATION_GRID_20200429_220019'
+resdir = paste0(Sys.getenv('CS_HOME'),'/UrbanEvolution/Results/EvolutionInnovation/',resprefix,'/');dir.create(resdir)
+
+res <- as.tbl(read.csv(file=paste0('openmole/calibration/',resprefix,'/population9000.csv')))
+
+res = res[res$evolution.samples>20,]
+res$averageUtility = - res$oppAverageUtility
+res$averageDiversity = - res$oppAverageDiversity
+
+for(param in params){
+  g=ggplot(res,aes_string(x="averageDiversity",y="averageUtility",color=param,size="evolution.samples"))
+  g+geom_point(alpha=0.6)+xlab("Diversity")+ylab("Utility")+scale_color_continuous(name=paramnames[[param]])+scale_size_continuous(name="Samples")+stdtheme
+  ggsave(filename = paste0(resdir,"paretoDiversity-Utility_color",param,'.png'),width=20,height=18,units='cm')
 }
 
 
