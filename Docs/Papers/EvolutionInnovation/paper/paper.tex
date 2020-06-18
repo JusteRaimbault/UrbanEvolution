@@ -48,11 +48,6 @@
 % Note:  Some laser printers have a serious problem printing TeX
 % output. The use of ps type I fonts should avoid this problem.
 
-% Modeling urban evolution with the diffusion of innovations
-% A simple model of urban evolution based on innovation diffusion
-% A model of urban evolution based on innovation diffusion
-% A model of urban evolution and innovation diffusion
-% A model of urban evolution based on the diffusion of innovations
 
 \title{A model of urban evolution based on innovation diffusion}
 \author{Juste Raimbault$^{1,2,3}$\\
@@ -76,14 +71,17 @@ juste.raimbault@polytechnique.edu} % email of corresponding author
 %  evaluation:	
 %2: (accept)
 %Promising work. For the future, it will be interesting to see how the model can reproduce observed properties of different cities.
+%TODO discussion real system
 
 % Review 2
 %1: (weak accept)
 %This paper presents a model of urban evolution based on innovation diffusion. The paper describes a simple model for systems of cities at the macroscopic level using population growth and innovation diffusion, which is then explored on synthethic city systems.
 
 %The paper is well written and the results promising. It would have been very interesting to see how this would work for a model of a real city - there are an abundance of datasets and models (even cited by the author) that would not have been difficult to integrate.
+%TODO apply model to real city (more discussion)
 
 %In addition, it would be very useful to include a discussion on how modeling innovation at a microscopic scale (or in-between, eg at a level of suburbs) changes the results of the simulations.
+%TODO discussion on microscopic scale
 
 % Review 3
 
@@ -94,27 +92,48 @@ juste.raimbault@polytechnique.edu} % email of corresponding author
 
 %Typos:
 %1. Evolutionary economics also study regional systems of innovation, how it diffuses and thee potential existence of spatial spillovers (Uyarra, 2010).
+% typo - OK
 %2. Finally, to existence of subsystems in which evolution can occur is natural through the spatial aspect of the model, ….
+% typo - OK
 %3. It is however significantly different in the way population are updated deterministically
+%TODO typo
 %4. Transformation processes are included as mutations, when random innovation appear in cities.
+% typo - OK
 %5. In our model, cities are characterized by their size in terms of population, and city size evolve following a spatial
+%TODO typo
 %6. Urban genomes are adapted such that the new innovation as an initial penetration rate ..
+%TODO typo
 %7. We choose simply to quantify the level of hierarchy at final time, estimated by fitting the rank-size law on populations using an Ordinary Least Squares on logarithms.
+%TODO typo
 %8. what means that stochastic noise is not an issue for interpreting indicator values … what means that these two last indicators need more statistical precision
+%TODO typo
 %9. we find that it always increase for larger population
+%TODO typo
 %10. it means that systems where i nteraction are more global will be less unequal. This is however not always the case in such urban dynamics model as
+%TODO typo
 %11. For low values of mutation rates, with find a piecewise linear
+%TODO typo
 %12. This peak is the strongest when innovation diffuse at broader range , what may mean that this regime is due to the emergence of regional ensemble of comparable competitivity and thus a higher chance of high utility innovation,
+%TODO typo
 %13. cumulated variance on the second and 91% on the third, confirming that even if correlation exist the behavior of
+%TODO typo
 %14. one may prefer in the compromise the points just before the transition which correspond to a local diffusion setting. Thus, local diffusion correspond to intermediate
+%TODO typo
 %15. urban genome can be used to simulated urban dynamics
+%TODO typo
 %16. model to real system …. and evoluting sub-systems
+%TODO typo
 %Other issues:
 %1. You need to deal with text formatting as some texts are being cut out at the end of the line (observed on paragraph 1 on page 5).
+%TODO pb cropping fig2 - OK?
 %2. Use of compromise and compromize in the same article, (kind of linear compromize between utility … prefer in the compromise the …)
+%TODO typo
 %3. It is not clear why the growth rate is fixed to 0.005 and the cited paper (Raimbault, 2020c) does not justify the use of that value.
+%TODO justify fixed growth rate
 %4. Fig 1 is a bit confusing, you will need to find a better way of presenting it than this.To enhance readability, the mutation rate and adoption rate should be clearly associated with those rows and columns you mentioned. As it is, it's hard to read.
+%TODO facet names
 %5. The statement “This increase however reaches a plateau around half of the width of the world (dG = 0.5) which is more obvious for higher values of mutation rates (bottom raw) …” is also confusing as it is not clear which plotting it refers to as it does not appear to apply to all plottings. I don’t think ‘(bottom raw) ’ is correct either.
+%TODO clarify
 %Your arguments are strong and I hope my comments will help to fine-tune your article to make it more readable. Good luck with your submission.
 
 
@@ -130,7 +149,6 @@ The dynamics of urban systems can be understood from an evolutionary perspective
 
 % Urban Systems; Urban Evolution; Innovation Diffusion
 
-\cite{zhang2019empirically}
 
 \section{Introduction}
 
@@ -148,7 +166,7 @@ A stream of research tightly linked to ALife relates to concepts of \emph{Urban 
 % (iii) Innovation diffusion - in ALife studies ; - in urban systems
 %\cite{Eletreby5664} diffusion/evolving
 
-Besides, a central concept bridging ALife and evolution with the study of urban systems is the concept of innovation diffusion. Within artificially evolved systems, understanding how innovation emerges and how it diffuses in the population is essential \citep{bedau2000open}. One aspect of open-ended evolution are mechanisms endogeneously producing novelty. In the case of urban systems, \cite{hagerstrand1968innovation} had already highlighted the role of a hierarchical diffusion of innovation between cities in their trajectories. The aforementioned evolutionary urban theory suggests that innovation cycles and their hierarchical diffusion is a possible explanation for the properties of urban scaling laws \citep{pumain2006evolutionary}. Evolutionary economics also study regional systems of innovation, how it diffuses and thee potential existence of spatial spillovers \citep{uyarra2010evolutionary}. Thus, the diffusion of innovation is a privileged entry into urban evolutionary processes.
+Besides, a central concept bridging ALife and evolution with the study of urban systems is the concept of innovation diffusion. Within artificially evolved systems, understanding how innovation emerges and how it diffuses in the population is essential \citep{bedau2000open}. One aspect of open-ended evolution are mechanisms endogeneously producing novelty. In the case of urban systems, \cite{hagerstrand1968innovation} had already highlighted the role of a hierarchical diffusion of innovation between cities in their trajectories. The aforementioned evolutionary urban theory suggests that innovation cycles and their hierarchical diffusion is a possible explanation for the properties of urban scaling laws \citep{pumain2006evolutionary}. Evolutionary economics also study regional systems of innovation, how it diffuses and the potential existence of spatial spillovers \citep{uyarra2010evolutionary}. At the microscopic scale, several agent-based models of innovation diffusion highlight the role of social and geographical networks, both of which are embedded into urban systems \citep{zhang2019empirically}. Thus, the diffusion of innovation is a privileged entry into urban evolutionary processes.
 
 
 % (iv) contribution
@@ -166,9 +184,10 @@ The rest of this paper is organized as follows: in the next section we give the 
 The core idea of the model is to build on a concept of ``Urban DNA'' which would capture evolution processes as in biological evolution and cultural evolution, i.e. a kind of genome that cities would be exchanging and which would undergo mutation processes. A suitable candidate is to build on the concept of \emph{meme} introduced in the field of cultural evolution. However, several particularities must be stressed out when working with urban systems. First, they are multi-dimensional implying very different types of agents, including physical and technical artefacts (e.g. infrastructures) but also social and economical structures. A comprehensive urban genome would include these very different dimensions. Then, they are multi-scalar in time and space, meaning that evolution processes, if they exist, may occur at different paces and through different elementary carriers. Finally, they are embedded in the geographical space, what structures the way transmission and mutation can occur, but also can strongly change properties of underlying processes \citep{raimbault2019space}. We choose to focus on the last point, considering a model at the macroscopic scale where cities are agents and with a one-dimensional genome, but in which spatial interactions are crucial for the dynamics. More particularly, this model combines two spatial interaction models \citep{fotheringham1989spatial}.
 
 
-Several models have been proposed to simulate the diffusion of innovation at microscopic and mesoscopic scales \citep{kiesling2012agent}. \cite{blommestein1987adoption} describe a model of innovation diffusion and urban dynamics with endogenous demand for innovations, but in which the spatial component only influences prices of innovations. \cite{deffuant2005individual} give an example of an elaborated model for adoption dynamics at the microscopic level. Effective channels for the diffusion of innovations are multiple, and can for example be urban firm linkages \citep{rozenblat2007firm}. \cite{pumain2017simpoplocal} describe a model based on innovation diffusion to explain the emergence of the first cities. \cite{favaro2011gibrat} study an urban growth model including innovation diffusion at the scale of the urban system. Our model builds on this last framework, extending and adapting it to an urban evolution context. It is however significantly different in the way population are updated deterministically and in the innovation process.
+Several models have been proposed to simulate the diffusion of innovation at microscopic and mesoscopic scales \citep{kiesling2012agent}. \cite{blommestein1987adoption} describe a model of innovation diffusion and urban dynamics with endogenous demand for innovations, but in which the spatial component only influences prices of innovations. \cite{deffuant2005individual} give an example of an elaborated model for adoption dynamics at the microscopic level. Effective channels for the diffusion of innovations are multiple, and can for example be urban firm linkages \citep{rozenblat2007firm}. \cite{pumain2017simpoplocal} describe a model based on innovation diffusion to explain the emergence of the first cities. \cite{favaro2011gibrat} study an urban growth model including innovation diffusion at the scale of the urban system. Our model builds on this last framework, extending and adapting it to an urban evolution context.
+It is however significantly different in the way population are updated deterministically and in the innovation process.
 
-In our model, cities are characterized by their size in terms of population, and city size evolve following a spatial interaction model in which city attractivity is included. This attractivity is determined by how innovative cities are. Transformation processes are included as mutations, when random innovation appear in cities. Transmission processes (spatial crossover) are included by diffusing innovations between cities. Finally, to existence of subsystems in which evolution can occur is natural through the spatial aspect of the model, through which different regions in space may behave and evolve differently, possibly resulting in the emergence of co-evolution niches \citep{holland2012signals,raimbault2018co}.
+In our model, cities are characterized by their size in terms of population. City sizes evolve following a spatial interaction model taking into account the attractivity of cities. This attractivity is determined by how innovative cities are. Transformation processes are included as mutations, when random innovations appear in cities. Transmission processes (spatial crossover) are included by diffusing innovations between cities. Finally, the existence of subsystems in which evolution can occur comes naturally with the spatial aspect of the model: different regions in space may behave and evolve differently, possibly resulting in the emergence of co-evolution niches \citep{holland2012signals,raimbault2018co}.
 
 \subsection{Model description}
 
@@ -196,6 +215,7 @@ We now formally describe the urban evolution model. A number $N$ of cities are l
 %\]
 
 Starting from an initial configuration, the simulation model is iterated in time with the following steps at each time tick:
+
 
 \begin{enumerate}
 	\item The crossover between urban genomes relies on spatial processes of innovation diffusion. This means that existing innovations are propagated between cities following a spatial interaction model given by
@@ -354,9 +374,12 @@ Our simple formulation of an urban genome and associated evolutionary processes,
 
 Several extensions and applications would be possible to this first model exploration. First, the innovation space in our model remained unidimensional. \citep{hidalgo2007product} show in terms of industrial production by countries that these industrial spaces are highly dimensional in terms of product produced and interdependencies between countries and types of production, increasing the path-dependency in economic trajectories. The investigation of patent data from a semantic viewpoint also shows the highly dimensional nature of technological innovation \citep{bergeaud2017classifying}. A direct extension of our model would consist in having a matrix genome instead of a vector one. Innovations would occur across several dimensions which can correspond to industrial or technological domains, but also social and cultural innovation and innovations in terms of infrastructures which condition the way systems of cities evolve. Each dimension should have particular innovation rules depending on its nature, and dependencies across dimensions could be introduced, implementing the possible emergence of technological co-evolution niches beside the spatial co-evolution niches.
 
-Second, applying the model to real system of cities, both in terms of initial parametrization and of empirical laws for innovation processes, would allow bringing this approach closer to possible policy applications. \cite{raimbault:halshs-01880492} benchmarked several models of urban growth based on interactions between cities, and integrated the model of \cite{favaro2011gibrat} on which this work was based. It however only included accurate initial populations and distance matrix. This application to real systems of cities also allows testing the performance of the model in predicting possible trajectories for these systems.
+Second, applying the model to real system of cities, both in terms of initial parametrization and of empirical laws for innovation processes, would allow bringing this approach closer to possible policy applications. \cite{raimbault:halshs-01880492} and later \cite{2020arXiv200510007R} benchmarked several models of urban growth based on interactions between cities, and integrated the model of \cite{favaro2011gibrat} on which this work was based. It however only included accurate initial populations and distance matrix, but no empirical data on innovation waves which were also synthetically constructed. One important aspect of this application to real systems of cities is thus a test of the performance of this model in predicting possible trajectories for systems of cities.
 
-Finally, our approach was rather restricted in the sense that even a broad geographical range is taken into account, a single ontological scale is included in the model, i.e. the macroscopic scale since cities are the basic agents. Similarly, a single temporal scale was included, although two dynamics of spatial interaction and innovation diffusion are effectively combined. A multi-scale approach of urban evolution would be necessary to fully account for the complexity of these systems. \cite{raimbault:halshs-02351722} introduced a multi-scalar model for population growth with upward and downward strong feedbacks between the mesoscopic scale (urban form) and the macroscopic scale (spatial interaction model). Adapting this approach in the case of urban evolution through innovation diffusion would be an interesting potential development.
+Finally, our approach was rather restricted in the sense that even a broad geographical range is taken into account, a single ontological scale is included in the model, i.e. the macroscopic scale since cities are the basic agents. 
+One can expect processes of innovation diffusion to behave differently at the microscopic scale or at intermediate scales of companies or innovation clusters % lit spillovers?
+Similarly, a single temporal scale was included, although two dynamics of spatial interaction and innovation diffusion are effectively combined. A multi-scale approach of urban evolution would be necessary to fully account for the complexity of these systems. \cite{raimbault:halshs-02351722} introduced a multi-scalar model for population growth with upward and downward strong feedbacks between the mesoscopic scale (urban form) and the macroscopic scale (spatial interaction model). Adapting this approach in the case of urban evolution through innovation diffusion would be an interesting potential development.
+The aspects to be clarified
 
 
 \section{Conclusion}

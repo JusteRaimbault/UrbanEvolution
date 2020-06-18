@@ -98,6 +98,9 @@ res <- as.tbl(read.csv(file=paste0('openmole/exploration/',resprefix,'.csv')))
 res=res[res$averageUtility<quantile(res$averageUtility,c(0.95),na.rm = T)&!is.na(res$averageUtility),]
 res2=res
 
+res$mutationRateF = paste0('beta *"="*',res$mutationRate)
+res$earlyAdoptersRateF = paste0('r[0]*"="*',res$earlyAdoptersRate)
+
 for(indic in indics){
   for(distrib in unique(res$utilityDistribution)){
       for(newInnovationHierarchy in unique(res$newInnovationHierarchy)){
@@ -105,7 +108,7 @@ for(indic in indics){
         g=ggplot(res[res$utilityDistribution==distrib&res$newInnovationHierarchy==newInnovationHierarchy,],
                  aes_string(x="gravityDecay",y=indic,group="innovationDecay",color="innovationDecay")
         )
-        g+geom_smooth(se = F)+facet_grid(mutationRate~earlyAdoptersRate,scales = 'free')+
+        g+geom_smooth(se = F)+facet_grid(mutationRateF~earlyAdoptersRateF,scales = 'free', labeller =label_parsed)+
           xlab(expression(d[G]))+ylab(indicnames[[indic]])+scale_color_continuous(name=expression(d[I]))+stdtheme
         ggsave(filename = paste0(resdir,indic,'-gravityDecay_color-innovationDecay_facet-mutationRate-earlyAdoptersRate_newInnovationHierarchy',newInnovationHierarchy,'_distrib',distrib,'.png'),width=30,height=20,units='cm')
         

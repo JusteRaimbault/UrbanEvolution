@@ -69,7 +69,7 @@ val evolution =
       objectives = Seq(oppAverageDiversity,oppAverageUtility),
       evaluation = model,
       stochastic = Stochastic(seed = replication),
-      termination = 20000,
+      termination = 50000,
       parallelism = 500,
       distribution = Island(10 minutes)
 )
