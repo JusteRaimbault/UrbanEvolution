@@ -72,6 +72,52 @@ juste.raimbault@polytechnique.edu} % email of corresponding author
 % allocated, place \setlength\titlebox{<new height>} after the
 % \documentclass line where <new height> is 2.25in
 
+% Review 1 
+%  evaluation:	
+%2: (accept)
+%Promising work. For the future, it will be interesting to see how the model can reproduce observed properties of different cities.
+
+% Review 2
+%1: (weak accept)
+%This paper presents a model of urban evolution based on innovation diffusion. The paper describes a simple model for systems of cities at the macroscopic level using population growth and innovation diffusion, which is then explored on synthethic city systems.
+
+%The paper is well written and the results promising. It would have been very interesting to see how this would work for a model of a real city - there are an abundance of datasets and models (even cited by the author) that would not have been difficult to integrate.
+
+%In addition, it would be very useful to include a discussion on how modeling innovation at a microscopic scale (or in-between, eg at a level of suburbs) changes the results of the simulations.
+
+% Review 3
+
+% 2: (accept)
+%A model of urban evolution based on innovation diffusion
+
+%I think you have really interesting ideas in this article particularly the research methodology followed. I found the paper to be very comprehensive with an interesting presentation of findings. The objectives are clear and literature review well done. The supporting theory was put together partly based on empirical preliminary studies carried out however, there are few parameters used that need to be justified adequately. The general concerns are that the paper is too hard to read because of typos and number of assumptions that need to be verified and qualified as stated below.
+
+%Typos:
+%1. Evolutionary economics also study regional systems of innovation, how it diffuses and thee potential existence of spatial spillovers (Uyarra, 2010).
+%2. Finally, to existence of subsystems in which evolution can occur is natural through the spatial aspect of the model, ….
+%3. It is however significantly different in the way population are updated deterministically
+%4. Transformation processes are included as mutations, when random innovation appear in cities.
+%5. In our model, cities are characterized by their size in terms of population, and city size evolve following a spatial
+%6. Urban genomes are adapted such that the new innovation as an initial penetration rate ..
+%7. We choose simply to quantify the level of hierarchy at final time, estimated by fitting the rank-size law on populations using an Ordinary Least Squares on logarithms.
+%8. what means that stochastic noise is not an issue for interpreting indicator values … what means that these two last indicators need more statistical precision
+%9. we find that it always increase for larger population
+%10. it means that systems where i nteraction are more global will be less unequal. This is however not always the case in such urban dynamics model as
+%11. For low values of mutation rates, with find a piecewise linear
+%12. This peak is the strongest when innovation diffuse at broader range , what may mean that this regime is due to the emergence of regional ensemble of comparable competitivity and thus a higher chance of high utility innovation,
+%13. cumulated variance on the second and 91% on the third, confirming that even if correlation exist the behavior of
+%14. one may prefer in the compromise the points just before the transition which correspond to a local diffusion setting. Thus, local diffusion correspond to intermediate
+%15. urban genome can be used to simulated urban dynamics
+%16. model to real system …. and evoluting sub-systems
+%Other issues:
+%1. You need to deal with text formatting as some texts are being cut out at the end of the line (observed on paragraph 1 on page 5).
+%2. Use of compromise and compromize in the same article, (kind of linear compromize between utility … prefer in the compromise the …)
+%3. It is not clear why the growth rate is fixed to 0.005 and the cited paper (Raimbault, 2020c) does not justify the use of that value.
+%4. Fig 1 is a bit confusing, you will need to find a better way of presenting it than this.To enhance readability, the mutation rate and adoption rate should be clearly associated with those rows and columns you mentioned. As it is, it's hard to read.
+%5. The statement “This increase however reaches a plateau around half of the width of the world (dG = 0.5) which is more obvious for higher values of mutation rates (bottom raw) …” is also confusing as it is not clear which plotting it refers to as it does not appear to apply to all plottings. I don’t think ‘(bottom raw) ’ is correct either.
+%Your arguments are strong and I hope my comments will help to fine-tune your article to make it more readable. Good luck with your submission.
+
+
 
 
 \begin{document}
@@ -136,7 +182,7 @@ In our model, cities are characterized by their size in terms of population, and
 % - ! no network evolving (too complicated
 % - evolves pop following Favaro-Pumain. P(innov) = scaling (pop) / utility ? ! not pop, gdp? (ok for eco innovation and sectors - should be multi-dimensional indeed)
  
-We now formally describe the urban evolution model. A number $N$ of cities are located in the geographical space, and described in time by their size $P_i (t)$ (which generally corresponds to population). The geography is captured with a distance matrix $d_{ij}$ between cities. We consider a one-dimensional technological space in which innovations can be introduced, indexed by their order of apparition $c$. Cities are then also characterized by their innovation profile $\delta_{c,i} (t) \in \left[0;1\right]$ which represents the proportion of population having adopted innovation $c$ in the city $i$ at time $t$. We assume exclusivity in the adoption of innovation, i.e. that we always have $\sum_c \delta_{c,i} (t) = 1$. This innovation profile corresponds to the urban genome. Each innovation has furthermore an utility $u_c >0$ which will influence its diffusion dynamics.
+We now formally describe the urban evolution model. A number $N$ of cities are located in the geographical space, and described in time by their size $P_i (t)$ (which generally corresponds to population). The geography is captured with a distance matrix $d_{ij}$ between cities. We consider a one-dimensional technological space in which innovations can be introduced, indexed by their order of apparition $c$. Cities are then also characterized by their innovation profile $\delta_{c,i} (t) \in \left[0;1\right]$ which represents the proportion of population having adopted innovation $c$ in the city $i$ at time $t$. We assume exclusivity in the adoption of innovation, i.e. that we always have $\sum_c \delta_{c,i} (t) = 1$. This innovation profile corresponds to the urban genome. Each innovation has furthermore a utility $u_c >0$ which will influence its diffusion dynamics.
 
 
 \paragraph{Model dynamics}
@@ -267,13 +313,6 @@ Finally, the indicator with a more interesting behavior is the utility (bottom l
 
 
 % correlations
-%%%%%%%%%%%%
-\begin{figure}[t]
-	\centering
-	\includegraphics[width=\linewidth,trim={6cm 6cm 0 6cm}]{figures/corrmat_indics.png}
-	\caption{Correlation matrix between indicators, estimated on the full grid experiment. Confidence intervals for correlations estimated with the Fisher method are tiny and not distinguishable in the plot.\label{fig:cormat}}
-\end{figure}
-%%%%%%%%%%%%
 
 % summary(prcomp(m))
 %Importance of components:
@@ -284,6 +323,13 @@ Finally, the indicator with a more interesting behavior is the utility (bottom l
 
 We also compute the correlation matrix between indicators across the full grid experiment. This shows that correlations that one could visually extrapolate from studying a part of the parameter space as commented in Fig.~\ref{fig:exploration} do not correspond to the actual correlations on the broader parameter space. Note that local correlation matrices could be estimated for a more thorough discussion. We show the correlation matrix in Fig.~\ref{fig:cormat}. Confidence intervals estimated with the Fisher method are of negligible width compared to correlation values. We find that diversity is finally the indicator with highest correlations. The correlation between innovation and population is low, meaning that the similar curves observed before are a particular case. Innovation and utility have a correlation lower than 0.5, and are thus rather independent. Regarding the effective dimension of the indicator space, a principal component analysis on normalized indicators gives 48\% of variance on the first component, 77\% of cumulated variance on the second and 91\% on the third, confirming that even if correlation exist the behavior of indicators are rather independent.
 
+%%%%%%%%%%%%
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=\linewidth,trim={6cm 6cm 0 6cm}]{figures/corrmat_indics.png}
+	\caption{Correlation matrix between indicators, estimated on the full grid experiment. Confidence intervals for correlations estimated with the Fisher method are tiny and not distinguishable in the plot.\label{fig:cormat}}
+\end{figure}
+%%%%%%%%%%%%
 
 
 \subsection{Model optimization}
@@ -327,250 +373,8 @@ Results obtained in this paper were computed on the vo.complex-system.eu virtual
 \bigskip
 
 \footnotesize
-%\bibliographystyle{apalike}
-%\bibliography{biblio} % replace by the name of your .bib file
-
-\begin{thebibliography}{}
-
-\bibitem[Batty, 2009]{batty2009digital}
-Batty, M. (2009).
-\newblock A digital breeder for designing cities.
-\newblock {\em Architectural Design}, 79(4):46--49.
-
-\bibitem[Batty and Marshall, 2009]{batty2009centenary}
-Batty, M. and Marshall, S. (2009).
-\newblock Centenary paper: The evolution of cities: Geddes, abercrombie and the
-  new physicalism.
-\newblock {\em Town Planning Review}, 80(6):551--574.
-
-\bibitem[Bedau et~al., 2000]{bedau2000open}
-Bedau, M.~A., McCaskill, J.~S., Packard, N.~H., Rasmussen, S., Adami, C.,
-  Green, D.~G., Ikegami, T., Kaneko, K., and Ray, T.~S. (2000).
-\newblock Open problems in artificial life.
-\newblock {\em Artificial life}, 6(4):363--376.
-
-\bibitem[Bergeaud et~al., 2017]{bergeaud2017classifying}
-Bergeaud, A., Potiron, Y., and Raimbault, J. (2017).
-\newblock Classifying patents based on their semantic content.
-\newblock {\em PloS one}, 12(4):e0176310.
-
-\bibitem[Blommestein and Nijkamp, 1987]{blommestein1987adoption}
-Blommestein, H. and Nijkamp, P. (1987).
-\newblock Adoption and diffusion of innovations and the evolution of spatial
-  systems.
-\newblock In {\em Economic Evolution and Structural Adjustment}, pages
-  368--380. Springer.
-
-\bibitem[Bull et~al., 2000]{bull2000meme}
-Bull, L., Holland, O., and Blackmore, S. (2000).
-\newblock On meme--gene coevolution.
-\newblock {\em Artificial life}, 6(3):227--235.
-
-\bibitem[Cottineau et~al., 2015]{cottineau2015modular}
-Cottineau, C., Reuillon, R., Chapron, P., Rey-Coyrehourcq, S., and Pumain, D.
-  (2015).
-\newblock A modular modelling framework for hypotheses testing in the
-  simulation of urbanisation.
-\newblock {\em Systems}, 3(4):348--377.
-
-\bibitem[D'Acci, 2014]{d2014urban}
-D'Acci, L. (2014).
-\newblock Urban dna for cities evolutions. cities as physical expression of
-  dynamic equilibriums between competitive and cooperative forces.
-\newblock {\em arXiv preprint arXiv:1408.2874}.
-
-\bibitem[Deb et~al., 2002]{deb2002fast}
-Deb, K., Pratap, A., Agarwal, S., and Meyarivan, T. (2002).
-\newblock A fast and elitist multiobjective genetic algorithm: Nsga-ii.
-\newblock {\em IEEE transactions on evolutionary computation}, 6(2):182--197.
-
-\bibitem[Deffuant et~al., 2005]{deffuant2005individual}
-Deffuant, G., Huet, S., and Amblard, F. (2005).
-\newblock An individual-based model of innovation diffusion mixing social value
-  and individual benefit.
-\newblock {\em American Journal of Sociology}, 110(4):1041--1069.
-
-\bibitem[Durham, 1991]{durham1991coevolution}
-Durham, W.~H. (1991).
-\newblock {\em Coevolution: Genes, culture, and human diversity}.
-\newblock Stanford University Press.
-
-\bibitem[Ethiraj and Levinthal, 2004]{ethiraj2004modularity}
-Ethiraj, S.~K. and Levinthal, D. (2004).
-\newblock Modularity and innovation in complex systems.
-\newblock {\em Management science}, 50(2):159--173.
-
-\bibitem[Favaro and Pumain, 2011]{favaro2011gibrat}
-Favaro, J.-M. and Pumain, D. (2011).
-\newblock Gibrat revisited: An urban growth model incorporating spatial
-  interaction and innovation cycles. 再评吉尔布瑞特:
-  顾及空间相互作用和创新周期的城市增长模型.
-\newblock {\em Geographical Analysis}, 43(3):261--286.
-
-\bibitem[Fotheringham and O'Kelly, 1989]{fotheringham1989spatial}
-Fotheringham, A.~S. and O'Kelly, M.~E. (1989).
-\newblock {\em Spatial interaction models: formulations and applications},
-  volume~1.
-\newblock Kluwer Academic Publishers Dordrecht.
-
-\bibitem[Gong and Hassink, 2019]{gong2019co}
-Gong, H. and Hassink, R. (2019).
-\newblock Co-evolution in contemporary economic geography: Towards a
-  theoretical framework.
-\newblock {\em Regional Studies}, 53(9):1344--1355.
-
-\bibitem[Hagerstrand et~al., 1968]{hagerstrand1968innovation}
-Hagerstrand, T. et~al. (1968).
-\newblock Innovation diffusion as a spatial process.
-\newblock {\em Innovation diffusion as a spatial process.}
-
-\bibitem[Hidalgo et~al., 2007]{hidalgo2007product}
-Hidalgo, C.~A., Klinger, B., Barab{\'a}si, A.-L., and Hausmann, R. (2007).
-\newblock The product space conditions the development of nations.
-\newblock {\em Science}, 317(5837):482--487.
-
-\bibitem[Holland, 2012]{holland2012signals}
-Holland, J.~H. (2012).
-\newblock {\em Signals and boundaries: Building blocks for complex adaptive
-  systems}.
-\newblock Mit Press.
-
-\bibitem[Kaya and B{\"o}len, 2017]{kaya2017urban}
-Kaya, H.~S. and B{\"o}len, F. (2017).
-\newblock Urban dna: morphogenetic analysis of urban pattern.
-
-\bibitem[Kiesling et~al., 2012]{kiesling2012agent}
-Kiesling, E., G{\"u}nther, M., Stummer, C., and Wakolbinger, L.~M. (2012).
-\newblock Agent-based simulation of innovation diffusion: a review.
-\newblock {\em Central European Journal of Operations Research},
-  20(2):183--230.
-
-\bibitem[Lobo et~al., 2020]{lobo2020urban}
-Lobo, J., Alberti, M., Allen-Dumas, M., Arcaute, E., Barthelemy, M.,
-  Bojorquez~Tapia, L.~A., Brail, S., Bettencourt, L., Beukes, A., Chen, W.-Q.,
-  et~al. (2020).
-\newblock Urban science: Integrated theory from the first cities to sustainable
-  metropolises.
-
-\bibitem[Mesoudi, 2001]{mesoudi2001cultural}
-Mesoudi, A. (2001).
-\newblock Cultural evolution.
-\newblock {\em eLS}, pages 1--8.
-
-\bibitem[Passerat-Palmbach et~al., 2017]{passerat2017reproducible}
-Passerat-Palmbach, J., Reuillon, R., Leclaire, M., Makropoulos, A., Robinson,
-  E.~C., Parisot, S., and Rueckert, D. (2017).
-\newblock Reproducible large-scale neuroimaging studies with the openmole
-  workflow management system.
-\newblock {\em Frontiers in neuroinformatics}, 11:21.
-
-\bibitem[Pumain, 2018]{pumain2018evolutionary}
-Pumain, D. (2018).
-\newblock An evolutionary theory of urban systems.
-\newblock In {\em International and transnational perspectives on urban
-  systems}, pages 3--18. Springer.
-
-\bibitem[Pumain et~al., 2012]{pumain2012theorie}
-Pumain, D. et~al. (2012).
-\newblock Une th{\'e}orie g{\'e}ographique pour la loi de zipf.
-\newblock {\em R{\'e}gion et d{\'e}veloppement}, 36(31-54):125--150.
-
-\bibitem[Pumain et~al., 2006]{pumain2006evolutionary}
-Pumain, D., Paulus, F., Vacchiani-Marcuzzo, C., and Lobo, J. (2006).
-\newblock An evolutionary theory for interpreting urban scaling laws.
-\newblock {\em Cybergeo: European Journal of Geography}.
-
-\bibitem[Pumain and Raimbault, 2020]{pumain2020conclusion}
-Pumain, D. and Raimbault, J. (2020).
-\newblock Conclusion: Perspectives on urban theories.
-\newblock In {\em Theories and Models of Urbanization}, pages 303--330.
-  Springer.
-
-\bibitem[Pumain and Reuillon, 2017]{pumain2017simpoplocal}
-Pumain, D. and Reuillon, R. (2017).
-\newblock The simpoplocal model.
-\newblock In {\em Urban Dynamics and Simulation Models}, pages 21--35.
-  Springer.
-
-\bibitem[Raimbault, 2018a]{raimbault:halshs-01880492}
-Raimbault, J. (2018a).
-\newblock {A systematic comparison of interaction models for systems of
-  cities}.
-\newblock In {\em {Conference on Complex Systems 2018}}, Thessaloniki, Greece.
-
-\bibitem[Raimbault, 2018b]{raimbault2018co}
-Raimbault, J. (2018b).
-\newblock Co-evolution and morphogenetic systems.
-\newblock {\em arXiv preprint arXiv:1803.11457}.
-
-\bibitem[Raimbault, 2019]{raimbault:halshs-02351722}
-Raimbault, J. (2019).
-\newblock {A multi-scalar model for system of cities}.
-\newblock In {\em {Conference on Complex Systems 2019}}, Singapore, Singapore.
-
-\bibitem[Raimbault, 2020a]{raimbault2020cities}
-Raimbault, J. (2020a).
-\newblock Cities as they could be: Artificial life and urban systems.
-\newblock {\em arXiv preprint arXiv:2002.12926}.
-
-\bibitem[Raimbault, 2020b]{raimbault2020hierarchy}
-Raimbault, J. (2020b).
-\newblock Hierarchy and co-evolution processes in urban systems.
-\newblock {\em arXiv preprint arXiv:2001.11989}.
-
-\bibitem[Raimbault, 2020c]{raimbault2020indirect}
-Raimbault, J. (2020c).
-\newblock Indirect evidence of network effects in a system of cities.
-\newblock {\em Environment and Planning B: Urban Analytics and City Science},
-  47(1):138--155.
-
-\bibitem[Raimbault, 2020d]{raimbault2020unveiling}
-Raimbault, J. (2020d).
-\newblock Unveiling co-evolutionary patterns in systems of cities: a systematic
-  exploration of the simpopnet model.
-\newblock In {\em Theories and Models of Urbanization}, pages 261--278.
-  Springer.
-
-\bibitem[Raimbault et~al., 2019]{raimbault2019space}
-Raimbault, J., Cottineau, C., Le~Texier, M., Le~Nechet, F., and Reuillon, R.
-  (2019).
-\newblock Space matters: Extending sensitivity analysis to initial spatial
-  conditions in geosimulation models.
-\newblock {\em Journal of Artificial Societies and Social Simulation},
-  22(4):10.
-
-\bibitem[Reuillon et~al., 2013]{reuillon2013openmole}
-Reuillon, R., Leclaire, M., and Rey-Coyrehourcq, S. (2013).
-\newblock Openmole, a workflow engine specifically tailored for the distributed
-  exploration of simulation models.
-\newblock {\em Future Generation Computer Systems}, 29(8):1981--1990.
-
-\bibitem[Rozenblat and Pumain, 2007]{rozenblat2007firm}
-Rozenblat, C. and Pumain, D. (2007).
-\newblock Firm linkages, innovation and the evolution of urban systems.
-\newblock {\em Cities in globalization: Practices, policies, theories}, pages
-  130--156.
-
-\bibitem[Uyarra, 2010]{uyarra2010evolutionary}
-Uyarra, E. (2010).
-\newblock What is evolutionary about ‘regional systems of innovation’?
-  implications for regional policy.
-\newblock {\em Journal of evolutionary economics}, 20(1):115.
-
-\bibitem[Votsis and Haavisto, 2019]{votsis2019urban}
-Votsis, A. and Haavisto, R. (2019).
-\newblock Urban dna and sustainable cities: A multi-city comparison.
-\newblock {\em Frontiers in Environmental Science}, 7:4.
-
-\bibitem[Wu and Silva, 2011]{wu2011urban}
-Wu, N. and Silva, E.~A. (2011).
-\newblock Urban dna: exploring the biological metaphor of urban evolution with
-  dg-abc model.
-\newblock In {\em Proceedings The 14th AGILE International Conference on
-  Geographic Information Science. Utrecht University}.
-
-\end{thebibliography}
-
+\bibliographystyle{apalike}
+\bibliography{biblio} % replace by the name of your .bib file
 
 
 \end{document}
