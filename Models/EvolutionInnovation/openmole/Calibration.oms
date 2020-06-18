@@ -1,0 +1,81 @@
+import java.text.SimpleDateFormat
+import java.util.Date
+
+// parameters
+val gravityDecay = Val[Double]
+val innovationDecay = Val[Double]
+val mutationRate = Val[Double]
+val newInnovationHierarchy = Val[Double]
+val earlyAdoptersRate = Val[Double]
+val utilityStd = Val[Double]
+val utilityDistribution = Val[String]
+
+val replication = Val[Int]
+val id = Val[Int]
+
+// indicators
+val oppAverageDiversity = Val[Double]
+val oppAverageUtility = Val[Double]
+
+val model = ScalaTask("""
+    |import urbanevolution.UrbanEvolution
+    |val (averageDiversity,averageUtility,_,_) = UrbanEvolution(
+    |  gravityDecay = input.gravityDecay,
+    |  innovationDecay = input.innovationDecay,
+    |  mutationRate = input.mutationRate,
+    |  newInnovationHierarchy = input.newInnovationHierarchy,
+    |  earlyAdoptersRate = input.earlyAdoptersRate,
+    |  utilityStd = input.utilityStd,
+    |  utilityDistribution = input.utilityDistribution,
+    |  syntheticCities = 30,
+    |  syntheticHierarchy = 1.0,
+    |  syntheticMaxPop =  100000.0,
+    |  finalTime = 50,
+    |  growthRate = 0.0,
+    |  innovationWeight = 0.005,
+    |  seed = input.replication
+    |).run
+    |val oppAverageDiversity = -1.0 * averageDiversity
+    |val oppAverageUtility = -1.0 * averageUtility
+    """.stripMargin
+) set (
+    (inputs,outputs) += (gravityDecay,innovationDecay,mutationRate,newInnovationHierarchy,earlyAdoptersRate,utilityStd,utilityDistribution,replication),
+    outputs += (oppAverageDiversity,oppAverageUtility),
+    plugins += pluginsOf[_root_.urbanevolution.UrbanEvolution]
+)
+    
+
+val purpose = "CALIBRATION_GRID"
+//val purpose = "CALIBRATION_TEST"
+val datestr = (new SimpleDateFormat("yyyyMMdd_HHmmss")).format(new Date()).toString
+val resdir = purpose+"_"+datestr
+
+val env = EGIEnvironment("vo.complex-systems.eu",openMOLEMemory = 2000 megabytes)
+//val env = LocalEnvironment(5)
+
+val evolution =
+  NSGA2Evolution(
+    genome =
+      Seq(
+        gravityDecay in (0.01,1.5),
+        innovationDecay in (0.01,1.5),
+        mutationRate in (0.01,0.5),
+        newInnovationHierarchy in (0.1,2.0),
+        earlyAdoptersRate in (0.01,0.9),
+        utilityStd in (0.7,2.0),
+        utilityDistribution in Seq("normal","log-normal")
+      ),
+      mu = 200,
+      objectives = Seq(oppAverageDiversity,oppAverageUtility),
+      evaluation = model,
+      stochastic = Stochastic(seed = replication),
+      termination = 20000,
+      parallelism = 500,
+      distribution = Island(10 minutes)
+)
+
+val savePopulation = SavePopulationHook(evolution, workDirectory / "calibration" / resdir,1000)
+
+
+(evolution on env hook savePopulation)
+    
