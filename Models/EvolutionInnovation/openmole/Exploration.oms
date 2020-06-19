@@ -86,7 +86,7 @@ val exploration = DirectSampling(
     // 2*2*2*2*20*20 = 6400
   )
   withIndex id)
-  x (replication in (UniformDistribution[Int](10000) take 500))
+  x (replication in (UniformDistribution[Int](10000) take 50))
 )
 
 
