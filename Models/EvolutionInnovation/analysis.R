@@ -94,10 +94,9 @@ for(indic in indics){
 #resprefix= '20200429_215249_GRID_GRID'
 #resfiles=c('20200429_215249_GRID_GRID')
 resprefix= '20200619_GRID_GRID'
-resfiles=c(#'20200429_215249_GRID_GRID',
-           '20200618_140526_GRID_GRID','20200618_164030_GRID_GRID','20200618_190830_GRID_GRID','20200618_213402_GRID_GRID',
+resfiles=c('20200618_140526_GRID_GRID','20200618_164030_GRID_GRID','20200618_190830_GRID_GRID','20200618_213402_GRID_GRID',
            '20200619_001006_GRID_GRID','20200619_025115_GRID_GRID','20200619_052000_GRID_GRID','20200619_084724_GRID_GRID',
-           '20200619_112519_GRID_GRID')
+           '20200619_112519_GRID_GRID','20200619_140601_GRID_GRID')
 
 resdir = paste0(Sys.getenv('CS_HOME'),'/UrbanEvolution/Results/EvolutionInnovation/',resprefix,'/');dir.create(resdir)
 
@@ -107,7 +106,7 @@ for(resfile in resfiles[2:length(resfiles)]){
 res <- rbind(res,as.tbl(read.csv(file=paste0('openmole/exploration/',resfile,'.csv'))))
 }
 
-#res=res[res$averageUtility<quantile(res$averageUtility,c(0.95),na.rm = T)&!is.na(res$averageUtility),]
+res=res[res$averageUtility<quantile(res$averageUtility,c(0.95),na.rm = T)&!is.na(res$averageUtility),]
 res2=res
 
 res$mutationRateF = paste0('beta *"="*',res$mutationRate)
@@ -116,13 +115,14 @@ res$earlyAdoptersRateF = paste0('r[0]*"="*',res$earlyAdoptersRate)
 for(indic in indics){
   for(distrib in unique(res$utilityDistribution)){
       for(newInnovationHierarchy in unique(res$newInnovationHierarchy)){
+        for(utilityStd in unique(res$utilityStd)){
         
-        g=ggplot(res[res$utilityDistribution==distrib&res$newInnovationHierarchy==newInnovationHierarchy,],
+        g=ggplot(res[res$utilityDistribution==distrib&res$newInnovationHierarchy==newInnovationHierarchy&res$utilityStd==utilityStd,],
                  aes_string(x="gravityDecay",y=indic,group="innovationDecay",color="innovationDecay")
         )
         g+geom_smooth(se = F)+facet_grid(mutationRateF~earlyAdoptersRateF,scales = 'free', labeller =label_parsed)+
           xlab(expression(d[G]))+ylab(indicnames[[indic]])+scale_color_continuous(name=expression(d[I]))+stdtheme
-        ggsave(filename = paste0(resdir,indic,'-gravityDecay_color-innovationDecay_facet-mutationRate-earlyAdoptersRate_newInnovationHierarchy',newInnovationHierarchy,'_distrib',distrib,'.png'),width=30,height=20,units='cm')
+        ggsave(filename = paste0(resdir,indic,'-gravityDecay_color-innovationDecay_facet-mutationRate-earlyAdoptersRate_newInnovationHierarchy',newInnovationHierarchy,'_utilityStd',utilityStd,'_distrib',distrib,'.png'),width=30,height=20,units='cm')
         
         #g+geom_point(pch='.')+geom_smooth(se = F)+facet_grid(mutationRate~earlyAdoptersRate,scales = 'free')+
         #  xlab(expression(d[G]))+ylab(indicnames[[indic]])+scale_color_continuous(name=expression(d[I]))+stdtheme
@@ -132,6 +132,7 @@ for(indic in indics){
         #  xlab(expression(d[G]))+ylab(indicnames[[indic]])+scale_color_continuous(name=expression(d[I]))+stdtheme
         #ggsave(filename = paste0(resdir,indic,'BOXPLOT-gravityDecay_color-innovationDecay_facet-mutationRate-earlyAdoptersRate_newInnovationHierarchy',newInnovationHierarchy,'_distrib',distrib,'.png'),width=30,height=20,units='cm')
         
+        }
       }
     }
 }

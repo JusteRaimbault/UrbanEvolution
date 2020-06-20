@@ -1,0 +1,2 @@
+48:39:24 ; 11m19d4h ; 28.58Gup; 2.57T down ; finished 50004 ; failed 1465 
+
