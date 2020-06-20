@@ -91,11 +91,23 @@ for(indic in indics){
 }
 
 #
-resprefix= '20200429_215249_GRID_GRID'
+#resprefix= '20200429_215249_GRID_GRID'
+#resfiles=c('20200429_215249_GRID_GRID')
+resprefix= '20200619_GRID_GRID'
+resfiles=c(#'20200429_215249_GRID_GRID',
+           '20200618_140526_GRID_GRID','20200618_164030_GRID_GRID','20200618_190830_GRID_GRID','20200618_213402_GRID_GRID',
+           '20200619_001006_GRID_GRID','20200619_025115_GRID_GRID','20200619_052000_GRID_GRID','20200619_084724_GRID_GRID',
+           '20200619_112519_GRID_GRID')
+
 resdir = paste0(Sys.getenv('CS_HOME'),'/UrbanEvolution/Results/EvolutionInnovation/',resprefix,'/');dir.create(resdir)
 
-res <- as.tbl(read.csv(file=paste0('openmole/exploration/',resprefix,'.csv')))
-res=res[res$averageUtility<quantile(res$averageUtility,c(0.95),na.rm = T)&!is.na(res$averageUtility),]
+res <- as.tbl(read.csv(file=paste0('openmole/exploration/',resfiles[1],'.csv')))
+if(is.null(res[['initialHierarchy']])){res[['initialHierarchy']]=rep(1,nrow(res))}
+for(resfile in resfiles[2:length(resfiles)]){
+res <- rbind(res,as.tbl(read.csv(file=paste0('openmole/exploration/',resfile,'.csv'))))
+}
+
+#res=res[res$averageUtility<quantile(res$averageUtility,c(0.95),na.rm = T)&!is.na(res$averageUtility),]
 res2=res
 
 res$mutationRateF = paste0('beta *"="*',res$mutationRate)
@@ -159,10 +171,11 @@ summary(prcomp(m))
 ############
 # calibration
 
-resprefix = 'CALIBRATION_GRID_20200429_220019'
+#resprefix = 'CALIBRATION_GRID_20200429_220019';finalgen='9000'
+resprefix = 'CALIBRATION_GRID_20200618_103726';finalgen='27000'
 resdir = paste0(Sys.getenv('CS_HOME'),'/UrbanEvolution/Results/EvolutionInnovation/',resprefix,'/');dir.create(resdir)
 
-res <- as.tbl(read.csv(file=paste0('openmole/calibration/',resprefix,'/population9000.csv')))
+res <- as.tbl(read.csv(file=paste0('openmole/calibration/',resprefix,'/population',finalgen,'.csv')))
 
 res = res[res$evolution.samples>20,]
 res$averageUtility = - res$oppAverageUtility
