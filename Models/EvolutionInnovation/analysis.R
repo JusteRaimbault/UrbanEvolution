@@ -91,12 +91,12 @@ for(indic in indics){
 }
 
 #
-#resprefix= '20200429_215249_GRID_GRID'
-#resfiles=c('20200429_215249_GRID_GRID')
-resprefix= '20200619_GRID_GRID'
-resfiles=c('20200618_140526_GRID_GRID','20200618_164030_GRID_GRID','20200618_190830_GRID_GRID','20200618_213402_GRID_GRID',
-           '20200619_001006_GRID_GRID','20200619_025115_GRID_GRID','20200619_052000_GRID_GRID','20200619_084724_GRID_GRID',
-           '20200619_112519_GRID_GRID','20200619_140601_GRID_GRID')
+resprefix= '20200429_215249_GRID_GRID'
+resfiles=c('20200429_215249_GRID_GRID')
+#resprefix= '20200619_GRID_GRID'
+#resfiles=c('20200618_140526_GRID_GRID','20200618_164030_GRID_GRID','20200618_190830_GRID_GRID','20200618_213402_GRID_GRID',
+#           '20200619_001006_GRID_GRID','20200619_025115_GRID_GRID','20200619_052000_GRID_GRID','20200619_084724_GRID_GRID',
+#           '20200619_112519_GRID_GRID','20200619_140601_GRID_GRID')
 
 resdir = paste0(Sys.getenv('CS_HOME'),'/UrbanEvolution/Results/EvolutionInnovation/',resprefix,'/');dir.create(resdir)
 
@@ -173,7 +173,7 @@ summary(prcomp(m))
 # calibration
 
 #resprefix = 'CALIBRATION_GRID_20200429_220019';finalgen='9000'
-resprefix = 'CALIBRATION_GRID_20200618_103726';finalgen='27000'
+resprefix = 'CALIBRATION_GRID_20200618_103726';finalgen='50000'
 resdir = paste0(Sys.getenv('CS_HOME'),'/UrbanEvolution/Results/EvolutionInnovation/',resprefix,'/');dir.create(resdir)
 
 res <- as.tbl(read.csv(file=paste0('openmole/calibration/',resprefix,'/population',finalgen,'.csv')))

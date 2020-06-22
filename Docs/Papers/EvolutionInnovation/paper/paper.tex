@@ -54,7 +54,7 @@
 \mbox{}\\
 $^1$Center for Advanced Spatial Analysis, University College London\\
 $^2$UPS CNRS 3611 ISC-PIF\\
-$^3$UMR CNRS 8504 G{\'e}ographie-cit{\'e}s\\
+$^3$UMR CNRS 8504 G{\'e}ographie-cit{\'e}s\medskip\\
 juste.raimbault@polytechnique.edu} % email of corresponding author
 
 % For several authors from the same institution use the same number to
@@ -71,17 +71,17 @@ juste.raimbault@polytechnique.edu} % email of corresponding author
 %  evaluation:	
 %2: (accept)
 %Promising work. For the future, it will be interesting to see how the model can reproduce observed properties of different cities.
-%TODO discussion real system
+% discussion real system - OK
 
 % Review 2
 %1: (weak accept)
 %This paper presents a model of urban evolution based on innovation diffusion. The paper describes a simple model for systems of cities at the macroscopic level using population growth and innovation diffusion, which is then explored on synthethic city systems.
 
 %The paper is well written and the results promising. It would have been very interesting to see how this would work for a model of a real city - there are an abundance of datasets and models (even cited by the author) that would not have been difficult to integrate.
-%TODO apply model to real city (more discussion)
+% apply model to real city (more discussion) - OK
 
 %In addition, it would be very useful to include a discussion on how modeling innovation at a microscopic scale (or in-between, eg at a level of suburbs) changes the results of the simulations.
-%TODO discussion on microscopic scale
+% discussion on microscopic scale - OK
 
 % Review 3
 
@@ -118,22 +118,22 @@ juste.raimbault@polytechnique.edu} % email of corresponding author
 %13. cumulated variance on the second and 91% on the third, confirming that even if correlation exist the behavior of
 % typo - OK
 %14. one may prefer in the compromise the points just before the transition which correspond to a local diffusion setting. Thus, local diffusion correspond to intermediate
-%TODO typo
+% typo - OK
 %15. urban genome can be used to simulated urban dynamics
 % typo - OK
 %16. model to real system …. and evoluting sub-systems
 % typo - OK
 %Other issues:
 %1. You need to deal with text formatting as some texts are being cut out at the end of the line (observed on paragraph 1 on page 5).
-%TODO pb cropping fig2 - OK?
+% pb cropping fig2 - OK?
 %2. Use of compromise and compromize in the same article, (kind of linear compromize between utility … prefer in the compromise the …)
-%TODO typo
+% typo - OK
 %3. It is not clear why the growth rate is fixed to 0.005 and the cited paper (Raimbault, 2020c) does not justify the use of that value.
-%TODO justify fixed growth rate
+% justify fixed growth rate - OK
 %4. Fig 1 is a bit confusing, you will need to find a better way of presenting it than this.To enhance readability, the mutation rate and adoption rate should be clearly associated with those rows and columns you mentioned. As it is, it's hard to read.
-%TODO facet names
+% facet names - OK
 %5. The statement “This increase however reaches a plateau around half of the width of the world (dG = 0.5) which is more obvious for higher values of mutation rates (bottom raw) …” is also confusing as it is not clear which plotting it refers to as it does not appear to apply to all plottings. I don’t think ‘(bottom raw) ’ is correct either.
-%TODO clarify
+% clarify - OK
 %Your arguments are strong and I hope my comments will help to fine-tune your article to make it more readable. Good luck with your submission.
 
 
@@ -144,7 +144,7 @@ juste.raimbault@polytechnique.edu} % email of corresponding author
 
 \begin{abstract}
 % Abstract length should not exceed 250 words
-The dynamics of urban systems can be understood from an evolutionary perspective, in some sense extending biological and cultural evolution. Models for systems of cities implementing elementary evolutionary processes remain however to be investigated. We propose here such a model for urban dynamics at the macroscopic scale, in which the diffusion of innovations between cities captures transformation processes (mutations) and transmission processes (diffusion), using two coupled spatial interaction models. Explorations of the model on synthetic systems of cities show the role of spatial interaction and innovation diffusion ranges on measures of diversity and utility, and the existence of intermediate ranges yielding an optimal utility. Multi-objective optimization shows how the model produces a compromise between utility and diversity. This model paves the way towards more elaborated formalizations of urban evolution.
+The dynamics of urban systems can be understood from an evolutionary perspective, in some sense extending biological and cultural evolution. Models for systems of cities implementing elementary evolutionary processes remain however to be investigated. We propose here such a model for urban dynamics at the macroscopic scale, in which the diffusion of innovations between cities captures transformation processes (mutations) and transmission processes (diffusion), using two coupled spatial interaction models. Explorations of the model on synthetic systems of cities show the role of spatial interaction and innovation diffusion ranges on measures of diversity and utility, and the existence of intermediate ranges yielding an optimal utility. Multi-objective optimization shows how the model produces a compromize between utility and diversity. This model paves the way towards more elaborated formalizations of urban evolution.
 \end{abstract}
 
 % Urban Systems; Urban Evolution; Innovation Diffusion
@@ -164,9 +164,8 @@ A stream of research tightly linked to ALife relates to concepts of \emph{Urban 
 
 
 % (iii) Innovation diffusion - in ALife studies ; - in urban systems
-%\cite{Eletreby5664} diffusion/evolving
 
-Besides, a central concept bridging ALife and evolution with the study of urban systems is the concept of innovation diffusion. Within artificially evolved systems, understanding how innovation emerges and how it diffuses in the population is essential \citep{bedau2000open}. One aspect of open-ended evolution are mechanisms endogeneously producing novelty. In the case of urban systems, \cite{hagerstrand1968innovation} had already highlighted the role of a hierarchical diffusion of innovation between cities in their trajectories. The aforementioned evolutionary urban theory suggests that innovation cycles and their hierarchical diffusion is a possible explanation for the properties of urban scaling laws \citep{pumain2006evolutionary}. Evolutionary economics also study regional systems of innovation, how it diffuses and the potential existence of spatial spillovers \citep{uyarra2010evolutionary}. At the microscopic scale, several agent-based models of innovation diffusion highlight the role of social and geographical networks, both of which are embedded into urban systems \citep{zhang2019empirically}. Thus, the diffusion of innovation is a privileged entry into urban evolutionary processes.
+Besides, a central concept bridging ALife and evolution with the study of urban systems is the concept of innovation diffusion. Within artificially evolved systems, understanding how innovation emerges and how it diffuses in the population is essential \citep{bedau2000open}. One aspect of open-ended evolution are mechanisms endogeneously producing novelty. The other way around, artificial societies approaches have also been pinned as a privileged entry for understanding the dynamics of innovation \citep{zenobia2009artificial}. In the case of urban systems, \cite{hagerstrand1968innovation} had already highlighted the role of a hierarchical diffusion of innovation between cities in their trajectories. The aforementioned evolutionary urban theory suggests that innovation cycles and their hierarchical diffusion is a possible explanation for the properties of urban scaling laws \citep{pumain2006evolutionary}. \cite{paulus2004co} provides empirical support for this approach by unveiling the co-evolution between economic functions of urban areas for the French systems of cities, which are closely related to the dynamics of innovation. Evolutionary economics also study regional systems of innovation, how it diffuses and the potential existence of spatial spillovers \citep{uyarra2010evolutionary}. At the microscopic scale, several agent-based models of innovation diffusion highlight the role of social and geographical networks, both of which are embedded into urban systems \citep{zhang2019empirically}. \cite{daude2004apports} proposes for example to understand the diffusion of an agricultural innovation within a geographical system using an agent-based model. Thus, the diffusion of innovation is a privileged entry into urban evolutionary processes, as it is furthermore tightly linked with other dimensions of urban systems such as the social and economic dimensions \citep{sonis1995territorial}.
 
 
 % (iv) contribution
@@ -226,7 +225,7 @@ Starting from an initial configuration, the simulation model is iterated in time
 where $p_{c,i,t} = \delta_{c,i,t} \cdot \frac{P_{i}(t)}{\sum_k P_k (t)}$ is the share of total population adopting $c$ in the city $i$ at time $t$; $d_I$ is the characteristic distance in the spatial innovation model, for which an increase will correspond to a broader spatial diffusion. As the population share is between 0 and 1, higher utilities will effectively diffuse faster as the exponent $1/u_c$ is used. In other terms, the inverse of the utility is the coefficient of population in the underlying spatial interaction model, and using an exponent is more relevant in that sense.
 
 
-	\item The sizes of cities evolve according to their performance in terms of innovation, i.e. more innovative cities are more attractive. This stage is also deterministic, following  with $P_i(t) - P_i(t-1) = w_I\cdot \sum_j \frac{V_{ij}}{<V_{ij}>}$ where $w_I$ is a fixed growth rate fixed to $w_I = 0.005$ in experiments, and where the interaction potential is defined by
+	\item The sizes of cities evolve according to their performance in terms of innovation, i.e. more innovative cities are more attractive. This stage is also deterministic, following  with $P_i(t) - P_i(t-1) = w_I\cdot \sum_j \frac{V_{ij}}{<V_{ij}>}$ where $w_I$ is a fixed growth rate, and where the interaction potential is defined by
 \begin{equation}
 V_{ij}= \frac{P_{i}(t-1) \cdot P_{j}(t-1)}{(\sum_k P_k(t-1))^2} \cdot \exp{\left(-\frac{d_{ij}}{d_G} \cdot \prod_c \delta_{c,i,t}^{\phi_{c,t}}\right)}
 \end{equation}
@@ -235,11 +234,11 @@ where $\phi_{c,t} = \sum_i \delta_{i,c,t}\cdot P_i(t-1) /\sum_{i,c} \delta_{i,c,
  \item Finally, mutations in the urban genome (transformation process) corresponds to the introduction of new innovations. Each city has an innovation activity $\beta$ independent of its size, which corresponds to an intrinsic mutation rate; and will have a probability to innovate function of its size, similar to a Gibrat model \citep{pumain2012theorie}, as $\beta \cdot \left(P_i (t) / \max_k P_k (t)\right)^{\alpha_I}$ where $\alpha_I$ is a hierarchy exponent biasing the innovation towards larger cities. The utility for a new innovation is drawn stochastically, following either a normal or log-normal distribution, such that (i) its average corresponds to the current mean of utilities for existing innovations, and (ii) its standard deviation is a fixed parameter $\sigma_U$, which allows controlling the ``disruptivity'' of innovations. Urban genomes are modified such that the new innovation has an initial penetration rate $r_0$ in the innovative city (previous innovation shares are rescaled for this city).
 \end{enumerate}
 
-The urban evolution is stopped after a fixed number of steps $t_f$.
+The urban evolution is stopped after a fixed number of steps $t_f$. Note that other stopping criteria such as reaching a total population, a maximal population for the largest city, or a maximal number of innovations introduced, could be included for other applications of the model.
 
 \paragraph{Synthetic setup}
 
-Although \cite{raimbault:halshs-01880492} proposed to apply the model of \cite{favaro2011gibrat} on real systems of cities, we focus our model study here on synthetic systems of cities, in order to isolate intrinsic effects independently of geographical contingencies. Cities are located randomly in an uniform square space. City sizes follow a Zipf law with exponent $\alpha_0 = 1$, i.e. such that $P_i (0) = \frac{P_{max}}{i^{\alpha_0}}$ \citep{pumain2012theorie}. We do not modify this initial hierarchy in our experiments. Distances between cities $d_{ij}$ are computed as euclidian distances. We take $N=30$ cities, $P_{max} = 10^5$ and $t_f = 50$ in our experiments, corresponding to a regional or small national system of cities, on timescales of the order of a century.
+Although \cite{raimbault:halshs-01880492} proposed to apply the model of \cite{favaro2011gibrat} on real systems of cities, we focus our model study here on synthetic systems of cities, in order to isolate intrinsic effects independently of geographical contingencies. Cities are located randomly in an uniform square space. City sizes follow a Zipf law with exponent $\alpha_0 = 1$, i.e. such that $P_i (0) = \frac{P_{max}}{i^{\alpha_0}}$ \citep{pumain2012theorie}. We do not modify this initial hierarchy in our experiments. Distances between cities $d_{ij}$ are computed as euclidian distances. We take $N=30$ cities, $P_{max} = 10^5$ and $t_f = 50$ in our experiments, corresponding to a regional or small national system of cities, on timescales of the order of a century. According to these approximates scales, we fix $w_I = 0.005$ in experiments which gives a maximal possible growth factor of $(1.005)^{50} = 1.28$ over the whole period, in consistence with mature urban systems having relatively slow population growth \citep{pumain1982dynamique}.
 
 
 \paragraph{Indicators}
@@ -266,7 +265,7 @@ The behavior of the model is quantified through indicators at the macroscopic sc
 %%%%%%%%%%%%
 \begin{figure*}[t]
 	\centering
-	\includegraphics[width=0.49\linewidth]{figures/averageDiversity-gravityDecay_color-innovationDecay_facet-mutationRate-earlyAdoptersRate_newInnovationHierarchy1_distriblog-normal.png}	\includegraphics[width=0.49\linewidth]{figures/averageInnovation-gravityDecay_color-innovationDecay_facet-mutationRate-earlyAdoptersRate_newInnovationHierarchy1_distriblog-normal.png}	\includegraphics[width=0.49\linewidth]{figures/averageUtility-gravityDecay_color-innovationDecay_facet-mutationRate-earlyAdoptersRate_newInnovationHierarchy1_distriblog-normal.png}	\includegraphics[width=0.49\linewidth]{figures/finalHierarchy-gravityDecay_color-innovationDecay_facet-mutationRate-earlyAdoptersRate_newInnovationHierarchy1_distriblog-normal.png}
+	\includegraphics[width=0.49\linewidth]{figures/averageDiversity-gravityDecay_color-innovationDecay_facet-mutationRate-earlyAdoptersRate_newInnovationHierarchy1_utilityStd1_distriblog-normal}	\includegraphics[width=0.49\linewidth]{figures/averageInnovation-gravityDecay_color-innovationDecay_facet-mutationRate-earlyAdoptersRate_newInnovationHierarchy1_utilityStd1_distriblog-normal.png}	\includegraphics[width=0.49\linewidth]{figures/averageUtility-gravityDecay_color-innovationDecay_facet-mutationRate-earlyAdoptersRate_newInnovationHierarchy1_utilityStd1_distriblog-normal.png}	\includegraphics[width=0.49\linewidth]{figures/finalHierarchy-gravityDecay_color-innovationDecay_facet-mutationRate-earlyAdoptersRate_newInnovationHierarchy1_utilityStd1_distriblog-normal.png}
 	\caption{Values of indicators obtained with the grid model exploration. Each plot give each indicator among diversity $D$, utility $U$, innovation $I$ and population hierarchy $\alpha_P$, at fixed parameters $\alpha_I = 1$, $\sigma_U = 1$ and for the log-normal utility law. Indicators are plotted as a function of gravity interaction range $d_G$, for varying values of innovation diffusion range $d_I$ (color). Sub-panels show varying values of mutation rate $\beta$ (rows) and of early adoption rate $r_0$ (columns).\label{fig:exploration}}
 \end{figure*}
 %%%%%%%%%%%%
@@ -279,8 +278,8 @@ Parameter explored in experiments are the spatial interaction parameters $d_G,d_
 
 %%%%%%%%%%%%
 \begin{table}
-\caption{Summary of model parameters. We first describe synthetic setup parameters which are fixed during our experiments, and then parameters varied during experiments. We give associated process, indicative range and default value for each parameter.\label{tab:params}}
-	\hspace{-0.5cm}
+\caption{Summary of model parameters. We first describe synthetic setup parameters which are fixed during our experiments, and then parameters varied during experiments. We give associated process, indicative range and default value for each parameter.\label{tab:params}}\medskip
+	\hspace{-1cm}
 	\footnotesize
 	\begin{tabular}{|l|l|l|l|l|l|}
 	\hline
@@ -288,7 +287,8 @@ Parameter explored in experiments are the spatial interaction parameters $d_G,d_
 	Number of cities & $N$ & Spatial scale & $[10 ; 100]$ & $30$\\
 	Initial hierarchy & $\alpha_0$ & System of cities & $[0.5 ; 2.0]$ & $1$\\
 	Initial population & $P_{max}$ & System of cities & $[10^4 ; 10^7]$ & $10^5$\\
-	Simulation steps & $t_f$ & Temporal scale & $[10 ; 100]$ & $50$\\\hline
+	Simulation steps & $t_f$ & Temporal scale & $[10 ; 100]$ & $50$\\
+	Growth rate & $w_I$ & Pop. growth & $[0.001 ; 0.01]$ & $0.005$\\\hline
 	Gravity range & $d_G$ & Crossover & $[0 ; 2]$ & $1$\\
 	Innovation range & $d_I$ & Crossover & $[0 ; 2]$ & $1$\\
 	Innovation rate & $\beta$ & Mutation & $[0 ; 1]$ & $0.5$\\
@@ -341,20 +341,27 @@ As the model is stochastic through the mutation process, first experiments are n
 
 The Sharpe ratios estimated on repetitions as sample standard deviation relative to absolute sample mean have high values for all indicators (min. 3.9 and median 12.1 for diversity; min. 3.0 and median 6.2 for innovation; min. 1.7 and median 3.6 for utility; min. 26 and median 257.3 for population hierarchy). This implies that stochastic noise is not an issue for interpreting indicator values.
 
-We also study the distance between points averages relative to their standard deviation, in order to know the significance in comparing averages. This distance is defined by $\Delta_{ij} = 2\frac{\left|\mu_i - \mu_j \right|}{\sigma_i + \sigma_j}$ if $\mu_i$ are estimated central values (mean or median) and $\sigma_i$ estimated standard deviations. These distances have an average and median larger than one for all couples, and a first quartile larger than one for innovation and population hierarchy, while the first quartile is 0.5 for utility and 0.6 for diversity. The most constraining indicators in terms of statistical precision are thus utility and diversity. 
-As in the case of normal distributions, a 95\% confidence interval of size $\sigma_2$ is achieved for $n\simeq 64$ runs, a number of 50 runs is satisfying for further experiments. %TODO new number of runs
+We also study the distance between points averages relative to their standard deviation, in order to know the significance in comparing averages. This distance is defined by $\Delta_{ij} = 2\frac{\left|\mu_i - \mu_j \right|}{\sigma_i + \sigma_j}$ if $\mu_i$ are estimated central values (mean or median) and $\sigma_i$ estimated standard deviations. These distances have an average and median larger than one for all couples, and a first quartile larger than one for innovation and population hierarchy, while the first quartile is 0.5 for utility and 0.6 for diversity. The most constraining indicators in terms of statistical precision are thus utility and diversity. As in the case of normal distributions, a 95\% confidence interval of size $\sigma_2$ is achieved for $n\simeq 64$ runs, a number of 50 runs is satisfying for further experiments.
 
 
 \subsection{Model exploration}
 
-We then explore a grid of the parameter space consisting of 23,168 parameter points, with a finer step on spatial parameters $d_G$ and $d_I$, and with 50 model replications for each parameter point. We find that the type of distribution for utility has small effects for all indicators and across most parameter values, but particular cases are more interesting in the log-normal case, which we comment further. Similarly, the effect of innovation hierarchy $\alpha_I$ and of innovation utility standard deviation $\sigma_U$ do not induce strong qualitative differences, so we discuss model behavior obtained at $\alpha_I = 1$ and $\sigma_U = 1$.
+We then explore a grid of the parameter space consisting of 23,168 parameter points, with a finer step on spatial parameters $d_G$ and $d_I$, and with 50 model replications for each parameter point. We find that the type of distribution for utility has small effects for all indicators and across most parameter values, but particular cases are more interesting in the log-normal case, which we comment further. Similarly, the effect of innovation hierarchy $\alpha_I$ and of innovation utility standard deviation $\sigma_U$ do not seem to induce strong qualitative differences, so we discuss model behavior obtained at $\alpha_I = 1$ and $\sigma_U = 1$.
 
-The Fig.~\ref{fig:exploration} shows the behavior of indicators with remaining parameters varying, namely spatial interaction parameters $d_G$ and $d_I$, mutation rate $\beta$ and innovation adoption $r_0$. Regarding the behavior of diversity (top left panel of Fig.~\ref{fig:exploration}), we find that it always increases for larger population growth spatial interaction distances, meaning that broader population exchanges will induce a higher diversity in innovations, probably through the higher innovation dynamics induced. This increase however reaches a plateau around half of the width of the world ($d_G = 0.5$) which is more obvious for higher values of mutation rates (bottom raw): higher intrinsic innovation dampens the role of spatial interactions. An increase of innovation interaction distance $d_I$ on the contrary monotonously decreases diversity, consistently with the idea of local innovation niches which can be overridden by competing innovations of higher utility coming from further away. Finally, mutation rate has a strong quantitative impact on total diversity as expected, while higher early adoption rate will change diversity behavior only when mutation rates are also high.
+The Fig.~\ref{fig:exploration} shows the behavior of indicators with remaining parameters varying, namely spatial interaction parameters $d_G$ and $d_I$, mutation rate $\beta$ and innovation adoption $r_0$. Regarding the behavior of diversity (top left panel of Fig.~\ref{fig:exploration}), we find that it always increases for larger population growth spatial interaction distances, meaning that broader population exchanges will induce a higher diversity in innovations, probably through the higher innovation dynamics induced. This increase is however slowed down around half of the width of the world ($d_G = 0.5$), which is more obvious with higher values of mutation rates for which a plateau is reached (bottom row, in particular the sub-panel for $r_0=0.1$ and $\beta = 0.5$): higher intrinsic innovation dampens the role of spatial interactions. An increase of innovation interaction distance $d_I$ on the contrary monotonously decreases diversity, consistently with the idea of local innovation niches which can be overridden by competing innovations of higher utility coming from further away. Finally, mutation rate has a strong quantitative impact on total diversity as expected, while higher early adoption rate will change diversity behavior only when mutation rates are also high.
 
 Two indicators which behavior is less rich are innovation and population hierarchy (top right and bottom right panels of Fig.~\ref{fig:exploration}), which could be expected as population dynamics are deterministic and strongly related to space, while innovation is directly related to population. We find that these increase both with $d_G$ and $d_I$, meaning that more interactions and more diffusion will foster local innovation. Regarding the final distribution of populations, this implies that systems where interactions are more global will be less unequal. This is however not always the case in such urban dynamics model as explored by \cite{raimbault2020hierarchy}. The mutation rate $\beta$ here only fosters the role of small $d_I$, yielding higher hierarchies and less innovations for these. The effect of initial adoption rate is small for these indicators. Note that although they appear highly correlated in this region of the parameter space, they are not the indicators with the highest correlation as shown further (see Fig.~\ref{fig:cormat} for a correlation matrix between indicators).
 
 Finally, the indicator with a more interesting behavior is the utility (bottom left panel of Fig.~\ref{fig:exploration}). For low values of mutation rates, we find a piecewise linear behavior as a function of $d_G$ and small effects of $d_I$, meaning that low innovation settings yield regimes where broader interactions are systematically desirable for the all system. However, when $\beta$ is higher, we witness a maximum of utility as a function of $d_G$, consistent across different values of $d_I$ and of $r_0$. This corresponds to an intermediate regional regime where local innovation regimes are more beneficial than a global integration. This peak is the strongest when innovations diffuse at a broader range, which could be consistent with this regime being due to the emergence of regional ensembles of comparable competitivity. Such a setting would yield a higher chance of introducing innovations with a high utility, while a globalized system would concentrate on a single dominating city and be overall less performant.
 
+
+%%%%%%%%%%%%
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=\linewidth,trim={6cm 6cm 0 6cm}]{figures/corrmat_indics.png}
+	\caption{Correlation matrix between indicators, estimated on the full grid experiment. Confidence intervals for correlations estimated with the Fisher method are tiny and not distinguishable in the plot.\label{fig:cormat}}
+\end{figure}
+%%%%%%%%%%%%
 
 % correlations
 
@@ -367,13 +374,7 @@ Finally, the indicator with a more interesting behavior is the utility (bottom l
 
 We also compute the correlation matrix between indicators across the full grid experiment. This shows that correlations that one could visually extrapolate from studying a part of the parameter space as commented in Fig.~\ref{fig:exploration} do not correspond to the actual correlations on the broader parameter space. Note that local correlation matrices could be estimated for a more thorough discussion. We show the correlation matrix in Fig.~\ref{fig:cormat}. Confidence intervals estimated with the Fisher method are of negligible width compared to correlation values. We find that diversity is finally the indicator with highest correlations. The correlation between innovation and population is low, meaning that the similar curves observed before are a particular case. Innovation and utility have a correlation lower than 0.5, and are thus rather independent. Regarding the effective dimension of the indicator space, a principal component analysis on normalized indicators gives 48\% of variance on the first component, 77\% of cumulated variance on the second and 91\% on the third. This confirms that even if correlations exist, the behavior of indicators are rather independent.
 
-%%%%%%%%%%%%
-\begin{figure}[t]
-	\centering
-	\includegraphics[width=\linewidth,trim={6cm 6cm 0 6cm}]{figures/corrmat_indics.png}
-	\caption{Correlation matrix between indicators, estimated on the full grid experiment. Confidence intervals for correlations estimated with the Fisher method are tiny and not distinguishable in the plot.\label{fig:cormat}}
-\end{figure}
-%%%%%%%%%%%%
+
 
 
 \subsection{Model optimization}
@@ -386,9 +387,9 @@ We also compute the correlation matrix between indicators across the full grid e
 \end{figure}
 %%%%%%%%%%%%
 
-The last experiment we perform is the application of a multi-objective optimization procedure to the model. More particularly, one could want to optimize simultaneously the global utility but also the diversity to ensure a certain resilience in the urban system. We apply thus a bi-objective genetic algorithm on the model, trying to maximize simultaneously utility and diversity. The algorithm is the NSGA2 algorithm \citep{deb2002fast}, which we run for 10,000 generations with a population of 200 individuals on a Island distribution scheme. The algorithm is integrated into the OpenMOLE software, and the stochastic aspect is internally tackled by using an embedding strategy, i.e. by adding the number of repetitions as an additional objective to find compromise points between the number of run needed and their statistical accuracy.
+The last experiment we perform is the application of a multi-objective optimization procedure to the model. More particularly, one could want to optimize simultaneously the global utility but also the diversity to ensure a certain resilience in the urban system. We apply thus a bi-objective genetic algorithm on the model, trying to maximize simultaneously utility and diversity. The algorithm is the NSGA2 algorithm \citep{deb2002fast}, which we run for 50,000 generations with a population of 200 individuals and an Island distribution scheme. The algorithm is integrated into the OpenMOLE software, and the stochastic aspect is internally tackled by using an embedding strategy, i.e. by adding the number of repetitions as an additional objective to find compromize points between the number of run needed and their statistical accuracy.
 
-We show in Fig.~\ref{fig:pareto} the obtained points, which are close to a Pareto front. We find two regimes, the first corresponding to the upper points in the plot for higher utilities but lower diversities, which should correspond to the intermediate optimal regimes identified before, and in which some kind of linear compromize between utility and diversity exists: increasing global utility is done at the cost of reducing diversity. Within this first regime, two very different parameter setting coexist, one with high innovation diffusion (light blue, points with higher utility), the other in dark blue with a more local innovation diffusion. This means that reducing the span of innovation diffusion will increase diversity as one could expect. A second part of the Pareto front, obtained after a sharp transition, allows increasing the diversity but at the price of a much lower utility (points on the bottom right). These points are all close to equivalent, and one may prefer in the compromise the points just before the transition which correspond to a local diffusion setting. Thus, local diffusion correspond to intermediate compromises, while broad diffusion corresponds to extremes in the Pareto front. In a nutshell, this optimization exercise is interesting both to show how the model produces compromises, but also how it could be used in practice for innovation policies applied to systems of cities.
+We show in Fig.~\ref{fig:pareto} the obtained points, which are close to a Pareto front. We include the points with at least 20 stochastic samples. We find three regimes, the first corresponding to the upper points in the plot for higher utilities but lower diversities, which should correspond to the intermediate optimal regimes identified before, and in which some kind of linear compromize between utility and diversity exists (but with a very flat slope for utility): increasing global utility is done at the cost of reducing diversity. Within this first regime, two very different parameter setting coexist, one with high innovation diffusion (light blue, points with higher utility), the other in dark blue with a more local innovation diffusion. This means that reducing the span of innovation diffusion will increase diversity as one could expect. A second part of the Pareto front corresponds to intermediate points with lower utility but higher diversity, and is exclusively composed of local innovation parameters. The third part of the Pareto front, obtained after a sharp transition, allows increasing significantly the diversity compared to the first part, but at the price of a much lower utility (points on the bottom right). These points are all close to equivalent, and one may prefer to consider as a compromize the extreme points which correspond to a broad diffusion setting, but this last regime is also mixed with local innovation. Thus, local diffusion correspond to intermediate compromizes, while broad diffusion corresponds to extremes in the Pareto front (first and third regimes). In a nutshell, this optimization exercise is interesting both to show how the model produces compromizes, but also how it could be used in practice for innovation policies applied to systems of cities.
 
 
 
@@ -396,19 +397,16 @@ We show in Fig.~\ref{fig:pareto} the obtained points, which are close to a Paret
 
 Our simple formulation of an urban genome and associated evolutionary processes, implemented by the diffusion of innovation, already capture complex urban dynamics, as shown for example by the emergence of an intermediate optimal regime corresponding to local innovation niches which diffuse far. Although much more empirical work would be needed to compare these stylized facts to real world settings, our model suggests in this particular setting that too much integration is not always optimal, what corresponds to the theoretical fact that complex systems are generally modular at different scales \citep{ethiraj2004modularity}. More generally, regarding the implications of our results for possible formalizations and theories of urban evolution which would closely build on biological and cultural evolution by extending them, we have demonstrated how a particular instance of an urban genome can be used to simulate urban dynamics, including fundamental processes needed to effectively have evolution. To what extent this approach relates to existing approaches of urban evolution which use other definitions remains to be investigated.
 
-Several extensions and applications would be possible to this first model exploration. First, the innovation space in our model remained unidimensional. \citep{hidalgo2007product} show in terms of industrial production by countries that these industrial spaces are highly dimensional in terms of product produced and interdependencies between countries and types of production, increasing the path-dependency in economic trajectories. The investigation of patent data from a semantic viewpoint also shows the highly dimensional nature of technological innovation \citep{bergeaud2017classifying}. A direct extension of our model would consist in having a matrix genome instead of a vector one. Innovations would occur across several dimensions which can correspond to industrial or technological domains, but also social and cultural innovation and innovations in terms of infrastructures which condition the way systems of cities evolve. Each dimension should have particular innovation rules depending on its nature, and dependencies across dimensions could be introduced, implementing the possible emergence of technological co-evolution niches beside the spatial co-evolution niches.
+Several extensions and applications would be possible to this first model exploration. First, the innovation space in our model remained unidimensional. \citep{hidalgo2007product} show in terms of industrial production by countries that these industrial spaces are highly dimensional in terms of product produced and interdependencies between countries and types of production, increasing the path-dependency in economic trajectories. The investigation of patent data from a semantic viewpoint also shows the highly dimensional nature of technological innovation \citep{raimbault2016investigating,bergeaud2017classifying}. A direct extension of our model would consist in having a matrix genome instead of a vector one. Innovations would occur across several dimensions which can correspond to industrial or technological domains, but also social and cultural innovation and innovations in terms of infrastructures which condition the way systems of cities evolve \citep{raimbault2018caracterisation}. Each dimension should have particular innovation rules depending on its nature, and dependencies across dimensions could be introduced, implementing the possible emergence of technological co-evolution niches beside the spatial co-evolution niches.
 
-Second, applying the model to real systems of cities, both in terms of initial parametrization and of empirical laws for innovation processes, would allow bringing this approach closer to possible policy applications. \cite{raimbault:halshs-01880492} and later \cite{2020arXiv200510007R} benchmarked several models of urban growth based on interactions between cities, and integrated the model of \cite{favaro2011gibrat} on which this work was based. It however only included accurate initial populations and distance matrix, but no empirical data on innovation waves which were also synthetically constructed. One important aspect of this application to real systems of cities is thus a test of the performance of this model in predicting possible trajectories for systems of cities.
+Second, applying the model to real systems of cities, both in terms of initial parametrization and of empirical laws for innovation processes, would allow bringing this approach closer to possible policy applications. \cite{raimbault:halshs-01880492} and later \cite{2020arXiv200510007R} benchmarked several models of urban growth based on interactions between cities, and integrated the model of \cite{favaro2011gibrat} on which this work was based. It however only included accurate initial populations and distance matrix, but no empirical data on innovation waves which were also synthetically constructed. One important aspect of this application to real systems of cities is thus a test of the performance of this model in predicting possible population trajectories for systems of cities. Several obstacles however remain for a more complete application of the innovation diffusion urban evolution model. Harmonized datasets with consistent definition of urban entities, in particular which can be compared between different urban systems and long time scales, are crucial to study the dynamics of urban systems as done for example by \cite{pumain2015multilevel}. Innovation measures are not included in such datasets, and existing innovation proxys are limited in time and space, as for example the US Patent Office database for which inventors have been localized \citep{morrison2017disambiguation}. Then, how to link innovation proxy measures with model processes, in other words how to parametrize or calibrate the model on real data, remains an open question. Finally, how various urban systems with very different histories and at different stages of development would fit model assumptions, in particular the fact that innovation waves partly drive growth rates of cities, remains to be empirically investigated \citep{pumain2009innovation}.
 
-Finally, our approach was rather restricted in the sense that even a broad geographical range is taken into account, a single ontological scale is included in the model, i.e. the macroscopic scale since cities are the basic agents. 
-One can expect processes of innovation diffusion to behave differently at the microscopic scale or at intermediate scales of companies or innovation clusters % lit spillovers?
-Similarly, a single temporal scale was included, although two dynamics of spatial interaction and innovation diffusion are effectively combined. A multi-scale approach of urban evolution would be necessary to fully account for the complexity of these systems. \cite{raimbault:halshs-02351722} introduced a multi-scalar model for population growth with upward and downward strong feedbacks between the mesoscopic scale (urban form) and the macroscopic scale (spatial interaction model). Adapting this approach in the case of urban evolution through innovation diffusion would be an interesting potential development.
-The aspects to be clarified
+Finally, our approach was rather restricted in the sense that even a broad geographical range is taken into account, a single ontological scale is included in the model, i.e. the macroscopic scale since cities are the basic agents. One can expect processes of innovation diffusion to behave differently at the microscopic scale or at intermediate scales of companies or innovation clusters \cite{audretsch2004knowledge}. Other types of agents and processes may be more significant than spatial interaction at this finer scales, for example with a diffusion through social networks \citep{zhang2019empirically}. Similarly, a single temporal scale was included, although two dynamics of spatial interaction and innovation diffusion are effectively combined. A multi-scale approach of urban evolution would be necessary to fully account for the complexity of these systems. \cite{raimbault:halshs-02351722} introduced a multi-scalar model for population growth with upward and downward strong feedbacks between the mesoscopic scale (urban form) and the macroscopic scale (spatial interaction model). Adapting this approach in the case of urban evolution through innovation diffusion would be an interesting potential development.
 
 
 \section{Conclusion}
 
-We have introduced a simple model of urban evolution integrating effectively the evolutionary processes of transmission, transformation and evolving sub-systems, through innovation diffusion and spatial interactions. Model exploration yield complex behavior while multi-objective optimization shows the potentiality for the model to produce compromises between utility and diversity in the system of cities. This work is thus a first step towards more elaborated models of urban evolution.
+We have introduced a simple model of urban evolution integrating effectively the evolutionary processes of transmission, transformation and evolving sub-systems, through innovation diffusion and spatial interactions. Model exploration yield complex behavior while multi-objective optimization shows the potentiality for the model to produce compromizes between utility and diversity in the system of cities. This work is thus a first step towards more elaborated models of urban evolution.
 
 
 \bigskip
