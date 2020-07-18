@@ -255,7 +255,7 @@ $\rightarrow$ Need for simple models with explicit urban genome at the system of
 
 \footnotesize
 
-At each time step, with $P_i \left(t\right)$ population, $p_{c,j,t}$ genome, $u_c$ utility of innovation
+At each time step, with $P_i \left(t\right)$ population, $\delta_{c,i}\left(t\right)$ genome, $u_c$ utility of innovation, $p_{c,i,t}$ share of total population adopting innovation $c$ in city $i$
 \begin{enumerate}
 	\item Crossover through the diffusion of innovations
 	\[
@@ -315,13 +315,13 @@ At each time step, with $P_i \left(t\right)$ population, $p_{c,j,t}$ genome, $u_
 
 % Although \cite{raimbault:halshs-01880492} proposed to apply the model of \cite{favaro2011gibrat} on real systems of cities, we focus our model study here on synthetic systems of cities, in order to isolate intrinsic effects independently of geographical contingencies. Cities are located randomly in an uniform square space. City sizes follow a Zipf law with exponent $\alpha_0 = 1$, i.e. such that $P_i (0) = \frac{P_{max}}{i^{\alpha_0}}$ \citep{pumain2012theorie}. We do not modify this initial hierarchy in our experiments. Distances between cities $d_{ij}$ are computed as euclidian distances. We take $N=30$ cities, $P_{max} = 10^5$ and $t_f = 50$ in our experiments, corresponding to a regional or small national system of cities, on timescales of the order of a century. According to these approximates scales, we fix $w_I = 0.005$ in experiments which gives a maximal possible growth factor of $(1.005)^{50} = 1.28$ over the whole period, in consistence with mature urban systems having relatively slow population growth \citep{pumain1982dynamique}.
 
-Model applied on synthetic systems of cities:
+Model applied on synthetic systems of cities (so that conclusions are independent of geographical contingencies \cite{raimbault2019space}):
 
 \medskip
 
 \begin{itemize}
 	\item random positions and rank-size hierarchy $P_i \left(0\right) \textrm{ = } \frac{P_{max}}{i^{\alpha_0}}$ with $\alpha_0 \textrm{ = } 1.0$ and $P_{max} \textrm{ = } 100,000$
-	\item countrywide urban system scale: $N \textrm{ = } 30$ cities
+	\item regional urban system scale: $N \textrm{ = } 30$ cities
 	\item simulated for $t_f \textrm{ = } 50$ macroscopic time steps (order of magnitude of a century)
 \end{itemize}
 
