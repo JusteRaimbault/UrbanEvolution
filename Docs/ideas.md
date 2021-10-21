@@ -1,4 +1,12 @@
 
+
+====
+2021/05/19
+
+Lenton, T. M., Kohler, T. A., Marquet, P. A., Boyle, R. A., Crucifix, M., Wilkinson, D. M., & Scheffer, M. (2021). Survival of the Systems. Trends in Ecology & Evolution.
+(in bib/UrbanEvolution) -> evolution without repplication in itself: apply to urban evolution - // question seminar Urban Genome.
+
+
 ====
 2021/01/14
 
