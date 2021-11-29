@@ -31,5 +31,6 @@ object RunUrbanEvolution extends App {
   val finalHierarchy = Statistics.slope(result.populations.getCol(50).flatValues)._1
   println("Final pop hierarchy = "+finalHierarchy)
   println("Delta hierarchy pop = "+(finalHierarchy - Statistics.slope(result.populations.getCol(0).flatValues)._1))
+  println("Average gravity flow = "+result.averageGravityFlow)
 
 }

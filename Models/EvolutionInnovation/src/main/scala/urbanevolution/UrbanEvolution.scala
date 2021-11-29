@@ -41,9 +41,9 @@ case class UrbanEvolution(
     * run for model calibration
     * @return
     */
-  def run: (Double, Double, Double, Double) = {
+  def run: (Double, Double, Double, Double, Double) = {
     val result = UrbanEvolution.run(this)
-    (result.averageDiversity,result.averageUtility,result.averageInnovation,Statistics.slope(result.populations.getCol(dates.length - 1).flatValues)._1)
+    (result.averageDiversity,result.averageUtility,result.averageInnovation,Statistics.slope(result.populations.getCol(dates.length - 1).flatValues)._1, result.averageGravityFlow)
   }
 
 
@@ -78,11 +78,13 @@ object UrbanEvolution {
     * @param populations populations
     * @param innovationUtilities utilities
     * @param innovationShares shares
+    * @param gravityPotentials gravity potentials (could be recomputed from pops, distance weights and innov shares)
     */
   case class InnovationResult(
                                populations: Matrix,
                                innovationUtilities: Seq[Double],
-                               innovationShares: Seq[Matrix]
+                               innovationShares: Seq[Matrix],
+                               gravityPotentials: Seq[Matrix]
                              ) {
 
     /**
@@ -124,6 +126,14 @@ object UrbanEvolution {
       */
     def averageInnovation: Double = {
       innovationUtilities.length.toDouble/(populations.nrows.toDouble*populations.ncols.toDouble)
+    }
+
+    /**
+      * gravity flows averaged in time and over cities
+      * @return
+      */
+    def averageGravityFlow: Double = {
+      gravityPotentials.map(m => m.sum / (m.ncols*m.nrows)).sum / gravityPotentials.size
     }
 
 
@@ -379,6 +389,8 @@ object UrbanEvolution {
     archaicTechno.setMSubmat(0, 0, Array.fill(n)(Array(1.0)))
     innovationProportions.append(archaicTechno)
 
+    val gravityPotentials: ArrayBuffer[Matrix] = new ArrayBuffer[Matrix]
+
 
     for (t <- 1 until p) {
 
@@ -422,6 +434,8 @@ object UrbanEvolution {
       val potsgravity = diagpops %*% DenseMatrix.diagonal(technoFactor) %*% gravityDistanceWeights %*% diagpops
       val meanpotgravity = potsgravity.sum / (n * n)
 
+      gravityPotentials.append(potsgravity)
+
       val prevpop = Matrix(currentPopulations.map(Array(_)))(Matrix.defaultImplementation)
       res.setMSubmat(0, t,
         (prevpop +
@@ -439,8 +453,8 @@ object UrbanEvolution {
       /*
         * 3) create a new innovation if needed
         */
-      val currentInnovProps: Seq[Seq[Double]] = innovationProportions.map(_.getCol(t).flatValues.toSeq)
-      val potentialInnovation: (Boolean, Seq[Double], Seq[Seq[Double]]) = model.newInnovation(currentPopulations.toSeq, innovationUtilities, currentInnovProps)
+      val currentInnovProps: Seq[Seq[Double]] = innovationProportions.map(_.getCol(t).flatValues.toSeq).toSeq
+      val potentialInnovation: (Boolean, Seq[Double], Seq[Seq[Double]]) = model.newInnovation(currentPopulations.toSeq, innovationUtilities.toSeq, currentInnovProps)
       if (potentialInnovation._1){
         innovationUtilities.appendAll(potentialInnovation._2)
         val newShares = potentialInnovation._3
@@ -465,7 +479,7 @@ object UrbanEvolution {
     log("Innovations introduced : "+innovationProportions.length)
     log("Macro adoption levels : "+macroAdoptionLevels.mkString(","))
 
-    InnovationResult(res,innovationUtilities,innovationProportions)
+    InnovationResult(res, innovationUtilities.toSeq, innovationProportions.toSeq, gravityPotentials.toSeq)
   }
 
 
