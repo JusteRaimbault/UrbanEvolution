@@ -14,12 +14,14 @@ val replication = Val[Int]
 val id = Val[Int]
 
 // indicators
-val oppAverageDiversity = Val[Double]
+//val oppAverageDiversity = Val[Double]
+val averageGravityFlow = Val[Double]
 val oppAverageUtility = Val[Double]
+
 
 val model = ScalaTask("""
     |import urbanevolution.UrbanEvolution
-    |val (averageDiversity,averageUtility,_,_) = UrbanEvolution(
+    |val (_,averageUtility,_,_,averageGravityFlow) = UrbanEvolution(
     |  gravityDecay = input.gravityDecay,
     |  innovationDecay = input.innovationDecay,
     |  mutationRate = input.mutationRate,
@@ -35,47 +37,51 @@ val model = ScalaTask("""
     |  innovationWeight = 0.005,
     |  seed = input.replication
     |).run
-    |val oppAverageDiversity = -1.0 * averageDiversity
     |val oppAverageUtility = -1.0 * averageUtility
     """.stripMargin
 ) set (
     (inputs,outputs) += (gravityDecay,innovationDecay,mutationRate,newInnovationHierarchy,earlyAdoptersRate,utilityStd,utilityDistribution,replication),
-    outputs += (oppAverageDiversity,oppAverageUtility),
-    plugins += pluginsOf[_root_.urbanevolution.UrbanEvolution]
+    outputs += (averageGravityFlow,oppAverageUtility),
+    plugins += pluginsOf[_root_.urbanevolution.UrbanEvolution],
+    newInnovationHierarchy := 0.5
+)
+
+val replications = Replication(
+  evaluation = model,
+  seed = replication,
+  sample = 10,
+  aggregation = Seq(averageGravityFlow aggregate median, oppAverageUtility aggregate median)
 )
     
 
-val purpose = "CALIBRATION_GRID"
+//val purpose = "CALIBRATION_GRID"
+//val purpose = "CALIBRATION_REPLICATIONS_HIERARCHY_0_5_LOCAL"
+val purpose = "CALIBRATION_REPLICATIONS_INNOVHIERARCHY_0_5_LOCAL"
 //val purpose = "CALIBRATION_TEST"
 val datestr = (new SimpleDateFormat("yyyyMMdd_HHmmss")).format(new Date()).toString
 val resdir = purpose+"_"+datestr
 
-val env = EGIEnvironment("vo.complex-systems.eu",openMOLEMemory = 2000 megabytes)
-//val env = LocalEnvironment(5)
+//val env = EGIEnvironment("vo.complex-systems.eu",openMOLEMemory = 2000 megabytes)
+val env = LocalEnvironment(10)
 
-val evolution =
-  NSGA2Evolution(
+NSGA2Evolution(
     genome =
       Seq(
         gravityDecay in (0.01,1.5),
         innovationDecay in (0.01,1.5),
         mutationRate in (0.01,0.5),
-        newInnovationHierarchy in (0.1,2.0),
+        //newInnovationHierarchy in (0.1,2.0),
         earlyAdoptersRate in (0.01,0.9),
         utilityStd in (0.7,2.0),
         utilityDistribution in Seq("normal","log-normal")
       ),
-      mu = 200,
-      objectives = Seq(oppAverageDiversity,oppAverageUtility),
-      evaluation = model,
-      stochastic = Stochastic(seed = replication),
-      termination = 50000,
-      parallelism = 500,
-      distribution = Island(10 minutes)
-)
+      populationSize = 100,
+      objective = Seq(averageGravityFlow,oppAverageUtility),
+      evaluation = (replications on env),
+      //stochastic = Stochastic(seed = replication),
+      termination = 10000,
+      parallelism = 10//,
+      //distribution = Island(10 minutes)
+) hook (workDirectory / "calibration" / resdir,1000)
 
-val savePopulation = SavePopulationHook(evolution, workDirectory / "calibration" / resdir,1000)
-
-
-(evolution on env hook savePopulation)
     
