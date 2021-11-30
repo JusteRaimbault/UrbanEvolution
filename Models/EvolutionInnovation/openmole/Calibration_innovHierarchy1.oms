@@ -43,7 +43,7 @@ val model = ScalaTask("""
     (inputs,outputs) += (gravityDecay,innovationDecay,mutationRate,newInnovationHierarchy,earlyAdoptersRate,utilityStd,utilityDistribution,replication),
     outputs += (averageGravityFlow,oppAverageUtility),
     plugins += pluginsOf[_root_.urbanevolution.UrbanEvolution],
-    newInnovationHierarchy := 1.5
+    newInnovationHierarchy := 1.0
 )
 
 val replications = Replication(
@@ -56,7 +56,7 @@ val replications = Replication(
 
 //val purpose = "CALIBRATION_GRID"
 //val purpose = "CALIBRATION_REPLICATIONS_HIERARCHY_0_5_LOCAL"
-val purpose = "CALIBRATION_REPLICATIONS_INNOVHIERARCHY_1_5_LOCAL"
+val purpose = "CALIBRATION_REPLICATIONS_INNOVHIERARCHY_1_LOCAL"
 //val purpose = "CALIBRATION_TEST"
 val datestr = (new SimpleDateFormat("yyyyMMdd_HHmmss")).format(new Date()).toString
 val resdir = purpose+"_"+datestr
