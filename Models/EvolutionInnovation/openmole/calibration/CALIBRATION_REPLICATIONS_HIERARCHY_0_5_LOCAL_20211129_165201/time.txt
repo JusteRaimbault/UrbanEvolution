@@ -1,0 +1,4 @@
+29/11/2021 16:51:54 ; 390231/390231 ; 8:11:27 ; finished
+model 100051 ; replication 100090
+env 3d9h ; submitted 29 ; finished 100051 ; failed 10
+

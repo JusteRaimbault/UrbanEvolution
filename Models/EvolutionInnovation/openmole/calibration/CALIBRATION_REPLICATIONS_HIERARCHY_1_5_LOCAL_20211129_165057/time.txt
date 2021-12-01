@@ -1,0 +1,4 @@
+29/11/2021 16:50:53 ; 390213/390213 ; ??? ; finished
+model 100042 ; replication 10000
+env 2d22h ; finished 100042 ; failed 10
+
