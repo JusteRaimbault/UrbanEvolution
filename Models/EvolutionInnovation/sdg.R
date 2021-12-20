@@ -10,8 +10,13 @@ res <- as_tibble(read.csv(paste0('openmole/calibration/',resprefix,'/population1
 resdir = paste0(Sys.getenv('CS_HOME'),'/UrbanEvolution/Results/EvolutionInnovation/',resprefix,'/');dir.create(resdir)
 
 g <- ggplot(res,aes(x=oppAverageUtility, y = averageGravityFlow, color=gravityDecay, size = innovationDecay, shape=utilityDistribution))
-g+geom_point(alpha=0.5)
-ggsave(file=paste0(resdir,'pareto-oppAverageUtility-averageGravityFlow_color-gravityDecay_size-innovationDecay_shape-utilityDistribution.png'),width=22,height=18,units='cm')
+g+geom_point(alpha=0.5)+
+  xlab("Opposite of total utility (innovation)")+ylab("Mobility intensity (emissions)")+
+  scale_color_continuous("Population spatial\ninteraction range")+
+  scale_size_continuous("Innovation spatial\ninteraction range")+
+  scale_shape_discrete("Utility distribution\ntype")+
+  stdtheme
+ggsave(file=paste0(resdir,'pareto-oppAverageUtility-averageGravityFlow_color-gravityDecay_size-innovationDecay_shape-utilityDistribution.png'),width=25,height=20,units='cm')
 
 
 #g <- ggplot(res,aes(x=oppAverageUtility, y = averageGravityFlow, color=newInnovationHierarchy, size = innovationDecay, shape=utilityDistribution))
@@ -25,8 +30,13 @@ res2 <- as_tibble(read.csv('openmole/calibration/CALIBRATION_REPLICATIONS_HIERAR
 allres = rbind(cbind(res,hierarchy=rep("1",nrow(res))),cbind(res1,hierarchy=rep("0.5",nrow(res1))),cbind(res2,hierarchy=rep("1.5",nrow(res2))))
 
 g <- ggplot(allres,aes(x=oppAverageUtility, y = averageGravityFlow, color=gravityDecay, size = innovationDecay, shape=hierarchy))
-g+geom_point(alpha=0.5)
-ggsave(file=paste0(resdir,'pareto-oppAverageUtility-averageGravityFlow_VARYINGHIERARCHY_color-gravityDecay_size-innovationDecay.png'),width=22,height=18,units='cm')
+g+geom_point(alpha=0.5)+
+  xlab("Opposite of total utility (innovation)")+ylab("Mobility intensity (emissions)")+
+  scale_color_continuous("Population spatial\ninteraction range")+
+  scale_size_continuous("Innovation spatial\ninteraction range")+
+  scale_shape_discrete("Hierarchy index")+
+  stdtheme
+ggsave(file=paste0(resdir,'pareto-oppAverageUtility-averageGravityFlow_VARYINGHIERARCHY_color-gravityDecay_size-innovationDecay.png'),width=25,height=20,units='cm')
 
 
 ## innovation hierarchy
@@ -38,8 +48,13 @@ res3 <- as_tibble(read.csv('openmole/calibration/CALIBRATION_REPLICATIONS_INNOVH
 allres = rbind(cbind(res2,innovHierarchy=rep("1",nrow(res2))),cbind(res1,innovHierarchy=rep("0.5",nrow(res1))),cbind(res3,innovHierarchy=rep("1.5",nrow(res3))))
 
 g <- ggplot(allres,aes(x=oppAverageUtility, y = averageGravityFlow, color=gravityDecay, size = innovationDecay, shape=innovHierarchy))
-g+geom_point(alpha=0.5)
-ggsave(file=paste0(resdir,'pareto-oppAverageUtility-averageGravityFlow_VARYINGINNOVHIERARCHY_color-gravityDecay_size-innovationDecay.png'),width=22,height=18,units='cm')
+g+geom_point(alpha=0.5)+
+  xlab("Opposite of total utility (innovation)")+ylab("Mobility intensity (emissions)")+
+  scale_color_continuous("Population spatial\ninteraction range")+
+  scale_size_continuous("Innovation spatial\ninteraction range")+
+  scale_shape_discrete("Innovation hierarchy")+
+  stdtheme
+ggsave(file=paste0(resdir,'pareto-oppAverageUtility-averageGravityFlow_VARYINGINNOVHIERARCHY_color-gravityDecay_size-innovationDecay.png'),width=25,height=20,units='cm')
 
 
 
