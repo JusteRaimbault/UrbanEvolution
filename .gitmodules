@@ -1,3 +1,6 @@
 [submodule "Docs/Papers/SDGTradeoffs/paper"]
 	path = Docs/Papers/SDGTradeoffs/SDGTradeoffs-paper
 	url = git@github.com:JusteRaimbault/SDGTradeoffs-paper.git
+[submodule "Docs/Papers/InnovationMultiscale/InnovationMultiscale-paper"]
+	path = Docs/Papers/InnovationMultiscale/InnovationMultiscale-paper
+	url = git@github.com:JusteRaimbault/InnovationMultiscale-paper.git
