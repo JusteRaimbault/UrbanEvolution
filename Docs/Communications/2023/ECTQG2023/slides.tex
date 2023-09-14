@@ -72,6 +72,7 @@ $^{4}$UMR CNRS 8504 G{\'e}ographie-cit{\'e}s
 
 
 \date{ECTQG 2023\\\smallskip
+Session Theoretical Geography 1\\\smallskip
 September 15th 2023
 }
 
@@ -87,29 +88,35 @@ September 15th 2023
 
 \begin{center}
 	\begin{columns}
-	\begin{column}{0.45\linewidth}
+	\begin{column}{0.49\linewidth}
 	\includegraphics[width=\textwidth]{../../2020/ALife2020/figures/evoltheory_scales.png}
 	\end{column}
-	\begin{column}{0.22\linewidth}
+	\begin{column}{0.3\linewidth}
 	\includegraphics[width=\textwidth]{../../2020/ALife2020/figures/simpop1.png}\\\medskip
 	\includegraphics[width=\textwidth]{../../2020/ALife2020/figures/setup_synth_1_tick100.png}
 	\end{column}
 	\end{columns}
 \end{center}
 
-\footnotesize
-\textit{An evolutionary urban theory considering cities as systems within systems of cities \cite{pumain2018evolutionary}; Simpop 1 model \cite{sanders1997simpop}; SimpopNet model \cite{schmitt2014modelisation}}
+%\footnotesize
+An evolutionary urban theory considering cities as systems within systems of cities \cite{pumain2018evolutionary}; Simpop 1 model \cite{sanders1997simpop}; SimpopNet model \cite{schmitt2014modelisation}
 
 
 
 }
 
 
-\sframe{Multi-modeling urban systems dynamics}{
+\sframe{Multi-modeling urban systems dynamics for sustainability}{
 
 % sdg tradeoffs, multiobj ersa2022
 
 
+\begin{center}
+	\includegraphics[width=0.51\textwidth]{../../../Papers/SDGTradeoffs/SDGTradeoffs-paper/figures/Fig3.png}
+	\includegraphics[width=0.42\textwidth]{../../../../../SDGTradeoffs/Docs/Communications/2022/FRCCS2022/figures/radar_sdgs.png}
+\end{center}
+
+Trade-offs between sustainable development goals in systems of cities \cite{raimbault2020empowering}; multi-modeling for many-objectives SDGs optimisation \cite{raimbault2022trade}
 
 }
 
@@ -118,6 +125,13 @@ September 15th 2023
 \sframe{Hybrid models}{
 
 % Lutecia and physical network: "semi-multiscale"
+
+\begin{center}
+	\includegraphics[width=0.49\textwidth]{../../../../../CityNetwork/Docs/ThesisMemoire/Final/Figures/Final/7-3-3-fig-lutecia-governance.jpg}
+	\includegraphics[width=0.49\textwidth]{../../../../../NetworksTerritories/CoevolutionNwTerritories/Docs/Papers/HierarchyCoevolution/chapter/figuresraw/ex_realphysical_1975_tf.png}
+\end{center}
+
+Simulation models for systems of cities and transportation networks making a slight bridge between scales: transportation governance modeling \cite{raimbault2021introducing}; physical network self-reinforcment \cite{raimbault2020hierarchy}
 
 }
 
@@ -128,7 +142,17 @@ September 15th 2023
 
 % contribution
 
+$\rightarrow$ multi-scale simulation models are needed to explore sustainable policies \cite{rozenblat2018conclusion}
 
+\bigskip
+
+
+$\rightarrow$ multi-scale urban models remain however underexplored in the literature
+
+\bigskip
+\bigskip
+
+\textbf{This contribution: } \textit{to synthesise lessons from two different recent tentatives to build multi-scale urban models with a strong coupling between scales: an urban morphogenesis model \cite{raimbault2021strong} and an innovation diffusion model \cite{raimbault2023innovation}, learnt from the systematic exploration of these models using OpenMOLE \cite{reuillon2013openmole}}
 
 
 }
@@ -139,11 +163,27 @@ September 15th 2023
 
 % broad description of morph-intgib model: cit ccs19 and preprint
 
+\begin{center}
+\includegraphics[width=\textwidth]{../../../../../UrbanGrowth/Docs/Papers/Multiscale/paper/figures/Fig1.jpg}
+\end{center}
+
+A strong coupling explored by \cite{raimbault2021strong} between urban morphogenesis agregation-diffusion processes at the meso scale \cite{raimbault2018calibration} and interactions between cities at the macro scale \cite{raimbault2020indirect}
+
+
 }
 
 \sframe{Model exploration}{
 
 % salient results for urbmorph-intgib
+
+\begin{center}
+\includegraphics[width=0.58\textwidth]{../../../../../UrbanGrowth/Docs/Papers/Multiscale/paper/figures/Fig5.jpg}
+\includegraphics[width=0.4\textwidth]{../../../../../UrbanGrowth/Docs/Papers/Multiscale/paper/figures/Fig7.jpg}
+\end{center}
+
+\bigskip
+
+(Left) Non-monotonous effect of policy parameters linking scales; (Right) Bi-objective optimisation of contradictory objectives across scales
 
 }
 
@@ -153,10 +193,28 @@ September 15th 2023
 
 % while the second one simulates the diffusion of innovation between urban areas and its impact on urban growth at the macroscopic scale, and innovation cluster dynamics within each area (Raimbault & Pumain, 2023).
 
+\begin{center}
+	\includegraphics[width=0.75\textwidth]{../../../Papers/InnovationMultiscale/InnovationMultiscale-paper/slides/figures/model_4.png}
+\end{center}
+
+
+A bi-scale model explored by \cite{raimbault2023innovation}, coupling urban evolution based on innovation diffusion at the macro scale \cite{raimbault2020model}, with intra-urban innovation cluster dynamics between firms for the emergence of new innovations \cite{raimbault2022innovation}; quantification of strong emergence using indicators by \cite{rosas2020reconciling}
+
+
 }
 
 
 \sframe{Model exploration}{
+
+\begin{center}
+\includegraphics[width=0.49\textwidth]{../../../Papers/InnovationMultiscale/InnovationMultiscale-paper/figures/paretoDiversity-Fitness_colordG_sizetheta.png}
+\includegraphics[width=0.49\textwidth]{../../../Papers/InnovationMultiscale/InnovationMultiscale-paper/figures/pse-psi-delta-utility_colorGamma_sizetheta.png}
+\end{center}
+
+\bigskip
+
+(Left) bi-optimisation between contradictory objectives across scales; (Right) diversity of emergence regimes obtained with a diversity search algorithm
+
 
 }
 
@@ -165,6 +223,11 @@ September 15th 2023
 
 % First simulation results show that strong emergence appears in a significant number of regimes for the innovation model, and that contradictory objectives across scales can be simultaneously optimised using multi-objective genetic algorithms for both models.
 
+$\rightarrow$ strong emergence quantified in a high diversity of regimes for the innovation diffusion model, probable (given cross-scale parameter influence, but not quantified) for the urban morphogenesis model
+
+\bigskip
+
+$\rightarrow$ optimisation objectives across scales seem generally contradictory, and can be simultaneously optimised with Pareto trade-offs
 
 }
 
@@ -175,6 +238,7 @@ September 15th 2023
 
 
 % A few pitfalls have been identified while theoretically constructing the models and empirically exploring their parameter space using advanced model validation techniques with the OpenMOLE software (Reuillon et al., 2013): (i) to obtain a strong coupling between scales, and thus effective multiscalar dynamics rather than fixed effects at the meso scale only for example, both top-down and bottom-up feedbacks have to be included explicitly, and corresponding ontologies and processes must be identified; 
+
 
 
 }
