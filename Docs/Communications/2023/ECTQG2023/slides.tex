@@ -122,7 +122,7 @@ Trade-offs between sustainable development goals in systems of cities \cite{raim
 
 
 
-\sframe{Hybrid models}{
+\sframe{Hybrid models mixing scales}{
 
 % Lutecia and physical network: "semi-multiscale"
 
@@ -239,6 +239,17 @@ $\rightarrow$ optimisation objectives across scales seem generally contradictory
 
 % A few pitfalls have been identified while theoretically constructing the models and empirically exploring their parameter space using advanced model validation techniques with the OpenMOLE software (Reuillon et al., 2013): (i) to obtain a strong coupling between scales, and thus effective multiscalar dynamics rather than fixed effects at the meso scale only for example, both top-down and bottom-up feedbacks have to be included explicitly, and corresponding ontologies and processes must be identified; 
 
+$\rightarrow$ models coupling scales with a single direction of inter-scale feedback can be simplified to non-stationary dynamics or fixed effects at a single scale: ``strong'' coupling is necessary
+
+\bigskip
+
+$\rightarrow$ scales have their own distinct ontologies with their own processes
+
+\bigskip
+
+% Q: is aggregation a process? not necessarily - but a feedback between variables
+
+$\rightarrow$ inter-scales processes may be necessary to capture feedbacks and may necessitate their own ontology
 
 
 }
@@ -248,6 +259,12 @@ $\rightarrow$ optimisation objectives across scales seem generally contradictory
 
 %ii) the parametrisation or calibration with empirical data is significantly more cumbersome than with single level models, and synthetic systems are a first alternative to explore model behaviour; 
 
+$\rightarrow$ model parametrisation with real data is more complicated: which scales? need of consistent datasets in case of multiple scales (cf Geodivercity project); how to consistently setup model states? \ldots
+
+\bigskip
+
+$\rightarrow$ synthetic systems of cities are a first way to explore model dynamics independently of geographical contingencies \cite{raimbault2019space}
+
 }
 
 
@@ -255,7 +272,21 @@ $\rightarrow$ optimisation objectives across scales seem generally contradictory
 
 % (iii) the convergence of model indicators regarding stochasticity seems more difficult to obtain, possibly due to non-linear noise propagation between scales; 
 
-% TODO histogram/distib for illustrated indicators for the innovation model?
+% histogram/distib for illustrated indicators for the innovation model? no time
+
+\begin{center}
+	\includegraphics[width=0.49\textwidth]{../../../../Results/InnovationMultiscale/exploration/20230623_135234_EXPLORATION/psiDiversity_MED-macroGravityDecay_color-macroInnovationDecay_facet-mesoToMacroInnovationThreshold-macroToMesoExchangeMaxUpdate_mesoCrossOverProba05.png}
+	\includegraphics[width=0.49\textwidth]{../../../../Results/InnovationMultiscale/exploration/20230705-20230712_EXPLORATION/psiDiversity-macroGravityDecay_color-macroInnovationDecay_facet-mesoToMacroInnovationThreshold-macroToMesoExchangeMaxUpdate_mesoCrossOverProba05.png}
+\end{center}
+
+% not sure 100? check oms commit! -> 56547b137cb2e8c807511e71efde1c06ba42ef6d : 20 repets only!
+
+$\rightarrow$ statistical convergence of indicators is more difficult to reach (example above for innovation diffusion: 20 vs 10,000 replications, despite ``good-looking'' empirical Sharpe ratios suggesting a low number of repetitions)
+
+\bigskip
+
+$\rightarrow$ non-linearities, fat-tail distribution, noise propagation between scales? More uncertainty-based/Bayesian validation methods?
+
 
 }
 
@@ -264,7 +295,19 @@ $\rightarrow$ optimisation objectives across scales seem generally contradictory
 
 % (iv) a crucial aspect remains to quantify the strength of emergence, such that these approaches are not a superfluous complication of simpler dynamics at a single scale – the indicators introduced by (Rosas et al., 2020) are good candidates for such measures but remain to be tested systematically on geosimulation models.
 
+$\rightarrow$ issue of over-complication/overfitting (generic issue for simulation models \cite{raimbault2020indirect}): is the multi-scale aspect necessary?
 
+\bigskip
+
+$\rightarrow$ the stronger the emergence, the more it is needed? \cite{bedau2002downward}: for nominal emergence, can be simplified/surrogated; for weak emergence, depends on the cases? (cf Schelling model); for strong emergence difficult to be avoided because of the autonomy?
+
+\bigskip
+
+$\rightarrow$ need indicators and methods to systematically quantify emergence in multi-scalar simulated dynamics: cf. information-theory-based indicators proposed by \cite{rosas2020reconciling}
+
+\bigskip
+
+$\rightarrow$ link between strength of emergence and strength of coupling, and other types of complexities (such as \cite{pumain2003approche}'s ``interdisciplinary'' complexity), seems to be an open question, related to the nature of complexities \cite{raimbault2020relating} and complex knowledge/knowledge of the complex
 
 }
 
@@ -272,23 +315,34 @@ $\rightarrow$ optimisation objectives across scales seem generally contradictory
 
 
 
-\sframe{Discussion}{
+\sframe{Discussion: still a long way to go!}{
 
 
-% \textbf{Main results:}
+%\textbf{Main results:}
 
 
 \justify
 
-$\rightarrow$ 
+$\rightarrow$ there seem to be methodological regularities when building strongly coupled multi-scale models - to what extent do they depend on the type of system, methodological framework, do they hold with a parametrisation on real data?
 			
 \bigskip
-				
-$\rightarrow$ 
 
+$\rightarrow$ subtle compromise between model complication/complexity and the effective capture of multi-scale dynamics
+
+\bigskip
+
+$\rightarrow$ application to multi-scalar policies still far, but already possible in a stylised way such as for trade-offs between SDGs (at a single scale for now \cite{raimbault2022trade})
+
+\bigskip
 \bigskip
 
 %\textbf{Conclusion: } 
+
+\textbf{Open repositories for presented models:}
+
+\texttt{https://github.com/JusteRaimbault/UrbanGrowth}
+
+\texttt{https://github.com/JusteRaimbault/InnovationMultiscale-model}
 
 }
 
